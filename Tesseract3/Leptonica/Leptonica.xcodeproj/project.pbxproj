@@ -1,0 +1,1208 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		085A541D2216C56500183FD3 /* Leptonica_FAT */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 085A541E2216C56500183FD3 /* Build configuration list for PBXAggregateTarget "Leptonica_FAT" */;
+			buildPhases = (
+				085A54212216C56E00183FD3 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Leptonica_FAT;
+			productName = Leptonica_FAT;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		085A52872216C32400183FD3 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085A52862216C32400183FD3 /* libjpeg.a */; };
+		085A536D2216C33F00183FD3 /* bootnumgen1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52962216C33E00183FD3 /* bootnumgen1.c */; };
+		085A536E2216C33F00183FD3 /* gifiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52972216C33E00183FD3 /* gifiostub.c */; };
+		085A536F2216C33F00183FD3 /* runlength.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52982216C33E00183FD3 /* runlength.c */; };
+		085A53702216C33F00183FD3 /* jp2kheader.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529A2216C33E00183FD3 /* jp2kheader.c */; };
+		085A53712216C33F00183FD3 /* zlibmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529B2216C33E00183FD3 /* zlibmem.c */; };
+		085A53722216C33F00183FD3 /* morphseq.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529C2216C33E00183FD3 /* morphseq.c */; };
+		085A53732216C33F00183FD3 /* stringcode.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529D2216C33E00183FD3 /* stringcode.c */; };
+		085A53742216C33F00183FD3 /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529E2216C33E00183FD3 /* compare.c */; };
+		085A53752216C33F00183FD3 /* dwacomblow.2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529F2216C33E00183FD3 /* dwacomblow.2.c */; };
+		085A53762216C33F00183FD3 /* warper.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A02216C33E00183FD3 /* warper.c */; };
+		085A53772216C33F00183FD3 /* rbtree.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A22216C33E00183FD3 /* rbtree.c */; };
+		085A53782216C33F00183FD3 /* colormorph.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A32216C33E00183FD3 /* colormorph.c */; };
+		085A53792216C33F00183FD3 /* utils2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A42216C33E00183FD3 /* utils2.c */; };
+		085A537A2216C33F00183FD3 /* sel1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A52216C33E00183FD3 /* sel1.c */; };
+		085A537B2216C33F00183FD3 /* boxbasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A62216C33E00183FD3 /* boxbasic.c */; };
+		085A537C2216C33F00183FD3 /* pix3.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A72216C33E00183FD3 /* pix3.c */; };
+		085A537D2216C33F00183FD3 /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A82216C33E00183FD3 /* list.c */; };
+		085A537E2216C33F00183FD3 /* affine.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A92216C33E00183FD3 /* affine.c */; };
+		085A537F2216C33F00183FD3 /* fhmtgenlow.1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52AA2216C33E00183FD3 /* fhmtgenlow.1.c */; };
+		085A53802216C33F00183FD3 /* selgen.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52AB2216C33E00183FD3 /* selgen.c */; };
+		085A53812216C33F00183FD3 /* dewarp4.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52AD2216C33E00183FD3 /* dewarp4.c */; };
+		085A53822216C33F00183FD3 /* gplot.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52AE2216C33E00183FD3 /* gplot.c */; };
+		085A53832216C33F00183FD3 /* seedfill.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52AF2216C33E00183FD3 /* seedfill.c */; };
+		085A53842216C33F00183FD3 /* numabasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B02216C33E00183FD3 /* numabasic.c */; };
+		085A53852216C33F00183FD3 /* flipdetect.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B12216C33E00183FD3 /* flipdetect.c */; };
+		085A53862216C33F00183FD3 /* zlibmemstub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B22216C33E00183FD3 /* zlibmemstub.c */; };
+		085A53872216C33F00183FD3 /* fpix2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B32216C33E00183FD3 /* fpix2.c */; };
+		085A53882216C33F00183FD3 /* rotateorth.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B42216C33E00183FD3 /* rotateorth.c */; };
+		085A53892216C33F00183FD3 /* ccthin.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B62216C33E00183FD3 /* ccthin.c */; };
+		085A538A2216C33F00183FD3 /* bilinear.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B72216C33E00183FD3 /* bilinear.c */; };
+		085A538B2216C33F00183FD3 /* maze.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B82216C33E00183FD3 /* maze.c */; };
+		085A538C2216C33F00183FD3 /* colorspace.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B92216C33E00183FD3 /* colorspace.c */; };
+		085A538D2216C33F00183FD3 /* ccbord.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52BA2216C33E00183FD3 /* ccbord.c */; };
+		085A538E2216C33F00183FD3 /* ptafunc2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52BB2216C33E00183FD3 /* ptafunc2.c */; };
+		085A538F2216C33F00183FD3 /* watershed.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52BD2216C33E00183FD3 /* watershed.c */; };
+		085A53902216C33F00183FD3 /* sarray2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52BE2216C33E00183FD3 /* sarray2.c */; };
+		085A53912216C33F00183FD3 /* tiffio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52BF2216C33E00183FD3 /* tiffio.c */; };
+		085A53922216C33F00183FD3 /* scale1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C02216C33E00183FD3 /* scale1.c */; };
+		085A53932216C33F00183FD3 /* kernel.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C12216C33E00183FD3 /* kernel.c */; };
+		085A53942216C33F00183FD3 /* writefile.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C22216C33E00183FD3 /* writefile.c */; };
+		085A53952216C33F00183FD3 /* pixcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C32216C33E00183FD3 /* pixcomp.c */; };
+		085A53962216C33F00183FD3 /* psio2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C42216C33E00183FD3 /* psio2.c */; };
+		085A53972216C33F00183FD3 /* heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C52216C33E00183FD3 /* heap.c */; };
+		085A53982216C33F00183FD3 /* rotateam.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C62216C33E00183FD3 /* rotateam.c */; };
+		085A53992216C33F00183FD3 /* jp2kiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C82216C33E00183FD3 /* jp2kiostub.c */; };
+		085A539A2216C33F00183FD3 /* rotate.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C92216C33E00183FD3 /* rotate.c */; };
+		085A539B2216C33F00183FD3 /* numafunc1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CA2216C33E00183FD3 /* numafunc1.c */; };
+		085A539C2216C33F00183FD3 /* rop.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CB2216C33E00183FD3 /* rop.c */; };
+		085A539D2216C33F00183FD3 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CC2216C33E00183FD3 /* stack.c */; };
+		085A539E2216C33F00183FD3 /* ptra.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CD2216C33E00183FD3 /* ptra.c */; };
+		085A539F2216C33F00183FD3 /* partition.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CE2216C33E00183FD3 /* partition.c */; };
+		085A53A02216C33F00183FD3 /* pnmio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CF2216C33E00183FD3 /* pnmio.c */; };
+		085A53A12216C33F00183FD3 /* boxfunc1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D02216C33E00183FD3 /* boxfunc1.c */; };
+		085A53A22216C33F00183FD3 /* readfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D12216C33E00183FD3 /* readfile.c */; };
+		085A53A32216C33F00183FD3 /* conncomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D22216C33E00183FD3 /* conncomp.c */; };
+		085A53A42216C33F00183FD3 /* pix4.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D52216C33E00183FD3 /* pix4.c */; };
+		085A53A52216C33F00183FD3 /* textops.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D62216C33E00183FD3 /* textops.c */; };
+		085A53A62216C33F00183FD3 /* ptabasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D72216C33E00183FD3 /* ptabasic.c */; };
+		085A53A72216C33F00183FD3 /* quadtree.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D82216C33E00183FD3 /* quadtree.c */; };
+		085A53A82216C33F00183FD3 /* dewarp3.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D92216C33E00183FD3 /* dewarp3.c */; };
+		085A53A92216C33F00183FD3 /* bootnumgen2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52DA2216C33E00183FD3 /* bootnumgen2.c */; };
+		085A53AA2216C33F00183FD3 /* projective.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52DB2216C33E00183FD3 /* projective.c */; };
+		085A53AB2216C33F00183FD3 /* graphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52DC2216C33E00183FD3 /* graphics.c */; };
+		085A53AC2216C33F00183FD3 /* morphapp.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52DD2216C33E00183FD3 /* morphapp.c */; };
+		085A53AD2216C33F00183FD3 /* rotateshear.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52DE2216C33E00183FD3 /* rotateshear.c */; };
+		085A53AE2216C33F00183FD3 /* colormap.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E12216C33E00183FD3 /* colormap.c */; };
+		085A53AF2216C33F00183FD3 /* skew.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E32216C33E00183FD3 /* skew.c */; };
+		085A53B02216C33F00183FD3 /* fpix1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E42216C33E00183FD3 /* fpix1.c */; };
+		085A53B12216C33F00183FD3 /* utils1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E52216C33E00183FD3 /* utils1.c */; };
+		085A53B22216C33F00183FD3 /* libversions.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E62216C33E00183FD3 /* libversions.c */; };
+		085A53B32216C33F00183FD3 /* pixconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E72216C33E00183FD3 /* pixconv.c */; };
+		085A53B42216C33F00183FD3 /* sel2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E82216C33E00183FD3 /* sel2.c */; };
+		085A53B52216C33F00183FD3 /* scale2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E92216C33E00183FD3 /* scale2.c */; };
+		085A53B62216C33F00183FD3 /* adaptmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52EA2216C33E00183FD3 /* adaptmap.c */; };
+		085A53B72216C33F00183FD3 /* sarray1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52EB2216C33E00183FD3 /* sarray1.c */; };
+		085A53B82216C33F00183FD3 /* bmpiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52ED2216C33E00183FD3 /* bmpiostub.c */; };
+		085A53B92216C33F00183FD3 /* psio1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52EE2216C33E00183FD3 /* psio1.c */; };
+		085A53BA2216C33F00183FD3 /* recogtrain.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52EF2216C33E00183FD3 /* recogtrain.c */; };
+		085A53BB2216C33F00183FD3 /* jpegiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F02216C33E00183FD3 /* jpegiostub.c */; };
+		085A53BC2216C33F00183FD3 /* arrayaccess.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F22216C33E00183FD3 /* arrayaccess.c */; };
+		085A53BD2216C33F00183FD3 /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F32216C33E00183FD3 /* queue.c */; };
+		085A53BE2216C33F00183FD3 /* pixlabel.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F42216C33E00183FD3 /* pixlabel.c */; };
+		085A53BF2216C33F00183FD3 /* ptafunc1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F62216C33E00183FD3 /* ptafunc1.c */; };
+		085A53C02216C33F00183FD3 /* fmorphgenlow.1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F82216C33E00183FD3 /* fmorphgenlow.1.c */; };
+		085A53C12216C33F00183FD3 /* boxfunc2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52FB2216C33E00183FD3 /* boxfunc2.c */; };
+		085A53C22216C33F00183FD3 /* leptwin.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52FC2216C33E00183FD3 /* leptwin.c */; };
+		085A53C32216C33F00183FD3 /* colorseg.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52FD2216C33E00183FD3 /* colorseg.c */; };
+		085A53C42216C33F00183FD3 /* gifio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52FE2216C33E00183FD3 /* gifio.c */; };
+		085A53C52216C33F00183FD3 /* binreduce.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52FF2216C33E00183FD3 /* binreduce.c */; };
+		085A53C62216C33F00183FD3 /* numafunc2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53012216C33E00183FD3 /* numafunc2.c */; };
+		085A53C72216C33F00183FD3 /* jp2kio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53032216C33E00183FD3 /* jp2kio.c */; };
+		085A53C82216C33F00183FD3 /* bilateral.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53042216C33E00183FD3 /* bilateral.c */; };
+		085A53C92216C33F00183FD3 /* fmorphgen.1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53052216C33E00183FD3 /* fmorphgen.1.c */; };
+		085A53CA2216C33F00183FD3 /* binarize.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53062216C33E00183FD3 /* binarize.c */; };
+		085A53CB2216C33F00183FD3 /* pixtiling.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53072216C33E00183FD3 /* pixtiling.c */; };
+		085A53CC2216C33F00183FD3 /* pdfio1stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53092216C33E00183FD3 /* pdfio1stub.c */; };
+		085A53CD2216C33F00183FD3 /* morph.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A530A2216C33E00183FD3 /* morph.c */; };
+		085A53CE2216C33F00183FD3 /* pix5.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A530B2216C33E00183FD3 /* pix5.c */; };
+		085A53CF2216C33F00183FD3 /* affinecompose.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A530D2216C33E00183FD3 /* affinecompose.c */; };
+		085A53D02216C33F00183FD3 /* pixafunc1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A530E2216C33E00183FD3 /* pixafunc1.c */; };
+		085A53D12216C33F00183FD3 /* classapp.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53102216C33E00183FD3 /* classapp.c */; };
+		085A53D22216C33F00183FD3 /* bmpio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53112216C33E00183FD3 /* bmpio.c */; };
+		085A53D32216C33F00183FD3 /* enhance.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53122216C33E00183FD3 /* enhance.c */; };
+		085A53D42216C33F00183FD3 /* webpiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53142216C33E00183FD3 /* webpiostub.c */; };
+		085A53D52216C33F00183FD3 /* bootnumgen3.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53152216C33E00183FD3 /* bootnumgen3.c */; };
+		085A53D62216C33F00183FD3 /* shear.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53162216C33E00183FD3 /* shear.c */; };
+		085A53D72216C33F00183FD3 /* dewarp2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53172216C33E00183FD3 /* dewarp2.c */; };
+		085A53D82216C33F00183FD3 /* pageseg.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53182216C33E00183FD3 /* pageseg.c */; };
+		085A53D92216C33F00183FD3 /* finditalic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53192216C33E00183FD3 /* finditalic.c */; };
+		085A53DA2216C33F00183FD3 /* psio2stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A531A2216C33E00183FD3 /* psio2stub.c */; };
+		085A53DB2216C33F00183FD3 /* pnmiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A531B2216C33E00183FD3 /* pnmiostub.c */; };
+		085A53DC2216C33F00183FD3 /* bardecode.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A531C2216C33E00183FD3 /* bardecode.c */; };
+		085A53DD2216C33F00183FD3 /* roplow.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A531E2216C33E00183FD3 /* roplow.c */; };
+		085A53DE2216C33F00183FD3 /* bytearray.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A531F2216C33E00183FD3 /* bytearray.c */; };
+		085A53DF2216C33F00183FD3 /* pix1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53202216C33E00183FD3 /* pix1.c */; };
+		085A53E02216C33F00183FD3 /* pixalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53212216C33E00183FD3 /* pixalloc.c */; };
+		085A53E12216C33F00183FD3 /* blend.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53232216C33E00183FD3 /* blend.c */; };
+		085A53E22216C33F00183FD3 /* baseline.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53252216C33E00183FD3 /* baseline.c */; };
+		085A53E32216C33F00183FD3 /* jpegio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53262216C33E00183FD3 /* jpegio.c */; };
+		085A53E42216C33F00183FD3 /* pixabasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53272216C33E00183FD3 /* pixabasic.c */; };
+		085A53E52216C33F00183FD3 /* fliphmtgen.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53282216C33E00183FD3 /* fliphmtgen.c */; };
+		085A53E62216C33F00183FD3 /* recogdid.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53292216C33E00183FD3 /* recogdid.c */; };
+		085A53E72216C33F00183FD3 /* bbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A532A2216C33E00183FD3 /* bbuffer.c */; };
+		085A53E82216C33F00183FD3 /* pdfio2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A532B2216C33E00183FD3 /* pdfio2.c */; };
+		085A53E92216C33F00183FD3 /* binexpand.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A532D2216C33E00183FD3 /* binexpand.c */; };
+		085A53EA2216C33F00183FD3 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53302216C33E00183FD3 /* map.c */; };
+		085A53EB2216C33F00183FD3 /* strokes.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53312216C33E00183FD3 /* strokes.c */; };
+		085A53EC2216C33F00183FD3 /* dnahash.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53322216C33E00183FD3 /* dnahash.c */; };
+		085A53ED2216C33F00183FD3 /* jp2kheaderstub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53332216C33E00183FD3 /* jp2kheaderstub.c */; };
+		085A53EE2216C33F00183FD3 /* colorquant2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53342216C33E00183FD3 /* colorquant2.c */; };
+		085A53EF2216C33F00183FD3 /* edge.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53352216C33E00183FD3 /* edge.c */; };
+		085A53F02216C33F00183FD3 /* boxfunc3.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53362216C33E00183FD3 /* boxfunc3.c */; };
+		085A53F12216C33F00183FD3 /* tiffiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53372216C33E00183FD3 /* tiffiostub.c */; };
+		085A53F22216C33F00183FD3 /* graymorph.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53382216C33E00183FD3 /* graymorph.c */; };
+		085A53F32216C33F00183FD3 /* paintcmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A533C2216C33F00183FD3 /* paintcmap.c */; };
+		085A53F42216C33F00183FD3 /* colorcontent.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A533D2216C33F00183FD3 /* colorcontent.c */; };
+		085A53F52216C33F00183FD3 /* parseprotos.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A533F2216C33F00183FD3 /* parseprotos.c */; };
+		085A53F62216C33F00183FD3 /* pixafunc2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53402216C33F00183FD3 /* pixafunc2.c */; };
+		085A53F72216C33F00183FD3 /* dewarp1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53412216C33F00183FD3 /* dewarp1.c */; };
+		085A53F82216C33F00183FD3 /* pixacc.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53422216C33F00183FD3 /* pixacc.c */; };
+		085A53F92216C33F00183FD3 /* pdfio2stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53432216C33F00183FD3 /* pdfio2stub.c */; };
+		085A53FA2216C33F00183FD3 /* pngiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53442216C33F00183FD3 /* pngiostub.c */; };
+		085A53FB2216C33F00183FD3 /* pix2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53462216C33F00183FD3 /* pix2.c */; };
+		085A53FC2216C33F00183FD3 /* recogident.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53472216C33F00183FD3 /* recogident.c */; };
+		085A53FD2216C33F00183FD3 /* fmorphauto.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53482216C33F00183FD3 /* fmorphauto.c */; };
+		085A53FE2216C33F00183FD3 /* dnabasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53492216C33F00183FD3 /* dnabasic.c */; };
+		085A53FF2216C33F00183FD3 /* spixio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A534A2216C33F00183FD3 /* spixio.c */; };
+		085A54002216C33F00183FD3 /* jbclass.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A534B2216C33F00183FD3 /* jbclass.c */; };
+		085A54012216C33F00183FD3 /* psio1stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A534C2216C33F00183FD3 /* psio1stub.c */; };
+		085A54022216C33F00183FD3 /* correlscore.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A534D2216C33F00183FD3 /* correlscore.c */; };
+		085A54032216C33F00183FD3 /* boxfunc4.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A534F2216C33F00183FD3 /* boxfunc4.c */; };
+		085A54042216C33F00183FD3 /* sudoku.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53512216C33F00183FD3 /* sudoku.c */; };
+		085A54052216C33F00183FD3 /* convolve.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53522216C33F00183FD3 /* convolve.c */; };
+		085A54062216C33F00183FD3 /* morphdwa.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53532216C33F00183FD3 /* morphdwa.c */; };
+		085A54072216C33F00183FD3 /* webpio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53542216C33F00183FD3 /* webpio.c */; };
+		085A54082216C33F00183FD3 /* regutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53552216C33F00183FD3 /* regutils.c */; };
+		085A54092216C33F00183FD3 /* pngio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53562216C33F00183FD3 /* pngio.c */; };
+		085A540A2216C33F00183FD3 /* readbarcode.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53572216C33F00183FD3 /* readbarcode.c */; };
+		085A540B2216C33F00183FD3 /* grayquant.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53582216C33F00183FD3 /* grayquant.c */; };
+		085A540C2216C33F00183FD3 /* pdfio1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A535A2216C33F00183FD3 /* pdfio1.c */; };
+		085A540D2216C33F00183FD3 /* recogbasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A535C2216C33F00183FD3 /* recogbasic.c */; };
+		085A540E2216C33F00183FD3 /* fhmtgen.1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A535E2216C33F00183FD3 /* fhmtgen.1.c */; };
+		085A540F2216C33F00183FD3 /* pixarith.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A535F2216C33F00183FD3 /* pixarith.c */; };
+		085A54102216C33F00183FD3 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53612216C33F00183FD3 /* encoding.c */; };
+		085A54112216C33F00183FD3 /* colorquant1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53642216C33F00183FD3 /* colorquant1.c */; };
+		085A54122216C33F00183FD3 /* convertfiles.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53662216C33F00183FD3 /* convertfiles.c */; };
+		085A54132216C33F00183FD3 /* rank.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53672216C33F00183FD3 /* rank.c */; };
+		085A54142216C33F00183FD3 /* dnafunc1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53682216C33F00183FD3 /* dnafunc1.c */; };
+		085A54152216C33F00183FD3 /* fhmtauto.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53692216C33F00183FD3 /* fhmtauto.c */; };
+		085A54162216C33F00183FD3 /* dwacomb.2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A536A2216C33F00183FD3 /* dwacomb.2.c */; };
+		085A54172216C33F00183FD3 /* coloring.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A536B2216C33F00183FD3 /* coloring.c */; };
+		085A54182216C33F00183FD3 /* bmf.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A536C2216C33F00183FD3 /* bmf.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		085A491D2216C15200183FD3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		085A491F2216C15200183FD3 /* libLeptonica.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLeptonica.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		085A52852216C31100183FD3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		085A52862216C32400183FD3 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		085A52892216C32E00183FD3 /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
+		085A528A2216C32E00183FD3 /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
+		085A528B2216C32E00183FD3 /* tiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiff.h; sourceTree = "<group>"; };
+		085A528C2216C32E00183FD3 /* tiffvers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffvers.h; sourceTree = "<group>"; };
+		085A528D2216C32E00183FD3 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		085A528E2216C32E00183FD3 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		085A528F2216C32E00183FD3 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		085A52902216C32E00183FD3 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
+		085A52912216C32E00183FD3 /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
+		085A52922216C32E00183FD3 /* tiffio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffio.h; sourceTree = "<group>"; };
+		085A52932216C32E00183FD3 /* tiffconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffconf.h; sourceTree = "<group>"; };
+		085A52952216C33E00183FD3 /* dewarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dewarp.h; sourceTree = "<group>"; };
+		085A52962216C33E00183FD3 /* bootnumgen1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bootnumgen1.c; sourceTree = "<group>"; };
+		085A52972216C33E00183FD3 /* gifiostub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gifiostub.c; sourceTree = "<group>"; };
+		085A52982216C33E00183FD3 /* runlength.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = runlength.c; sourceTree = "<group>"; };
+		085A52992216C33E00183FD3 /* allheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allheaders.h; sourceTree = "<group>"; };
+		085A529A2216C33E00183FD3 /* jp2kheader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jp2kheader.c; sourceTree = "<group>"; };
+		085A529B2216C33E00183FD3 /* zlibmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zlibmem.c; sourceTree = "<group>"; };
+		085A529C2216C33E00183FD3 /* morphseq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = morphseq.c; sourceTree = "<group>"; };
+		085A529D2216C33E00183FD3 /* stringcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stringcode.c; sourceTree = "<group>"; };
+		085A529E2216C33E00183FD3 /* compare.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compare.c; sourceTree = "<group>"; };
+		085A529F2216C33E00183FD3 /* dwacomblow.2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dwacomblow.2.c; sourceTree = "<group>"; };
+		085A52A02216C33E00183FD3 /* warper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = warper.c; sourceTree = "<group>"; };
+		085A52A12216C33E00183FD3 /* imageio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageio.h; sourceTree = "<group>"; };
+		085A52A22216C33E00183FD3 /* rbtree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rbtree.c; sourceTree = "<group>"; };
+		085A52A32216C33E00183FD3 /* colormorph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = colormorph.c; sourceTree = "<group>"; };
+		085A52A42216C33E00183FD3 /* utils2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils2.c; sourceTree = "<group>"; };
+		085A52A52216C33E00183FD3 /* sel1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sel1.c; sourceTree = "<group>"; };
+		085A52A62216C33E00183FD3 /* boxbasic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = boxbasic.c; sourceTree = "<group>"; };
+		085A52A72216C33E00183FD3 /* pix3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pix3.c; sourceTree = "<group>"; };
+		085A52A82216C33E00183FD3 /* list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = list.c; sourceTree = "<group>"; };
+		085A52A92216C33E00183FD3 /* affine.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = affine.c; sourceTree = "<group>"; };
+		085A52AA2216C33E00183FD3 /* fhmtgenlow.1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fhmtgenlow.1.c; sourceTree = "<group>"; };
+		085A52AB2216C33E00183FD3 /* selgen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = selgen.c; sourceTree = "<group>"; };
+		085A52AC2216C33E00183FD3 /* bilateral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bilateral.h; sourceTree = "<group>"; };
+		085A52AD2216C33E00183FD3 /* dewarp4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dewarp4.c; sourceTree = "<group>"; };
+		085A52AE2216C33E00183FD3 /* gplot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gplot.c; sourceTree = "<group>"; };
+		085A52AF2216C33E00183FD3 /* seedfill.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = seedfill.c; sourceTree = "<group>"; };
+		085A52B02216C33E00183FD3 /* numabasic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = numabasic.c; sourceTree = "<group>"; };
+		085A52B12216C33E00183FD3 /* flipdetect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = flipdetect.c; sourceTree = "<group>"; };
+		085A52B22216C33E00183FD3 /* zlibmemstub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zlibmemstub.c; sourceTree = "<group>"; };
+		085A52B32216C33E00183FD3 /* fpix2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fpix2.c; sourceTree = "<group>"; };
+		085A52B42216C33E00183FD3 /* rotateorth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rotateorth.c; sourceTree = "<group>"; };
+		085A52B52216C33E00183FD3 /* morph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = morph.h; sourceTree = "<group>"; };
+		085A52B62216C33E00183FD3 /* ccthin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ccthin.c; sourceTree = "<group>"; };
+		085A52B72216C33E00183FD3 /* bilinear.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bilinear.c; sourceTree = "<group>"; };
+		085A52B82216C33E00183FD3 /* maze.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = maze.c; sourceTree = "<group>"; };
+		085A52B92216C33E00183FD3 /* colorspace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = colorspace.c; sourceTree = "<group>"; };
+		085A52BA2216C33E00183FD3 /* ccbord.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ccbord.c; sourceTree = "<group>"; };
+		085A52BB2216C33E00183FD3 /* ptafunc2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptafunc2.c; sourceTree = "<group>"; };
+		085A52BC2216C33E00183FD3 /* endianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endianness.h; sourceTree = "<group>"; };
+		085A52BD2216C33E00183FD3 /* watershed.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = watershed.c; sourceTree = "<group>"; };
+		085A52BE2216C33E00183FD3 /* sarray2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sarray2.c; sourceTree = "<group>"; };
+		085A52BF2216C33E00183FD3 /* tiffio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tiffio.c; sourceTree = "<group>"; };
+		085A52C02216C33E00183FD3 /* scale1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scale1.c; sourceTree = "<group>"; };
+		085A52C12216C33E00183FD3 /* kernel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel.c; sourceTree = "<group>"; };
+		085A52C22216C33E00183FD3 /* writefile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = writefile.c; sourceTree = "<group>"; };
+		085A52C32216C33E00183FD3 /* pixcomp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pixcomp.c; sourceTree = "<group>"; };
+		085A52C42216C33E00183FD3 /* psio2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psio2.c; sourceTree = "<group>"; };
+		085A52C52216C33E00183FD3 /* heap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = heap.c; sourceTree = "<group>"; };
+		085A52C62216C33E00183FD3 /* rotateam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rotateam.c; sourceTree = "<group>"; };
+		085A52C72216C33E00183FD3 /* allheaders_bot.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = allheaders_bot.txt; sourceTree = "<group>"; };
+		085A52C82216C33E00183FD3 /* jp2kiostub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jp2kiostub.c; sourceTree = "<group>"; };
+		085A52C92216C33E00183FD3 /* rotate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rotate.c; sourceTree = "<group>"; };
+		085A52CA2216C33E00183FD3 /* numafunc1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = numafunc1.c; sourceTree = "<group>"; };
+		085A52CB2216C33E00183FD3 /* rop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rop.c; sourceTree = "<group>"; };
+		085A52CC2216C33E00183FD3 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		085A52CD2216C33E00183FD3 /* ptra.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptra.c; sourceTree = "<group>"; };
+		085A52CE2216C33E00183FD3 /* partition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = partition.c; sourceTree = "<group>"; };
+		085A52CF2216C33E00183FD3 /* pnmio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pnmio.c; sourceTree = "<group>"; };
+		085A52D02216C33E00183FD3 /* boxfunc1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = boxfunc1.c; sourceTree = "<group>"; };
+		085A52D12216C33E00183FD3 /* readfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = readfile.c; sourceTree = "<group>"; };
+		085A52D22216C33E00183FD3 /* conncomp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = conncomp.c; sourceTree = "<group>"; };
+		085A52D32216C33E00183FD3 /* bbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bbuffer.h; sourceTree = "<group>"; };
+		085A52D42216C33E00183FD3 /* jbclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jbclass.h; sourceTree = "<group>"; };
+		085A52D52216C33E00183FD3 /* pix4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pix4.c; sourceTree = "<group>"; };
+		085A52D62216C33E00183FD3 /* textops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = textops.c; sourceTree = "<group>"; };
+		085A52D72216C33E00183FD3 /* ptabasic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptabasic.c; sourceTree = "<group>"; };
+		085A52D82216C33E00183FD3 /* quadtree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = quadtree.c; sourceTree = "<group>"; };
+		085A52D92216C33E00183FD3 /* dewarp3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dewarp3.c; sourceTree = "<group>"; };
+		085A52DA2216C33E00183FD3 /* bootnumgen2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bootnumgen2.c; sourceTree = "<group>"; };
+		085A52DB2216C33E00183FD3 /* projective.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = projective.c; sourceTree = "<group>"; };
+		085A52DC2216C33E00183FD3 /* graphics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = graphics.c; sourceTree = "<group>"; };
+		085A52DD2216C33E00183FD3 /* morphapp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = morphapp.c; sourceTree = "<group>"; };
+		085A52DE2216C33E00183FD3 /* rotateshear.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rotateshear.c; sourceTree = "<group>"; };
+		085A52DF2216C33E00183FD3 /* bmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmp.h; sourceTree = "<group>"; };
+		085A52E02216C33E00183FD3 /* leptonica-license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "leptonica-license.txt"; sourceTree = "<group>"; };
+		085A52E12216C33E00183FD3 /* colormap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = colormap.c; sourceTree = "<group>"; };
+		085A52E22216C33E00183FD3 /* makefile.static */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makefile.static; sourceTree = "<group>"; };
+		085A52E32216C33E00183FD3 /* skew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = skew.c; sourceTree = "<group>"; };
+		085A52E42216C33E00183FD3 /* fpix1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fpix1.c; sourceTree = "<group>"; };
+		085A52E52216C33E00183FD3 /* utils1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils1.c; sourceTree = "<group>"; };
+		085A52E62216C33E00183FD3 /* libversions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libversions.c; sourceTree = "<group>"; };
+		085A52E72216C33E00183FD3 /* pixconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pixconv.c; sourceTree = "<group>"; };
+		085A52E82216C33E00183FD3 /* sel2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sel2.c; sourceTree = "<group>"; };
+		085A52E92216C33E00183FD3 /* scale2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scale2.c; sourceTree = "<group>"; };
+		085A52EA2216C33E00183FD3 /* adaptmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adaptmap.c; sourceTree = "<group>"; };
+		085A52EB2216C33E00183FD3 /* sarray1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sarray1.c; sourceTree = "<group>"; };
+		085A52EC2216C33E00183FD3 /* bmf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmf.h; sourceTree = "<group>"; };
+		085A52ED2216C33E00183FD3 /* bmpiostub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bmpiostub.c; sourceTree = "<group>"; };
+		085A52EE2216C33E00183FD3 /* psio1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psio1.c; sourceTree = "<group>"; };
+		085A52EF2216C33E00183FD3 /* recogtrain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recogtrain.c; sourceTree = "<group>"; };
+		085A52F02216C33E00183FD3 /* jpegiostub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jpegiostub.c; sourceTree = "<group>"; };
+		085A52F12216C33E00183FD3 /* recog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recog.h; sourceTree = "<group>"; };
+		085A52F22216C33E00183FD3 /* arrayaccess.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arrayaccess.c; sourceTree = "<group>"; };
+		085A52F32216C33E00183FD3 /* queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = queue.c; sourceTree = "<group>"; };
+		085A52F42216C33E00183FD3 /* pixlabel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pixlabel.c; sourceTree = "<group>"; };
+		085A52F52216C33E00183FD3 /* environ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = environ.h; sourceTree = "<group>"; };
+		085A52F62216C33E00183FD3 /* ptafunc1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ptafunc1.c; sourceTree = "<group>"; };
+		085A52F72216C33E00183FD3 /* hmttemplate2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hmttemplate2.txt; sourceTree = "<group>"; };
+		085A52F82216C33E00183FD3 /* fmorphgenlow.1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fmorphgenlow.1.c; sourceTree = "<group>"; };
+		085A52F92216C33E00183FD3 /* readbarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readbarcode.h; sourceTree = "<group>"; };
+		085A52FA2216C33E00183FD3 /* regutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regutils.h; sourceTree = "<group>"; };
+		085A52FB2216C33E00183FD3 /* boxfunc2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = boxfunc2.c; sourceTree = "<group>"; };
+		085A52FC2216C33E00183FD3 /* leptwin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = leptwin.c; sourceTree = "<group>"; };
+		085A52FD2216C33E00183FD3 /* colorseg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = colorseg.c; sourceTree = "<group>"; };
+		085A52FE2216C33E00183FD3 /* gifio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gifio.c; sourceTree = "<group>"; };
+		085A52FF2216C33E00183FD3 /* binreduce.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = binreduce.c; sourceTree = "<group>"; };
+		085A53002216C33E00183FD3 /* sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sudoku.h; sourceTree = "<group>"; };
+		085A53012216C33E00183FD3 /* numafunc2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = numafunc2.c; sourceTree = "<group>"; };
+		085A53022216C33E00183FD3 /* hmttemplate1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hmttemplate1.txt; sourceTree = "<group>"; };
+		085A53032216C33E00183FD3 /* jp2kio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jp2kio.c; sourceTree = "<group>"; };
+		085A53042216C33E00183FD3 /* bilateral.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bilateral.c; sourceTree = "<group>"; };
+		085A53052216C33E00183FD3 /* fmorphgen.1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fmorphgen.1.c; sourceTree = "<group>"; };
+		085A53062216C33E00183FD3 /* binarize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = binarize.c; sourceTree = "<group>"; };
+		085A53072216C33E00183FD3 /* pixtiling.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pixtiling.c; sourceTree = "<group>"; };
+		085A53082216C33E00183FD3 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		085A53092216C33E00183FD3 /* pdfio1stub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pdfio1stub.c; sourceTree = "<group>"; };
+		085A530A2216C33E00183FD3 /* morph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = morph.c; sourceTree = "<group>"; };
+		085A530B2216C33E00183FD3 /* pix5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pix5.c; sourceTree = "<group>"; };
+		085A530C2216C33E00183FD3 /* gplot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gplot.h; sourceTree = "<group>"; };
+		085A530D2216C33E00183FD3 /* affinecompose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = affinecompose.c; sourceTree = "<group>"; };
+		085A530E2216C33E00183FD3 /* pixafunc1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pixafunc1.c; sourceTree = "<group>"; };
+		085A530F2216C33E00183FD3 /* stringtemplate1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stringtemplate1.txt; sourceTree = "<group>"; };
+		085A53102216C33E00183FD3 /* classapp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = classapp.c; sourceTree = "<group>"; };
+		085A53112216C33E00183FD3 /* bmpio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bmpio.c; sourceTree = "<group>"; };
+		085A53122216C33E00183FD3 /* enhance.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enhance.c; sourceTree = "<group>"; };
+		085A53132216C33E00183FD3 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		085A53142216C33E00183FD3 /* webpiostub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = webpiostub.c; sourceTree = "<group>"; };
+		085A53152216C33E00183FD3 /* bootnumgen3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bootnumgen3.c; sourceTree = "<group>"; };
+		085A53162216C33E00183FD3 /* shear.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shear.c; sourceTree = "<group>"; };
+		085A53172216C33E00183FD3 /* dewarp2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dewarp2.c; sourceTree = "<group>"; };
+		085A53182216C33E00183FD3 /* pageseg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pageseg.c; sourceTree = "<group>"; };
+		085A53192216C33E00183FD3 /* finditalic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = finditalic.c; sourceTree = "<group>"; };
+		085A531A2216C33E00183FD3 /* psio2stub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psio2stub.c; sourceTree = "<group>"; };
+		085A531B2216C33E00183FD3 /* pnmiostub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pnmiostub.c; sourceTree = "<group>"; };
+		085A531C2216C33E00183FD3 /* bardecode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bardecode.c; sourceTree = "<group>"; };
+		085A531D2216C33E00183FD3 /* rbtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rbtree.h; sourceTree = "<group>"; };
+		085A531E2216C33E00183FD3 /* roplow.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = roplow.c; sourceTree = "<group>"; };
+		085A531F2216C33E00183FD3 /* bytearray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bytearray.c; sourceTree = "<group>"; };
+		085A53202216C33E00183FD3 /* pix1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pix1.c; sourceTree = "<group>"; };
+		085A53212216C33E00183FD3 /* pixalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pixalloc.c; sourceTree = "<group>"; };
+		085A53222216C33E00183FD3 /* stringtemplate2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stringtemplate2.txt; sourceTree = "<group>"; };
+		085A53232216C33E00183FD3 /* blend.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blend.c; sourceTree = "<group>"; };
+		085A53242216C33E00183FD3 /* stringcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringcode.h; sourceTree = "<group>"; };
+		085A53252216C33E00183FD3 /* baseline.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = baseline.c; sourceTree = "<group>"; };
+		085A53262216C33E00183FD3 /* jpegio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jpegio.c; sourceTree = "<group>"; };
+		085A53272216C33E00183FD3 /* pixabasic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pixabasic.c; sourceTree = "<group>"; };
+		085A53282216C33E00183FD3 /* fliphmtgen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fliphmtgen.c; sourceTree = "<group>"; };
+		085A53292216C33E00183FD3 /* recogdid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recogdid.c; sourceTree = "<group>"; };
+		085A532A2216C33E00183FD3 /* bbuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bbuffer.c; sourceTree = "<group>"; };
+		085A532B2216C33E00183FD3 /* pdfio2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pdfio2.c; sourceTree = "<group>"; };
+		085A532C2216C33E00183FD3 /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		085A532D2216C33E00183FD3 /* binexpand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = binexpand.c; sourceTree = "<group>"; };
+		085A532E2216C33E00183FD3 /* ptra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptra.h; sourceTree = "<group>"; };
+		085A532F2216C33E00183FD3 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		085A53302216C33E00183FD3 /* map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = map.c; sourceTree = "<group>"; };
+		085A53312216C33E00183FD3 /* strokes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strokes.c; sourceTree = "<group>"; };
+		085A53322216C33E00183FD3 /* dnahash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dnahash.c; sourceTree = "<group>"; };
+		085A53332216C33E00183FD3 /* jp2kheaderstub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jp2kheaderstub.c; sourceTree = "<group>"; };
+		085A53342216C33E00183FD3 /* colorquant2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = colorquant2.c; sourceTree = "<group>"; };
+		085A53352216C33E00183FD3 /* edge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = edge.c; sourceTree = "<group>"; };
+		085A53362216C33E00183FD3 /* boxfunc3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = boxfunc3.c; sourceTree = "<group>"; };
+		085A53372216C33E00183FD3 /* tiffiostub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tiffiostub.c; sourceTree = "<group>"; };
+		085A53382216C33E00183FD3 /* graymorph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = graymorph.c; sourceTree = "<group>"; };
+		085A53392216C33E00183FD3 /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
+		085A533A2216C33E00183FD3 /* allheaders_top.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = allheaders_top.txt; sourceTree = "<group>"; };
+		085A533B2216C33F00183FD3 /* watershed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = watershed.h; sourceTree = "<group>"; };
+		085A533C2216C33F00183FD3 /* paintcmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = paintcmap.c; sourceTree = "<group>"; };
+		085A533D2216C33F00183FD3 /* colorcontent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = colorcontent.c; sourceTree = "<group>"; };
+		085A533E2216C33F00183FD3 /* ccbord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccbord.h; sourceTree = "<group>"; };
+		085A533F2216C33F00183FD3 /* parseprotos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parseprotos.c; sourceTree = "<group>"; };
+		085A53402216C33F00183FD3 /* pixafunc2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pixafunc2.c; sourceTree = "<group>"; };
+		085A53412216C33F00183FD3 /* dewarp1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dewarp1.c; sourceTree = "<group>"; };
+		085A53422216C33F00183FD3 /* pixacc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pixacc.c; sourceTree = "<group>"; };
+		085A53432216C33F00183FD3 /* pdfio2stub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pdfio2stub.c; sourceTree = "<group>"; };
+		085A53442216C33F00183FD3 /* pngiostub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngiostub.c; sourceTree = "<group>"; };
+		085A53452216C33F00183FD3 /* mainpage.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mainpage.txt; sourceTree = "<group>"; };
+		085A53462216C33F00183FD3 /* pix2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pix2.c; sourceTree = "<group>"; };
+		085A53472216C33F00183FD3 /* recogident.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recogident.c; sourceTree = "<group>"; };
+		085A53482216C33F00183FD3 /* fmorphauto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fmorphauto.c; sourceTree = "<group>"; };
+		085A53492216C33F00183FD3 /* dnabasic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dnabasic.c; sourceTree = "<group>"; };
+		085A534A2216C33F00183FD3 /* spixio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spixio.c; sourceTree = "<group>"; };
+		085A534B2216C33F00183FD3 /* jbclass.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jbclass.c; sourceTree = "<group>"; };
+		085A534C2216C33F00183FD3 /* psio1stub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psio1stub.c; sourceTree = "<group>"; };
+		085A534D2216C33F00183FD3 /* correlscore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = correlscore.c; sourceTree = "<group>"; };
+		085A534E2216C33F00183FD3 /* alltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alltypes.h; sourceTree = "<group>"; };
+		085A534F2216C33F00183FD3 /* boxfunc4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = boxfunc4.c; sourceTree = "<group>"; };
+		085A53502216C33F00183FD3 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		085A53512216C33F00183FD3 /* sudoku.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sudoku.c; sourceTree = "<group>"; };
+		085A53522216C33F00183FD3 /* convolve.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convolve.c; sourceTree = "<group>"; };
+		085A53532216C33F00183FD3 /* morphdwa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = morphdwa.c; sourceTree = "<group>"; };
+		085A53542216C33F00183FD3 /* webpio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = webpio.c; sourceTree = "<group>"; };
+		085A53552216C33F00183FD3 /* regutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = regutils.c; sourceTree = "<group>"; };
+		085A53562216C33F00183FD3 /* pngio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngio.c; sourceTree = "<group>"; };
+		085A53572216C33F00183FD3 /* readbarcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = readbarcode.c; sourceTree = "<group>"; };
+		085A53582216C33F00183FD3 /* grayquant.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = grayquant.c; sourceTree = "<group>"; };
+		085A53592216C33F00183FD3 /* morphtemplate1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = morphtemplate1.txt; sourceTree = "<group>"; };
+		085A535A2216C33F00183FD3 /* pdfio1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pdfio1.c; sourceTree = "<group>"; };
+		085A535B2216C33F00183FD3 /* leptwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leptwin.h; sourceTree = "<group>"; };
+		085A535C2216C33F00183FD3 /* recogbasic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = recogbasic.c; sourceTree = "<group>"; };
+		085A535D2216C33F00183FD3 /* queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		085A535E2216C33F00183FD3 /* fhmtgen.1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fhmtgen.1.c; sourceTree = "<group>"; };
+		085A535F2216C33F00183FD3 /* pixarith.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pixarith.c; sourceTree = "<group>"; };
+		085A53602216C33F00183FD3 /* bmfdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmfdata.h; sourceTree = "<group>"; };
+		085A53612216C33F00183FD3 /* encoding.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encoding.c; sourceTree = "<group>"; };
+		085A53622216C33F00183FD3 /* pix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pix.h; sourceTree = "<group>"; };
+		085A53632216C33F00183FD3 /* morphtemplate2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = morphtemplate2.txt; sourceTree = "<group>"; };
+		085A53642216C33F00183FD3 /* colorquant1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = colorquant1.c; sourceTree = "<group>"; };
+		085A53652216C33F00183FD3 /* arrayaccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayaccess.h; sourceTree = "<group>"; };
+		085A53662216C33F00183FD3 /* convertfiles.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convertfiles.c; sourceTree = "<group>"; };
+		085A53672216C33F00183FD3 /* rank.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rank.c; sourceTree = "<group>"; };
+		085A53682216C33F00183FD3 /* dnafunc1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dnafunc1.c; sourceTree = "<group>"; };
+		085A53692216C33F00183FD3 /* fhmtauto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fhmtauto.c; sourceTree = "<group>"; };
+		085A536A2216C33F00183FD3 /* dwacomb.2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dwacomb.2.c; sourceTree = "<group>"; };
+		085A536B2216C33F00183FD3 /* coloring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coloring.c; sourceTree = "<group>"; };
+		085A536C2216C33F00183FD3 /* bmf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bmf.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		085A491C2216C15200183FD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085A52872216C32400183FD3 /* libjpeg.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		085A49162216C15200183FD3 = {
+			isa = PBXGroup;
+			children = (
+				085A52942216C33E00183FD3 /* src */,
+				085A52882216C32E00183FD3 /* include */,
+				085A52852216C31100183FD3 /* PrefixHeader.pch */,
+				085A52862216C32400183FD3 /* libjpeg.a */,
+				085A49202216C15200183FD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		085A49202216C15200183FD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085A491F2216C15200183FD3 /* libLeptonica.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085A52882216C32E00183FD3 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				085A52892216C32E00183FD3 /* jpeglib.h */,
+				085A528A2216C32E00183FD3 /* jerror.h */,
+				085A528B2216C32E00183FD3 /* tiff.h */,
+				085A528C2216C32E00183FD3 /* tiffvers.h */,
+				085A528D2216C32E00183FD3 /* png.h */,
+				085A528E2216C32E00183FD3 /* pnglibconf.h */,
+				085A528F2216C32E00183FD3 /* pngconf.h */,
+				085A52902216C32E00183FD3 /* jconfig.h */,
+				085A52912216C32E00183FD3 /* jmorecfg.h */,
+				085A52922216C32E00183FD3 /* tiffio.h */,
+				085A52932216C32E00183FD3 /* tiffconf.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		085A52942216C33E00183FD3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				085A52952216C33E00183FD3 /* dewarp.h */,
+				085A52962216C33E00183FD3 /* bootnumgen1.c */,
+				085A52972216C33E00183FD3 /* gifiostub.c */,
+				085A52982216C33E00183FD3 /* runlength.c */,
+				085A52992216C33E00183FD3 /* allheaders.h */,
+				085A529A2216C33E00183FD3 /* jp2kheader.c */,
+				085A529B2216C33E00183FD3 /* zlibmem.c */,
+				085A529C2216C33E00183FD3 /* morphseq.c */,
+				085A529D2216C33E00183FD3 /* stringcode.c */,
+				085A529E2216C33E00183FD3 /* compare.c */,
+				085A529F2216C33E00183FD3 /* dwacomblow.2.c */,
+				085A52A02216C33E00183FD3 /* warper.c */,
+				085A52A12216C33E00183FD3 /* imageio.h */,
+				085A52A22216C33E00183FD3 /* rbtree.c */,
+				085A52A32216C33E00183FD3 /* colormorph.c */,
+				085A52A42216C33E00183FD3 /* utils2.c */,
+				085A52A52216C33E00183FD3 /* sel1.c */,
+				085A52A62216C33E00183FD3 /* boxbasic.c */,
+				085A52A72216C33E00183FD3 /* pix3.c */,
+				085A52A82216C33E00183FD3 /* list.c */,
+				085A52A92216C33E00183FD3 /* affine.c */,
+				085A52AA2216C33E00183FD3 /* fhmtgenlow.1.c */,
+				085A52AB2216C33E00183FD3 /* selgen.c */,
+				085A52AC2216C33E00183FD3 /* bilateral.h */,
+				085A52AD2216C33E00183FD3 /* dewarp4.c */,
+				085A52AE2216C33E00183FD3 /* gplot.c */,
+				085A52AF2216C33E00183FD3 /* seedfill.c */,
+				085A52B02216C33E00183FD3 /* numabasic.c */,
+				085A52B12216C33E00183FD3 /* flipdetect.c */,
+				085A52B22216C33E00183FD3 /* zlibmemstub.c */,
+				085A52B32216C33E00183FD3 /* fpix2.c */,
+				085A52B42216C33E00183FD3 /* rotateorth.c */,
+				085A52B52216C33E00183FD3 /* morph.h */,
+				085A52B62216C33E00183FD3 /* ccthin.c */,
+				085A52B72216C33E00183FD3 /* bilinear.c */,
+				085A52B82216C33E00183FD3 /* maze.c */,
+				085A52B92216C33E00183FD3 /* colorspace.c */,
+				085A52BA2216C33E00183FD3 /* ccbord.c */,
+				085A52BB2216C33E00183FD3 /* ptafunc2.c */,
+				085A52BC2216C33E00183FD3 /* endianness.h */,
+				085A52BD2216C33E00183FD3 /* watershed.c */,
+				085A52BE2216C33E00183FD3 /* sarray2.c */,
+				085A52BF2216C33E00183FD3 /* tiffio.c */,
+				085A52C02216C33E00183FD3 /* scale1.c */,
+				085A52C12216C33E00183FD3 /* kernel.c */,
+				085A52C22216C33E00183FD3 /* writefile.c */,
+				085A52C32216C33E00183FD3 /* pixcomp.c */,
+				085A52C42216C33E00183FD3 /* psio2.c */,
+				085A52C52216C33E00183FD3 /* heap.c */,
+				085A52C62216C33E00183FD3 /* rotateam.c */,
+				085A52C72216C33E00183FD3 /* allheaders_bot.txt */,
+				085A52C82216C33E00183FD3 /* jp2kiostub.c */,
+				085A52C92216C33E00183FD3 /* rotate.c */,
+				085A52CA2216C33E00183FD3 /* numafunc1.c */,
+				085A52CB2216C33E00183FD3 /* rop.c */,
+				085A52CC2216C33E00183FD3 /* stack.c */,
+				085A52CD2216C33E00183FD3 /* ptra.c */,
+				085A52CE2216C33E00183FD3 /* partition.c */,
+				085A52CF2216C33E00183FD3 /* pnmio.c */,
+				085A52D02216C33E00183FD3 /* boxfunc1.c */,
+				085A52D12216C33E00183FD3 /* readfile.c */,
+				085A52D22216C33E00183FD3 /* conncomp.c */,
+				085A52D32216C33E00183FD3 /* bbuffer.h */,
+				085A52D42216C33E00183FD3 /* jbclass.h */,
+				085A52D52216C33E00183FD3 /* pix4.c */,
+				085A52D62216C33E00183FD3 /* textops.c */,
+				085A52D72216C33E00183FD3 /* ptabasic.c */,
+				085A52D82216C33E00183FD3 /* quadtree.c */,
+				085A52D92216C33E00183FD3 /* dewarp3.c */,
+				085A52DA2216C33E00183FD3 /* bootnumgen2.c */,
+				085A52DB2216C33E00183FD3 /* projective.c */,
+				085A52DC2216C33E00183FD3 /* graphics.c */,
+				085A52DD2216C33E00183FD3 /* morphapp.c */,
+				085A52DE2216C33E00183FD3 /* rotateshear.c */,
+				085A52DF2216C33E00183FD3 /* bmp.h */,
+				085A52E02216C33E00183FD3 /* leptonica-license.txt */,
+				085A52E12216C33E00183FD3 /* colormap.c */,
+				085A52E22216C33E00183FD3 /* makefile.static */,
+				085A52E32216C33E00183FD3 /* skew.c */,
+				085A52E42216C33E00183FD3 /* fpix1.c */,
+				085A52E52216C33E00183FD3 /* utils1.c */,
+				085A52E62216C33E00183FD3 /* libversions.c */,
+				085A52E72216C33E00183FD3 /* pixconv.c */,
+				085A52E82216C33E00183FD3 /* sel2.c */,
+				085A52E92216C33E00183FD3 /* scale2.c */,
+				085A52EA2216C33E00183FD3 /* adaptmap.c */,
+				085A52EB2216C33E00183FD3 /* sarray1.c */,
+				085A52EC2216C33E00183FD3 /* bmf.h */,
+				085A52ED2216C33E00183FD3 /* bmpiostub.c */,
+				085A52EE2216C33E00183FD3 /* psio1.c */,
+				085A52EF2216C33E00183FD3 /* recogtrain.c */,
+				085A52F02216C33E00183FD3 /* jpegiostub.c */,
+				085A52F12216C33E00183FD3 /* recog.h */,
+				085A52F22216C33E00183FD3 /* arrayaccess.c */,
+				085A52F32216C33E00183FD3 /* queue.c */,
+				085A52F42216C33E00183FD3 /* pixlabel.c */,
+				085A52F52216C33E00183FD3 /* environ.h */,
+				085A52F62216C33E00183FD3 /* ptafunc1.c */,
+				085A52F72216C33E00183FD3 /* hmttemplate2.txt */,
+				085A52F82216C33E00183FD3 /* fmorphgenlow.1.c */,
+				085A52F92216C33E00183FD3 /* readbarcode.h */,
+				085A52FA2216C33E00183FD3 /* regutils.h */,
+				085A52FB2216C33E00183FD3 /* boxfunc2.c */,
+				085A52FC2216C33E00183FD3 /* leptwin.c */,
+				085A52FD2216C33E00183FD3 /* colorseg.c */,
+				085A52FE2216C33E00183FD3 /* gifio.c */,
+				085A52FF2216C33E00183FD3 /* binreduce.c */,
+				085A53002216C33E00183FD3 /* sudoku.h */,
+				085A53012216C33E00183FD3 /* numafunc2.c */,
+				085A53022216C33E00183FD3 /* hmttemplate1.txt */,
+				085A53032216C33E00183FD3 /* jp2kio.c */,
+				085A53042216C33E00183FD3 /* bilateral.c */,
+				085A53052216C33E00183FD3 /* fmorphgen.1.c */,
+				085A53062216C33E00183FD3 /* binarize.c */,
+				085A53072216C33E00183FD3 /* pixtiling.c */,
+				085A53082216C33E00183FD3 /* Makefile.am */,
+				085A53092216C33E00183FD3 /* pdfio1stub.c */,
+				085A530A2216C33E00183FD3 /* morph.c */,
+				085A530B2216C33E00183FD3 /* pix5.c */,
+				085A530C2216C33E00183FD3 /* gplot.h */,
+				085A530D2216C33E00183FD3 /* affinecompose.c */,
+				085A530E2216C33E00183FD3 /* pixafunc1.c */,
+				085A530F2216C33E00183FD3 /* stringtemplate1.txt */,
+				085A53102216C33E00183FD3 /* classapp.c */,
+				085A53112216C33E00183FD3 /* bmpio.c */,
+				085A53122216C33E00183FD3 /* enhance.c */,
+				085A53132216C33E00183FD3 /* list.h */,
+				085A53142216C33E00183FD3 /* webpiostub.c */,
+				085A53152216C33E00183FD3 /* bootnumgen3.c */,
+				085A53162216C33E00183FD3 /* shear.c */,
+				085A53172216C33E00183FD3 /* dewarp2.c */,
+				085A53182216C33E00183FD3 /* pageseg.c */,
+				085A53192216C33E00183FD3 /* finditalic.c */,
+				085A531A2216C33E00183FD3 /* psio2stub.c */,
+				085A531B2216C33E00183FD3 /* pnmiostub.c */,
+				085A531C2216C33E00183FD3 /* bardecode.c */,
+				085A531D2216C33E00183FD3 /* rbtree.h */,
+				085A531E2216C33E00183FD3 /* roplow.c */,
+				085A531F2216C33E00183FD3 /* bytearray.c */,
+				085A53202216C33E00183FD3 /* pix1.c */,
+				085A53212216C33E00183FD3 /* pixalloc.c */,
+				085A53222216C33E00183FD3 /* stringtemplate2.txt */,
+				085A53232216C33E00183FD3 /* blend.c */,
+				085A53242216C33E00183FD3 /* stringcode.h */,
+				085A53252216C33E00183FD3 /* baseline.c */,
+				085A53262216C33E00183FD3 /* jpegio.c */,
+				085A53272216C33E00183FD3 /* pixabasic.c */,
+				085A53282216C33E00183FD3 /* fliphmtgen.c */,
+				085A53292216C33E00183FD3 /* recogdid.c */,
+				085A532A2216C33E00183FD3 /* bbuffer.c */,
+				085A532B2216C33E00183FD3 /* pdfio2.c */,
+				085A532C2216C33E00183FD3 /* array.h */,
+				085A532D2216C33E00183FD3 /* binexpand.c */,
+				085A532E2216C33E00183FD3 /* ptra.h */,
+				085A532F2216C33E00183FD3 /* stack.h */,
+				085A53302216C33E00183FD3 /* map.c */,
+				085A53312216C33E00183FD3 /* strokes.c */,
+				085A53322216C33E00183FD3 /* dnahash.c */,
+				085A53332216C33E00183FD3 /* jp2kheaderstub.c */,
+				085A53342216C33E00183FD3 /* colorquant2.c */,
+				085A53352216C33E00183FD3 /* edge.c */,
+				085A53362216C33E00183FD3 /* boxfunc3.c */,
+				085A53372216C33E00183FD3 /* tiffiostub.c */,
+				085A53382216C33E00183FD3 /* graymorph.c */,
+				085A53392216C33E00183FD3 /* heap.h */,
+				085A533A2216C33E00183FD3 /* allheaders_top.txt */,
+				085A533B2216C33F00183FD3 /* watershed.h */,
+				085A533C2216C33F00183FD3 /* paintcmap.c */,
+				085A533D2216C33F00183FD3 /* colorcontent.c */,
+				085A533E2216C33F00183FD3 /* ccbord.h */,
+				085A533F2216C33F00183FD3 /* parseprotos.c */,
+				085A53402216C33F00183FD3 /* pixafunc2.c */,
+				085A53412216C33F00183FD3 /* dewarp1.c */,
+				085A53422216C33F00183FD3 /* pixacc.c */,
+				085A53432216C33F00183FD3 /* pdfio2stub.c */,
+				085A53442216C33F00183FD3 /* pngiostub.c */,
+				085A53452216C33F00183FD3 /* mainpage.txt */,
+				085A53462216C33F00183FD3 /* pix2.c */,
+				085A53472216C33F00183FD3 /* recogident.c */,
+				085A53482216C33F00183FD3 /* fmorphauto.c */,
+				085A53492216C33F00183FD3 /* dnabasic.c */,
+				085A534A2216C33F00183FD3 /* spixio.c */,
+				085A534B2216C33F00183FD3 /* jbclass.c */,
+				085A534C2216C33F00183FD3 /* psio1stub.c */,
+				085A534D2216C33F00183FD3 /* correlscore.c */,
+				085A534E2216C33F00183FD3 /* alltypes.h */,
+				085A534F2216C33F00183FD3 /* boxfunc4.c */,
+				085A53502216C33F00183FD3 /* Makefile.in */,
+				085A53512216C33F00183FD3 /* sudoku.c */,
+				085A53522216C33F00183FD3 /* convolve.c */,
+				085A53532216C33F00183FD3 /* morphdwa.c */,
+				085A53542216C33F00183FD3 /* webpio.c */,
+				085A53552216C33F00183FD3 /* regutils.c */,
+				085A53562216C33F00183FD3 /* pngio.c */,
+				085A53572216C33F00183FD3 /* readbarcode.c */,
+				085A53582216C33F00183FD3 /* grayquant.c */,
+				085A53592216C33F00183FD3 /* morphtemplate1.txt */,
+				085A535A2216C33F00183FD3 /* pdfio1.c */,
+				085A535B2216C33F00183FD3 /* leptwin.h */,
+				085A535C2216C33F00183FD3 /* recogbasic.c */,
+				085A535D2216C33F00183FD3 /* queue.h */,
+				085A535E2216C33F00183FD3 /* fhmtgen.1.c */,
+				085A535F2216C33F00183FD3 /* pixarith.c */,
+				085A53602216C33F00183FD3 /* bmfdata.h */,
+				085A53612216C33F00183FD3 /* encoding.c */,
+				085A53622216C33F00183FD3 /* pix.h */,
+				085A53632216C33F00183FD3 /* morphtemplate2.txt */,
+				085A53642216C33F00183FD3 /* colorquant1.c */,
+				085A53652216C33F00183FD3 /* arrayaccess.h */,
+				085A53662216C33F00183FD3 /* convertfiles.c */,
+				085A53672216C33F00183FD3 /* rank.c */,
+				085A53682216C33F00183FD3 /* dnafunc1.c */,
+				085A53692216C33F00183FD3 /* fhmtauto.c */,
+				085A536A2216C33F00183FD3 /* dwacomb.2.c */,
+				085A536B2216C33F00183FD3 /* coloring.c */,
+				085A536C2216C33F00183FD3 /* bmf.c */,
+			);
+			name = src;
+			path = "leptonica-sources/src";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		085A491E2216C15200183FD3 /* Leptonica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 085A49282216C15300183FD3 /* Build configuration list for PBXNativeTarget "Leptonica" */;
+			buildPhases = (
+				085A491B2216C15200183FD3 /* Sources */,
+				085A491C2216C15200183FD3 /* Frameworks */,
+				085A491D2216C15200183FD3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Leptonica;
+			productName = Leptonica;
+			productReference = 085A491F2216C15200183FD3 /* libLeptonica.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		085A49172216C15200183FD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "doo GmbH";
+				TargetAttributes = {
+					085A491E2216C15200183FD3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					085A541D2216C56500183FD3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 085A491A2216C15200183FD3 /* Build configuration list for PBXProject "Leptonica" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 085A49162216C15200183FD3;
+			productRefGroup = 085A49202216C15200183FD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				085A491E2216C15200183FD3 /* Leptonica */,
+				085A541D2216C56500183FD3 /* Leptonica_FAT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		085A54212216C56E00183FD3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nBUILD_CONFIG=Release\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${BUILD_CONFIG}-universal\nSCHEME_NAME=Leptonica\nLIB_NAME=libLeptonica.a\n\nSRC_INCLUDE_FOLDER=${PROJECT_DIR}/include\nOUTPUT_FOLDER=${PROJECT_DIR}/Release\nDST_INCLUDE_FOLDER=${OUTPUT_FOLDER}/include\nSOURCES_FOLDER=${PROJECT_DIR}/leptonica-sources/src\n\necho \"Cleaning output folder...\"\nrm -dfr \"${OUTPUT_FOLDER}\"\n\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\necho \"Building device architectures...\"\nxcodebuild -target \"${SCHEME_NAME}\" ONLY_ACTIVE_ARCH=NO ENABLE_BITCODE=YES BITCODE_GENERATION_MODE=bitcode -configuration ${BUILD_CONFIG} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\necho \"Building simulator architectures...\"\nxcodebuild -target \"${SCHEME_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${BUILD_CONFIG} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\necho \"Merging binaries...\"\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${LIB_NAME}\" \"${BUILD_DIR}/${BUILD_CONFIG}-iphonesimulator/${LIB_NAME}\" \"${BUILD_DIR}/${BUILD_CONFIG}-iphoneos/${LIB_NAME}\"\n\nmkdir -p \"${OUTPUT_FOLDER}\"\nmkdir -p \"${DST_INCLUDE_FOLDER}\"\n\necho \"Copying FAT binary...\"\ncp \"${UNIVERSAL_OUTPUTFOLDER}/${LIB_NAME}\" \"${OUTPUT_FOLDER}/${LIB_NAME}\"\n\necho \"Copying headers...\"\ndeclare -a headers=(\n\"jconfig.h\"\n\"jerror.h\"\n\"jmorecfg.h\"\n\"jpeglib.h\"\n)\n\nfor filename in \"${headers[@]}\"\ndo\nfilepath=\"${SRC_INCLUDE_FOLDER}/${filename}\"\n#echo \"Copying ${filepath}...\"\ncp \"${filepath}\" \"${DST_INCLUDE_FOLDER}/\"\ndone\n\ncp \"${SOURCES_FOLDER}\"/*.h \"${DST_INCLUDE_FOLDER}/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		085A491B2216C15200183FD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085A53982216C33F00183FD3 /* rotateam.c in Sources */,
+				085A53FC2216C33F00183FD3 /* recogident.c in Sources */,
+				085A53D42216C33F00183FD3 /* webpiostub.c in Sources */,
+				085A54182216C33F00183FD3 /* bmf.c in Sources */,
+				085A54122216C33F00183FD3 /* convertfiles.c in Sources */,
+				085A53B62216C33F00183FD3 /* adaptmap.c in Sources */,
+				085A53D52216C33F00183FD3 /* bootnumgen3.c in Sources */,
+				085A53872216C33F00183FD3 /* fpix2.c in Sources */,
+				085A53AC2216C33F00183FD3 /* morphapp.c in Sources */,
+				085A53A62216C33F00183FD3 /* ptabasic.c in Sources */,
+				085A54072216C33F00183FD3 /* webpio.c in Sources */,
+				085A53BA2216C33F00183FD3 /* recogtrain.c in Sources */,
+				085A53862216C33F00183FD3 /* zlibmemstub.c in Sources */,
+				085A53CF2216C33F00183FD3 /* affinecompose.c in Sources */,
+				085A537F2216C33F00183FD3 /* fhmtgenlow.1.c in Sources */,
+				085A53C82216C33F00183FD3 /* bilateral.c in Sources */,
+				085A53E72216C33F00183FD3 /* bbuffer.c in Sources */,
+				085A53FE2216C33F00183FD3 /* dnabasic.c in Sources */,
+				085A53AE2216C33F00183FD3 /* colormap.c in Sources */,
+				085A538A2216C33F00183FD3 /* bilinear.c in Sources */,
+				085A53932216C33F00183FD3 /* kernel.c in Sources */,
+				085A53DA2216C33F00183FD3 /* psio2stub.c in Sources */,
+				085A53C62216C33F00183FD3 /* numafunc2.c in Sources */,
+				085A53DE2216C33F00183FD3 /* bytearray.c in Sources */,
+				085A53912216C33F00183FD3 /* tiffio.c in Sources */,
+				085A536F2216C33F00183FD3 /* runlength.c in Sources */,
+				085A53FF2216C33F00183FD3 /* spixio.c in Sources */,
+				085A53C32216C33F00183FD3 /* colorseg.c in Sources */,
+				085A54082216C33F00183FD3 /* regutils.c in Sources */,
+				085A54022216C33F00183FD3 /* correlscore.c in Sources */,
+				085A540C2216C33F00183FD3 /* pdfio1.c in Sources */,
+				085A53742216C33F00183FD3 /* compare.c in Sources */,
+				085A53702216C33F00183FD3 /* jp2kheader.c in Sources */,
+				085A53E02216C33F00183FD3 /* pixalloc.c in Sources */,
+				085A53A72216C33F00183FD3 /* quadtree.c in Sources */,
+				085A53F62216C33F00183FD3 /* pixafunc2.c in Sources */,
+				085A53EE2216C33F00183FD3 /* colorquant2.c in Sources */,
+				085A53A92216C33F00183FD3 /* bootnumgen2.c in Sources */,
+				085A53AB2216C33F00183FD3 /* graphics.c in Sources */,
+				085A540A2216C33F00183FD3 /* readbarcode.c in Sources */,
+				085A53D12216C33F00183FD3 /* classapp.c in Sources */,
+				085A54062216C33F00183FD3 /* morphdwa.c in Sources */,
+				085A53B02216C33F00183FD3 /* fpix1.c in Sources */,
+				085A53972216C33F00183FD3 /* heap.c in Sources */,
+				085A538B2216C33F00183FD3 /* maze.c in Sources */,
+				085A53DB2216C33F00183FD3 /* pnmiostub.c in Sources */,
+				085A538F2216C33F00183FD3 /* watershed.c in Sources */,
+				085A53AA2216C33F00183FD3 /* projective.c in Sources */,
+				085A538C2216C33F00183FD3 /* colorspace.c in Sources */,
+				085A53BE2216C33F00183FD3 /* pixlabel.c in Sources */,
+				085A53EF2216C33F00183FD3 /* edge.c in Sources */,
+				085A53DF2216C33F00183FD3 /* pix1.c in Sources */,
+				085A537D2216C33F00183FD3 /* list.c in Sources */,
+				085A538D2216C33F00183FD3 /* ccbord.c in Sources */,
+				085A53CC2216C33F00183FD3 /* pdfio1stub.c in Sources */,
+				085A53722216C33F00183FD3 /* morphseq.c in Sources */,
+				085A54092216C33F00183FD3 /* pngio.c in Sources */,
+				085A53712216C33F00183FD3 /* zlibmem.c in Sources */,
+				085A53BF2216C33F00183FD3 /* ptafunc1.c in Sources */,
+				085A53952216C33F00183FD3 /* pixcomp.c in Sources */,
+				085A53F32216C33F00183FD3 /* paintcmap.c in Sources */,
+				085A53A32216C33F00183FD3 /* conncomp.c in Sources */,
+				085A53992216C33F00183FD3 /* jp2kiostub.c in Sources */,
+				085A54172216C33F00183FD3 /* coloring.c in Sources */,
+				085A53752216C33F00183FD3 /* dwacomblow.2.c in Sources */,
+				085A53732216C33F00183FD3 /* stringcode.c in Sources */,
+				085A53D92216C33F00183FD3 /* finditalic.c in Sources */,
+				085A539B2216C33F00183FD3 /* numafunc1.c in Sources */,
+				085A539F2216C33F00183FD3 /* partition.c in Sources */,
+				085A53ED2216C33F00183FD3 /* jp2kheaderstub.c in Sources */,
+				085A53E12216C33F00183FD3 /* blend.c in Sources */,
+				085A53E92216C33F00183FD3 /* binexpand.c in Sources */,
+				085A53EA2216C33F00183FD3 /* map.c in Sources */,
+				085A53F92216C33F00183FD3 /* pdfio2stub.c in Sources */,
+				085A53D62216C33F00183FD3 /* shear.c in Sources */,
+				085A53F82216C33F00183FD3 /* pixacc.c in Sources */,
+				085A53C42216C33F00183FD3 /* gifio.c in Sources */,
+				085A54142216C33F00183FD3 /* dnafunc1.c in Sources */,
+				085A537E2216C33F00183FD3 /* affine.c in Sources */,
+				085A53E52216C33F00183FD3 /* fliphmtgen.c in Sources */,
+				085A53E82216C33F00183FD3 /* pdfio2.c in Sources */,
+				085A53F22216C33F00183FD3 /* graymorph.c in Sources */,
+				085A53C72216C33F00183FD3 /* jp2kio.c in Sources */,
+				085A538E2216C33F00183FD3 /* ptafunc2.c in Sources */,
+				085A53D82216C33F00183FD3 /* pageseg.c in Sources */,
+				085A53962216C33F00183FD3 /* psio2.c in Sources */,
+				085A53D02216C33F00183FD3 /* pixafunc1.c in Sources */,
+				085A53892216C33F00183FD3 /* ccthin.c in Sources */,
+				085A53C22216C33F00183FD3 /* leptwin.c in Sources */,
+				085A53CB2216C33F00183FD3 /* pixtiling.c in Sources */,
+				085A53F52216C33F00183FD3 /* parseprotos.c in Sources */,
+				085A53CA2216C33F00183FD3 /* binarize.c in Sources */,
+				085A53772216C33F00183FD3 /* rbtree.c in Sources */,
+				085A54162216C33F00183FD3 /* dwacomb.2.c in Sources */,
+				085A53802216C33F00183FD3 /* selgen.c in Sources */,
+				085A53822216C33F00183FD3 /* gplot.c in Sources */,
+				085A53B82216C33F00183FD3 /* bmpiostub.c in Sources */,
+				085A53B22216C33F00183FD3 /* libversions.c in Sources */,
+				085A53A02216C33F00183FD3 /* pnmio.c in Sources */,
+				085A53BB2216C33F00183FD3 /* jpegiostub.c in Sources */,
+				085A54052216C33F00183FD3 /* convolve.c in Sources */,
+				085A53F42216C33F00183FD3 /* colorcontent.c in Sources */,
+				085A53DD2216C33F00183FD3 /* roplow.c in Sources */,
+				085A53E22216C33F00183FD3 /* baseline.c in Sources */,
+				085A53B32216C33F00183FD3 /* pixconv.c in Sources */,
+				085A53EB2216C33F00183FD3 /* strokes.c in Sources */,
+				085A53BC2216C33F00183FD3 /* arrayaccess.c in Sources */,
+				085A53FB2216C33F00183FD3 /* pix2.c in Sources */,
+				085A540F2216C33F00183FD3 /* pixarith.c in Sources */,
+				085A53B72216C33F00183FD3 /* sarray1.c in Sources */,
+				085A536E2216C33F00183FD3 /* gifiostub.c in Sources */,
+				085A53922216C33F00183FD3 /* scale1.c in Sources */,
+				085A53BD2216C33F00183FD3 /* queue.c in Sources */,
+				085A53C12216C33F00183FD3 /* boxfunc2.c in Sources */,
+				085A53E42216C33F00183FD3 /* pixabasic.c in Sources */,
+				085A54032216C33F00183FD3 /* boxfunc4.c in Sources */,
+				085A53C92216C33F00183FD3 /* fmorphgen.1.c in Sources */,
+				085A539D2216C33F00183FD3 /* stack.c in Sources */,
+				085A53D22216C33F00183FD3 /* bmpio.c in Sources */,
+				085A53B12216C33F00183FD3 /* utils1.c in Sources */,
+				085A53AD2216C33F00183FD3 /* rotateshear.c in Sources */,
+				085A53832216C33F00183FD3 /* seedfill.c in Sources */,
+				085A53792216C33F00183FD3 /* utils2.c in Sources */,
+				085A53C52216C33F00183FD3 /* binreduce.c in Sources */,
+				085A53A82216C33F00183FD3 /* dewarp3.c in Sources */,
+				085A53C02216C33F00183FD3 /* fmorphgenlow.1.c in Sources */,
+				085A53F12216C33F00183FD3 /* tiffiostub.c in Sources */,
+				085A53AF2216C33F00183FD3 /* skew.c in Sources */,
+				085A53852216C33F00183FD3 /* flipdetect.c in Sources */,
+				085A54042216C33F00183FD3 /* sudoku.c in Sources */,
+				085A53902216C33F00183FD3 /* sarray2.c in Sources */,
+				085A53E32216C33F00183FD3 /* jpegio.c in Sources */,
+				085A540B2216C33F00183FD3 /* grayquant.c in Sources */,
+				085A53762216C33F00183FD3 /* warper.c in Sources */,
+				085A54152216C33F00183FD3 /* fhmtauto.c in Sources */,
+				085A53B92216C33F00183FD3 /* psio1.c in Sources */,
+				085A53B52216C33F00183FD3 /* scale2.c in Sources */,
+				085A54132216C33F00183FD3 /* rank.c in Sources */,
+				085A53A52216C33F00183FD3 /* textops.c in Sources */,
+				085A537C2216C33F00183FD3 /* pix3.c in Sources */,
+				085A53F72216C33F00183FD3 /* dewarp1.c in Sources */,
+				085A54102216C33F00183FD3 /* encoding.c in Sources */,
+				085A53CE2216C33F00183FD3 /* pix5.c in Sources */,
+				085A53FA2216C33F00183FD3 /* pngiostub.c in Sources */,
+				085A53882216C33F00183FD3 /* rotateorth.c in Sources */,
+				085A540E2216C33F00183FD3 /* fhmtgen.1.c in Sources */,
+				085A53F02216C33F00183FD3 /* boxfunc3.c in Sources */,
+				085A539E2216C33F00183FD3 /* ptra.c in Sources */,
+				085A53CD2216C33F00183FD3 /* morph.c in Sources */,
+				085A539C2216C33F00183FD3 /* rop.c in Sources */,
+				085A53782216C33F00183FD3 /* colormorph.c in Sources */,
+				085A53D32216C33F00183FD3 /* enhance.c in Sources */,
+				085A53EC2216C33F00183FD3 /* dnahash.c in Sources */,
+				085A53B42216C33F00183FD3 /* sel2.c in Sources */,
+				085A53A22216C33F00183FD3 /* readfile.c in Sources */,
+				085A53DC2216C33F00183FD3 /* bardecode.c in Sources */,
+				085A54112216C33F00183FD3 /* colorquant1.c in Sources */,
+				085A53D72216C33F00183FD3 /* dewarp2.c in Sources */,
+				085A53FD2216C33F00183FD3 /* fmorphauto.c in Sources */,
+				085A54012216C33F00183FD3 /* psio1stub.c in Sources */,
+				085A537A2216C33F00183FD3 /* sel1.c in Sources */,
+				085A536D2216C33F00183FD3 /* bootnumgen1.c in Sources */,
+				085A53A12216C33F00183FD3 /* boxfunc1.c in Sources */,
+				085A53812216C33F00183FD3 /* dewarp4.c in Sources */,
+				085A539A2216C33F00183FD3 /* rotate.c in Sources */,
+				085A53A42216C33F00183FD3 /* pix4.c in Sources */,
+				085A537B2216C33F00183FD3 /* boxbasic.c in Sources */,
+				085A54002216C33F00183FD3 /* jbclass.c in Sources */,
+				085A540D2216C33F00183FD3 /* recogbasic.c in Sources */,
+				085A53842216C33F00183FD3 /* numabasic.c in Sources */,
+				085A53E62216C33F00183FD3 /* recogdid.c in Sources */,
+				085A53942216C33F00183FD3 /* writefile.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		085A49262216C15300183FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		085A49272216C15300183FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		085A49292216C15300183FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+					i386,
+				);
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = VZ266K5KCR;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64 i386";
+			};
+			name = Debug;
+		};
+		085A492A2216C15300183FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+					i386,
+				);
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = VZ266K5KCR;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64 i386";
+			};
+			name = Release;
+		};
+		085A541F2216C56500183FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ266K5KCR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		085A54202216C56500183FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZ266K5KCR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		085A491A2216C15200183FD3 /* Build configuration list for PBXProject "Leptonica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085A49262216C15300183FD3 /* Debug */,
+				085A49272216C15300183FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		085A49282216C15300183FD3 /* Build configuration list for PBXNativeTarget "Leptonica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085A49292216C15300183FD3 /* Debug */,
+				085A492A2216C15300183FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		085A541E2216C56500183FD3 /* Build configuration list for PBXAggregateTarget "Leptonica_FAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085A541F2216C56500183FD3 /* Debug */,
+				085A54202216C56500183FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 085A49172216C15200183FD3 /* Project object */;
+}
