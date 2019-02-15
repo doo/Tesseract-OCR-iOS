@@ -1087,11 +1087,7 @@
 		085A49292216C15300183FD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
@@ -1122,11 +1118,7 @@
 		085A492A2216C15300183FD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;

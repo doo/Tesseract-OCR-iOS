@@ -2016,11 +2016,7 @@
 		08D4F55121089D6A00BEB3D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_LINK_OBJC_RUNTIME = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2050,11 +2046,7 @@
 		08D4F55221089D6A00BEB3D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_LINK_OBJC_RUNTIME = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_STYLE = Automatic;
