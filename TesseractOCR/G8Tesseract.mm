@@ -340,8 +340,9 @@ namespace tesseract {
 - (void)loadVariables
 {
     if (self.isEngineConfigured) {
+        __weak G8Tesseract *weakSelf = self;
         [self.variables enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *value, BOOL *stop) {
-            _tesseract->SetVariable(key.UTF8String, value.UTF8String);
+            weakSelf.tesseract->SetVariable(key.UTF8String, value.UTF8String);
         }];
     }
 }
