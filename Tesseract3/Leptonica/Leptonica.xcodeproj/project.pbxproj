@@ -214,15 +214,8 @@
 		085A52862216C32400183FD3 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
 		085A52892216C32E00183FD3 /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
 		085A528A2216C32E00183FD3 /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
-		085A528B2216C32E00183FD3 /* tiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiff.h; sourceTree = "<group>"; };
-		085A528C2216C32E00183FD3 /* tiffvers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffvers.h; sourceTree = "<group>"; };
-		085A528D2216C32E00183FD3 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
-		085A528E2216C32E00183FD3 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
-		085A528F2216C32E00183FD3 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
 		085A52902216C32E00183FD3 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
 		085A52912216C32E00183FD3 /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
-		085A52922216C32E00183FD3 /* tiffio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffio.h; sourceTree = "<group>"; };
-		085A52932216C32E00183FD3 /* tiffconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tiffconf.h; sourceTree = "<group>"; };
 		085A52952216C33E00183FD3 /* dewarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dewarp.h; sourceTree = "<group>"; };
 		085A52962216C33E00183FD3 /* bootnumgen1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bootnumgen1.c; sourceTree = "<group>"; };
 		085A52972216C33E00183FD3 /* gifiostub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gifiostub.c; sourceTree = "<group>"; };
@@ -477,15 +470,8 @@
 			children = (
 				085A52892216C32E00183FD3 /* jpeglib.h */,
 				085A528A2216C32E00183FD3 /* jerror.h */,
-				085A528B2216C32E00183FD3 /* tiff.h */,
-				085A528C2216C32E00183FD3 /* tiffvers.h */,
-				085A528D2216C32E00183FD3 /* png.h */,
-				085A528E2216C32E00183FD3 /* pnglibconf.h */,
-				085A528F2216C32E00183FD3 /* pngconf.h */,
 				085A52902216C32E00183FD3 /* jconfig.h */,
 				085A52912216C32E00183FD3 /* jmorecfg.h */,
-				085A52922216C32E00183FD3 /* tiffio.h */,
-				085A52932216C32E00183FD3 /* tiffconf.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
