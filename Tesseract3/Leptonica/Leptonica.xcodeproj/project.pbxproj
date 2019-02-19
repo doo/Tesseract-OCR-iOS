@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		085A52872216C32400183FD3 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085A52862216C32400183FD3 /* libjpeg.a */; };
 		085A536D2216C33F00183FD3 /* bootnumgen1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52962216C33E00183FD3 /* bootnumgen1.c */; };
 		085A536E2216C33F00183FD3 /* gifiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52972216C33E00183FD3 /* gifiostub.c */; };
 		085A536F2216C33F00183FD3 /* runlength.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52982216C33E00183FD3 /* runlength.c */; };
@@ -211,7 +210,6 @@
 /* Begin PBXFileReference section */
 		085A491F2216C15200183FD3 /* libLeptonica.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLeptonica.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		085A52852216C31100183FD3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		085A52862216C32400183FD3 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
 		085A52892216C32E00183FD3 /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
 		085A528A2216C32E00183FD3 /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
 		085A52902216C32E00183FD3 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
@@ -439,7 +437,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				085A52872216C32400183FD3 /* libjpeg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,10 +446,9 @@
 		085A49162216C15200183FD3 = {
 			isa = PBXGroup;
 			children = (
+				085A52852216C31100183FD3 /* PrefixHeader.pch */,
 				085A52942216C33E00183FD3 /* src */,
 				085A52882216C32E00183FD3 /* include */,
-				085A52852216C31100183FD3 /* PrefixHeader.pch */,
-				085A52862216C32400183FD3 /* libjpeg.a */,
 				085A49202216C15200183FD3 /* Products */,
 			);
 			sourceTree = "<group>";

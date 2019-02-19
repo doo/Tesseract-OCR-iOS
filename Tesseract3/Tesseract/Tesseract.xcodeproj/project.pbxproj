@@ -1517,8 +1517,8 @@
 		08D4F53E21089D6A00BEB3D1 = {
 			isa = PBXGroup;
 			children = (
-				085A4E472216C29F00183FD3 /* tesseract-sources */,
 				085A4E462216C27C00183FD3 /* PrefixHeader.pch */,
+				085A4E472216C29F00183FD3 /* tesseract-sources */,
 				08D4F54821089D6A00BEB3D1 /* Products */,
 				08D4FA5A2108A01B00BEB3D1 /* Frameworks */,
 			);

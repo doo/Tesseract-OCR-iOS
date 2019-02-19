@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		085A54552216D6CC00183FD3 /* g8Tesseract.m in Sources */ = {isa = PBXBuildFile; fileRef = 085A54542216D6CC00183FD3 /* g8Tesseract.m */; };
-		085A54562216D6CC00183FD3 /* g8Tesseract.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 085A54532216D6CC00183FD3 /* g8Tesseract.h */; };
 		085A545B2216D6E400183FD3 /* G8Tesseract.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64A029D717307CD0002B12E7 /* G8Tesseract.mm */; };
 		085A545C2216D6E400183FD3 /* G8RecognizedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B41A501A42ED7600D46246 /* G8RecognizedBlock.m */; };
 		085A545D2216D6E400183FD3 /* G8RecognitionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A95DED1A3AFBF30085093C /* G8RecognitionOperation.m */; };
@@ -17,7 +15,6 @@
 		085A54602216D6E400183FD3 /* UIImage+G8FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F03311A5FBBDD000C194B /* UIImage+G8FixOrientation.m */; };
 		085A54652216D70A00183FD3 /* libLeptonica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085A544C2216D6AE00183FD3 /* libLeptonica.a */; };
 		085A54662216D70A00183FD3 /* libtesseract.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085A54452216D6A800183FD3 /* libtesseract.a */; };
-		085A54682216D8AF00183FD3 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085A54672216D8AF00183FD3 /* libtiff.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +55,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				085A54562216D6CC00183FD3 /* g8Tesseract.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,9 +64,6 @@
 		085A543F2216D6A800183FD3 /* Tesseract.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tesseract.xcodeproj; path = Tesseract3/Tesseract/Tesseract.xcodeproj; sourceTree = "<group>"; };
 		085A54462216D6AE00183FD3 /* Leptonica.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Leptonica.xcodeproj; path = Tesseract3/Leptonica/Leptonica.xcodeproj; sourceTree = "<group>"; };
 		085A54512216D6CC00183FD3 /* libg8Tesseract.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libg8Tesseract.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		085A54532216D6CC00183FD3 /* g8Tesseract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = g8Tesseract.h; sourceTree = "<group>"; };
-		085A54542216D6CC00183FD3 /* g8Tesseract.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = g8Tesseract.m; sourceTree = "<group>"; };
-		085A54672216D8AF00183FD3 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtiff.a; path = TesseractOCR/lib/libtiff.a; sourceTree = "<group>"; };
 		413F03301A5FBBDD000C194B /* UIImage+G8FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+G8FixOrientation.h"; sourceTree = "<group>"; };
 		413F03311A5FBBDD000C194B /* UIImage+G8FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+G8FixOrientation.m"; sourceTree = "<group>"; };
 		4141211F1A4C578800583ED4 /* G8TesseractDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = G8TesseractDelegate.h; sourceTree = "<group>"; };
@@ -104,7 +97,6 @@
 			files = (
 				085A54652216D70A00183FD3 /* libLeptonica.a in Frameworks */,
 				085A54662216D70A00183FD3 /* libtesseract.a in Frameworks */,
-				085A54682216D8AF00183FD3 /* libtiff.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,15 +117,6 @@
 				085A544C2216D6AE00183FD3 /* libLeptonica.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		085A54522216D6CC00183FD3 /* g8Tesseract */ = {
-			isa = PBXGroup;
-			children = (
-				085A54532216D6CC00183FD3 /* g8Tesseract.h */,
-				085A54542216D6CC00183FD3 /* g8Tesseract.m */,
-			);
-			path = g8Tesseract;
 			sourceTree = "<group>";
 		};
 		41C7E8211A3F0650000DC42B /* Readme */ = {
@@ -185,7 +168,6 @@
 				085A54462216D6AE00183FD3 /* Leptonica.xcodeproj */,
 				085A543F2216D6A800183FD3 /* Tesseract.xcodeproj */,
 				64A0292F17307C1D002B12E7 /* TesseractOCR */,
-				085A54522216D6CC00183FD3 /* g8Tesseract */,
 				64F74CCB172FD75F0068E657 /* Frameworks */,
 				085A54512216D6CC00183FD3 /* libg8Tesseract.a */,
 			);
@@ -194,7 +176,6 @@
 		64F74CCB172FD75F0068E657 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				085A54672216D8AF00183FD3 /* libtiff.a */,
 				64907492198A6B9E00D728CC /* CoreImage.framework */,
 				64F74D77172FD8E90068E657 /* UIKit.framework */,
 				64F74CCC172FD75F0068E657 /* Foundation.framework */,
@@ -296,7 +277,6 @@
 				085A545C2216D6E400183FD3 /* G8RecognizedBlock.m in Sources */,
 				085A545F2216D6E400183FD3 /* UIImage+G8Filters.m in Sources */,
 				085A545E2216D6E400183FD3 /* G8TesseractParameters.m in Sources */,
-				085A54552216D6CC00183FD3 /* g8Tesseract.m in Sources */,
 				085A545B2216D6E400183FD3 /* G8Tesseract.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
