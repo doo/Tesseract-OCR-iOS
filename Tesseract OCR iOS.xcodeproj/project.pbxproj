@@ -13,6 +13,8 @@
 		085A545E2216D6E400183FD3 /* G8TesseractParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A95DE91A3AF39B0085093C /* G8TesseractParameters.m */; };
 		085A545F2216D6E400183FD3 /* UIImage+G8Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = 6490748B198A5A5600D728CC /* UIImage+G8Filters.m */; };
 		085A54602216D6E400183FD3 /* UIImage+G8FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F03311A5FBBDD000C194B /* UIImage+G8FixOrientation.m */; };
+		08AFEE8D221EE5FB004E7B66 /* libLeptonica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AFEE6F221EE459004E7B66 /* libLeptonica.a */; };
+		08AFF1E9221EE7EE004E7B66 /* libtesseract.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AFEE88221EE59E004E7B66 /* libtesseract.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,33 @@
 			remoteGlobalIDString = 085A491F2216C15200183FD3;
 			remoteInfo = Leptonica;
 		};
-		08AFEE74221EE46C004E7B66 /* PBXContainerItemProxy */ = {
+		08AFEE80221EE585004E7B66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 085A543F2216D6A800183FD3 /* Tesseract.xcodeproj */;
+			containerPortal = 085A543F2216D6A800183FD3 /* Tesseract3.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 08D4F54721089D6A00BEB3D1;
 			remoteInfo = Tesseract;
+		};
+		08AFEE87221EE59E004E7B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08AFEE82221EE59E004E7B66 /* Tesseract4.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08D4F54721089D6A00BEB3D1;
+			remoteInfo = Tesseract;
+		};
+		08AFEE89221EE5EF004E7B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 085A54462216D6AE00183FD3 /* Leptonica.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 085A491E2216C15200183FD3;
+			remoteInfo = Leptonica;
+		};
+		08AFF1E7221EE7E5004E7B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08AFEE82221EE59E004E7B66 /* Tesseract4.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08D4F54621089D6A00BEB3D1;
+			remoteInfo = Tesseract4;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,9 +68,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		085A543F2216D6A800183FD3 /* Tesseract.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tesseract.xcodeproj; path = Tesseract/Tesseract/Tesseract.xcodeproj; sourceTree = "<group>"; };
+		085A543F2216D6A800183FD3 /* Tesseract3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tesseract3.xcodeproj; path = Tesseract/Tesseract3/Tesseract3.xcodeproj; sourceTree = "<group>"; };
 		085A54462216D6AE00183FD3 /* Leptonica.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Leptonica.xcodeproj; path = Tesseract/Leptonica/Leptonica.xcodeproj; sourceTree = "<group>"; };
 		085A54512216D6CC00183FD3 /* libg8Tesseract.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libg8Tesseract.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		08AFEE82221EE59E004E7B66 /* Tesseract4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tesseract4.xcodeproj; path = Tesseract/Tesseract4/Tesseract4.xcodeproj; sourceTree = "<group>"; };
 		413F03301A5FBBDD000C194B /* UIImage+G8FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+G8FixOrientation.h"; sourceTree = "<group>"; };
 		413F03311A5FBBDD000C194B /* UIImage+G8FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+G8FixOrientation.m"; sourceTree = "<group>"; };
 		4141211F1A4C578800583ED4 /* G8TesseractDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = G8TesseractDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08AFF1E9221EE7EE004E7B66 /* libtesseract.a in Frameworks */,
+				08AFEE8D221EE5FB004E7B66 /* libLeptonica.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,10 +119,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		08AFEE70221EE46C004E7B66 /* Products */ = {
+		08AFEE7C221EE585004E7B66 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08AFEE75221EE46C004E7B66 /* libtesseract.a */,
+				08AFEE81221EE585004E7B66 /* libtesseract.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08AFEE83221EE59E004E7B66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08AFEE88221EE59E004E7B66 /* libtesseract.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,7 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				085A54462216D6AE00183FD3 /* Leptonica.xcodeproj */,
-				085A543F2216D6A800183FD3 /* Tesseract.xcodeproj */,
+				085A543F2216D6A800183FD3 /* Tesseract3.xcodeproj */,
+				08AFEE82221EE59E004E7B66 /* Tesseract4.xcodeproj */,
 				64A0292F17307C1D002B12E7 /* TesseractOCR */,
 				64F74CCB172FD75F0068E657 /* Frameworks */,
 				085A54512216D6CC00183FD3 /* libg8Tesseract.a */,
@@ -180,6 +215,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				08AFF1E8221EE7E5004E7B66 /* PBXTargetDependency */,
+				08AFEE8A221EE5EF004E7B66 /* PBXTargetDependency */,
 			);
 			name = g8Tesseract;
 			productName = g8Tesseract;
@@ -219,8 +256,12 @@
 					ProjectRef = 085A54462216D6AE00183FD3 /* Leptonica.xcodeproj */;
 				},
 				{
-					ProductGroup = 08AFEE70221EE46C004E7B66 /* Products */;
-					ProjectRef = 085A543F2216D6A800183FD3 /* Tesseract.xcodeproj */;
+					ProductGroup = 08AFEE7C221EE585004E7B66 /* Products */;
+					ProjectRef = 085A543F2216D6A800183FD3 /* Tesseract3.xcodeproj */;
+				},
+				{
+					ProductGroup = 08AFEE83221EE59E004E7B66 /* Products */;
+					ProjectRef = 08AFEE82221EE59E004E7B66 /* Tesseract4.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -238,11 +279,18 @@
 			remoteRef = 08AFEE6E221EE459004E7B66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		08AFEE75221EE46C004E7B66 /* libtesseract.a */ = {
+		08AFEE81221EE585004E7B66 /* libtesseract.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libtesseract.a;
-			remoteRef = 08AFEE74221EE46C004E7B66 /* PBXContainerItemProxy */;
+			remoteRef = 08AFEE80221EE585004E7B66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08AFEE88221EE59E004E7B66 /* libtesseract.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtesseract.a;
+			remoteRef = 08AFEE87221EE59E004E7B66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -262,6 +310,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08AFEE8A221EE5EF004E7B66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Leptonica;
+			targetProxy = 08AFEE89221EE5EF004E7B66 /* PBXContainerItemProxy */;
+		};
+		08AFF1E8221EE7E5004E7B66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Tesseract4;
+			targetProxy = 08AFF1E7221EE7E5004E7B66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		64A0293217307C1D002B12E7 /* InfoPlist.strings */ = {
