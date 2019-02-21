@@ -2451,7 +2451,7 @@ void InitializeRowInfo(bool after_recognition,
   while (trailing_ws_idx > 0 &&
          // isspace() only takes ASCII
          ((text[trailing_ws_idx - 1] & 0x80) == 0) &&
-         isspace(text[trailing_ws_idx - 1]))
+         ::isspace(text[trailing_ws_idx - 1]))
     trailing_ws_idx--;
   if (trailing_ws_idx > 0) {
     int lspaces = info->pix_ldistance / info->average_interword_space;

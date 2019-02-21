@@ -251,11 +251,11 @@ CLUSTER *FindNearestNeighbor(KDTREE *Tree,
 CLUSTER *MakeNewCluster(CLUSTERER *Clusterer, TEMPCLUSTER *TempCluster);
 
 inT32 MergeClusters (inT16 N,
-register PARAM_DESC ParamDesc[],
-register inT32 n1,
-register inT32 n2,
-register FLOAT32 m[],
-register FLOAT32 m1[], register FLOAT32 m2[]);
+                     PARAM_DESC ParamDesc[],
+                     inT32 n1,
+                     inT32 n2,
+                     FLOAT32 m[],
+                     FLOAT32 m1[], FLOAT32 m2[]);
 
 void ComputePrototypes(CLUSTERER *Clusterer, CLUSTERCONFIG *Config);
 

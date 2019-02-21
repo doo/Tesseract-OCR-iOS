@@ -2017,6 +2017,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_LINK_OBJC_RUNTIME = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2049,6 +2050,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_LINK_OBJC_RUNTIME = YES;
 				CLANG_MODULES_AUTOLINK = YES;
 				CODE_SIGN_STYLE = Automatic;

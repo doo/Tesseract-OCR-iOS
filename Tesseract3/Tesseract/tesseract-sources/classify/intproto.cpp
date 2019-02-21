@@ -131,9 +131,9 @@ FLOAT32 BucketEnd(int Bucket, FLOAT32 Offset, int NumBuckets);
 
 void DoFill(FILL_SPEC *FillSpec,
             CLASS_PRUNER_STRUCT* Pruner,
-            register uinT32 ClassMask,
-            register uinT32 ClassCount,
-            register uinT32 WordIndex);
+            uinT32 ClassMask,
+            uinT32 ClassCount,
+            uinT32 WordIndex);
 
 BOOL8 FillerDone(TABLE_FILLER *Filler);
 
@@ -1242,9 +1242,9 @@ FLOAT32 BucketEnd(int Bucket, FLOAT32 Offset, int NumBuckets) {
  */
 void DoFill(FILL_SPEC *FillSpec,
             CLASS_PRUNER_STRUCT* Pruner,
-            register uinT32 ClassMask,
-            register uinT32 ClassCount,
-            register uinT32 WordIndex) {
+            uinT32 ClassMask,
+            uinT32 ClassCount,
+            uinT32 WordIndex) {
   int X, Y, Angle;
   uinT32 OldWord;
 
