@@ -1,0 +1,8 @@
+tif_fax3sm.lo: ../../libtiff/tif_fax3sm.c ../../libtiff/tiff.h tiffconf.h \
+  ../../libtiff/tif_fax3.h
+
+../../libtiff/tiff.h:
+
+tiffconf.h:
+
+../../libtiff/tif_fax3.h:
