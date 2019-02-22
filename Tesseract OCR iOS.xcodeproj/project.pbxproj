@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087F9583222016D900EF06BE /* libLeptonica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 087F955922200F4500EF06BE /* libLeptonica.a */; };
+		087F9584222016D900EF06BE /* libtesseract.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 087F956722200F8B00EF06BE /* libtesseract.a */; };
+		087F958D222016F400EF06BE /* libLeptonica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 087F955922200F4500EF06BE /* libLeptonica.a */; };
+		087F958E222016F400EF06BE /* libtesseract.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 087F956022200F6C00EF06BE /* libtesseract.a */; };
 		0880FE2922200023006B76FD /* G8RecognitionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0880FE1422200023006B76FD /* G8RecognitionOperation.m */; };
 		0880FE2A22200023006B76FD /* G8TesseractParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 0880FE1822200023006B76FD /* G8TesseractParameters.m */; };
 		0880FE2B22200023006B76FD /* UIImage+G8Filters.m in Sources */ = {isa = PBXBuildFile; fileRef = 0880FE1922200023006B76FD /* UIImage+G8Filters.m */; };
@@ -42,6 +46,34 @@
 			proxyType = 2;
 			remoteGlobalIDString = 08D4F54721089D6A00BEB3D1;
 			remoteInfo = Tesseract4;
+		};
+		087F9585222016E400EF06BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 087F955322200F4500EF06BE /* Leptonica.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 085A491E2216C15200183FD3;
+			remoteInfo = Leptonica;
+		};
+		087F9587222016E400EF06BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 087F956122200F8B00EF06BE /* Tesseract4.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08D4F54621089D6A00BEB3D1;
+			remoteInfo = Tesseract4;
+		};
+		087F9589222016ED00EF06BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 087F955322200F4500EF06BE /* Leptonica.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 085A491E2216C15200183FD3;
+			remoteInfo = Leptonica;
+		};
+		087F958B222016ED00EF06BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 087F955A22200F6C00EF06BE /* Tesseract3.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08D4F54621089D6A00BEB3D1;
+			remoteInfo = Tesseract3;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -119,6 +151,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				087F958D222016F400EF06BE /* libLeptonica.a in Frameworks */,
+				087F958E222016F400EF06BE /* libtesseract.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +160,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				087F9583222016D900EF06BE /* libLeptonica.a in Frameworks */,
+				087F9584222016D900EF06BE /* libtesseract.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +283,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				087F958A222016ED00EF06BE /* PBXTargetDependency */,
+				087F958C222016ED00EF06BE /* PBXTargetDependency */,
 			);
 			name = g8Tesseract_tess3;
 			productName = g8Tesseract;
@@ -264,6 +302,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				087F9586222016E400EF06BE /* PBXTargetDependency */,
+				087F9588222016E400EF06BE /* PBXTargetDependency */,
 			);
 			name = g8Tesseract_tess4;
 			productName = g8Tesseract;
@@ -375,6 +415,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		087F9586222016E400EF06BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Leptonica;
+			targetProxy = 087F9585222016E400EF06BE /* PBXContainerItemProxy */;
+		};
+		087F9588222016E400EF06BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Tesseract4;
+			targetProxy = 087F9587222016E400EF06BE /* PBXContainerItemProxy */;
+		};
+		087F958A222016ED00EF06BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Leptonica;
+			targetProxy = 087F9589222016ED00EF06BE /* PBXContainerItemProxy */;
+		};
+		087F958C222016ED00EF06BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Tesseract3;
+			targetProxy = 087F958B222016ED00EF06BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0880FE1622200023006B76FD /* InfoPlist.strings */ = {
