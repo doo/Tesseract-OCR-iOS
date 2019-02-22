@@ -1545,9 +1545,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		08D4F54621089D6A00BEB3D1 /* Tesseract */ = {
+		08D4F54621089D6A00BEB3D1 /* Tesseract3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08D4F55021089D6A00BEB3D1 /* Build configuration list for PBXNativeTarget "Tesseract" */;
+			buildConfigurationList = 08D4F55021089D6A00BEB3D1 /* Build configuration list for PBXNativeTarget "Tesseract3" */;
 			buildPhases = (
 				08D4F54321089D6A00BEB3D1 /* Sources */,
 				08D4F54421089D6A00BEB3D1 /* Frameworks */,
@@ -1557,7 +1557,7 @@
 			);
 			dependencies = (
 			);
-			name = Tesseract;
+			name = Tesseract3;
 			productName = Tesseract;
 			productReference = 08D4F54721089D6A00BEB3D1 /* libtesseract.a */;
 			productType = "com.apple.product-type.library.static";
@@ -1579,7 +1579,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 08D4F54221089D6A00BEB3D1 /* Build configuration list for PBXProject "Tesseract" */;
+			buildConfigurationList = 08D4F54221089D6A00BEB3D1 /* Build configuration list for PBXProject "Tesseract3" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1591,7 +1591,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				08D4F54621089D6A00BEB3D1 /* Tesseract */,
+				08D4F54621089D6A00BEB3D1 /* Tesseract3 */,
 				08395AE52215790B00897C50 /* Tesseract_FAT */,
 			);
 		};
@@ -2041,7 +2041,7 @@
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = debugging;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Leptonica/leptonica-sources/src";
 				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64 i386";
 			};
 			name = Debug;
@@ -2074,7 +2074,7 @@
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = debugging;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Leptonica/leptonica-sources/src";
 				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64 i386";
 			};
 			name = Release;
@@ -2091,7 +2091,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08D4F54221089D6A00BEB3D1 /* Build configuration list for PBXProject "Tesseract" */ = {
+		08D4F54221089D6A00BEB3D1 /* Build configuration list for PBXProject "Tesseract3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08D4F54E21089D6A00BEB3D1 /* Debug */,
@@ -2100,7 +2100,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08D4F55021089D6A00BEB3D1 /* Build configuration list for PBXNativeTarget "Tesseract" */ = {
+		08D4F55021089D6A00BEB3D1 /* Build configuration list for PBXNativeTarget "Tesseract3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08D4F55121089D6A00BEB3D1 /* Debug */,

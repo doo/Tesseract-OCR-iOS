@@ -1916,7 +1916,7 @@
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = debugging;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Leptonica/leptonica-sources/src";
 				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64 i386";
 			};
 			name = Debug;
@@ -1949,7 +1949,7 @@
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = debugging;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Leptonica/leptonica-sources/src";
 				VALID_ARCHS = "$(ARCHS_STANDARD) x86_64 i386";
 			};
 			name = Release;
