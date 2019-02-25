@@ -18,18 +18,31 @@
 
 #include "fullyconnected.h"
 
-#ifdef _OPENMP
-#include <omp.h>
-#endif
 #include <cstdio>
 #include <cstdlib>
 
 #include "functions.h"
 #include "networkscratch.h"
 
+#if __APPLE__
+#define HAS_GCD
+#endif
+
 // Number of threads to use for parallel calculation of Forward and Backward.
 #ifdef _OPENMP
+#include <omp.h>
 const int kNumThreads = 4;
+
+#define PARALLEL_FOR(t, tmax)
+
+#elif defined(HAS_GCD)
+#include <vector>
+#include <mutex>
+#include <dispatch/dispatch.h>
+const int kNumThreads = 4;
+
+#define PARALLEL_FOR(t, tmax)
+
 #else
 const int kNumThreads = 1;
 #endif
@@ -138,6 +151,14 @@ void FullyConnected::Forward(bool debug, const NetworkIO& input,
   for (int t = 0; t < width; ++t) {
     // Thread-local pointer to temporary storage.
     int thread_id = omp_get_thread_num();
+#elif defined(HAS_GCD)
+      dispatch_queue_t concurrent_queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+      dispatch_apply(kNumThreads, concurrent_queue, ^(size_t thread_id){
+          
+          int startIndex = width * thread_id / kNumThreads;
+          int endIndex = width * (thread_id + 1) / kNumThreads;
+          
+          for (int t = startIndex; t < endIndex; ++t) {
 #else
   for (int t = 0; t < width; ++t) {
     // Thread-local pointer to temporary storage.
@@ -154,7 +175,12 @@ void FullyConnected::Forward(bool debug, const NetworkIO& input,
     if (IsTraining() && type_ != NT_SOFTMAX) {
       acts_.CopyTimeStepFrom(t, *output, t);
     }
+#ifdef HAS_GCD
+    }
+  });
+#else
   }
+#endif
   // Zero all the elements that are in the padding around images that allows
   // multiple different-sized images to exist in a single array.
   // acts_ is only used if this is not a softmax op.

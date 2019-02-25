@@ -24,5 +24,4 @@ class ETEXT_DESC;
 
                                  //progress monitor
 extern ETEXT_DESC *global_monitor;
-
 #endif

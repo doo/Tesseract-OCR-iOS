@@ -209,6 +209,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		084736AF2223EC7C00DCCBAF /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = libs/dependencies/lib/libpng.a; sourceTree = "<group>"; };
+		084736B02223EC7C00DCCBAF /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtiff.a; path = libs/dependencies/lib/libtiff.a; sourceTree = "<group>"; };
 		085A491F2216C15200183FD3 /* libLeptonica.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLeptonica.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		085A52852216C31100183FD3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		085A52892216C32E00183FD3 /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
@@ -704,6 +706,8 @@
 		087F95682220100B00EF06BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				084736AF2223EC7C00DCCBAF /* libpng.a */,
+				084736B02223EC7C00DCCBAF /* libtiff.a */,
 				087F956B222010EA00EF06BE /* libjpeg.a */,
 				087F95692220100B00EF06BE /* libjpeg.a */,
 			);
@@ -1099,6 +1103,7 @@
 				GCC_WARN_UNUSED_FUNCTION = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/dependencies/include";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1133,6 +1138,7 @@
 				GCC_WARN_UNUSED_FUNCTION = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/dependencies/include";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

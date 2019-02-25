@@ -78,6 +78,12 @@ const char *format, ...          // special message
     case TESSEXIT:
       //err_exit();
     case ABORT:
+#if !defined(NDEBUG)
+      // Create a deliberate segv as the stack trace is more useful that way.
+      // This is done only in debug builds, because the error message
+      // "segmentation fault" confuses most normal users.
+      *reinterpret_cast<volatile int*>(0) = 0;
+#endif
       abort();
     default:
       BADERRACTION.error ("error", ABORT, nullptr);

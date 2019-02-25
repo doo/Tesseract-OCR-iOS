@@ -15,7 +15,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 ///////////////////////////////////////////////////////////////////////
-
 #include "lstm.h"
 
 #ifdef _OPENMP
@@ -56,12 +55,15 @@
 #define PRAGMA(x) _Pragma(#x)
 #endif  // _MSC_VER
 
+#elif defined(HAS_GCD)
+
+#include <dispatch/dispatch.h>
+
 #else  // _OPENMP
 #define PARALLEL_IF_OPENMP(__num_threads)
 #define SECTION_IF_OPENMP
 #define END_PARALLEL_IF_OPENMP
 #endif  // _OPENMP
-
 
 namespace tesseract {
 
@@ -263,11 +265,12 @@ void LSTM::Forward(bool debug, const NetworkIO& input,
   NetworkScratch::FloatVec temp_lines[WT_COUNT];
   for (int i = 0; i < WT_COUNT; ++i) temp_lines[i].Init(ns_, scratch);
   // Single timestep buffers for the current/recurrent output and state.
-  NetworkScratch::FloatVec curr_state, curr_output;
+  NetworkScratch::FloatVec curr_state, curr_output, scratchVec;
   curr_state.Init(ns_, scratch);
   ZeroVector<double>(ns_, curr_state);
   curr_output.Init(ns_, scratch);
   ZeroVector<double>(ns_, curr_output);
+  scratchVec.Init(ns_, scratch);
   // Rotating buffers of width buf_width allow storage of the state and output
   // for the other dimension, used only when working in true 2D mode. The width
   // is enough to hold an entire strip of the major direction.
@@ -319,50 +322,53 @@ void LSTM::Forward(bool debug, const NetworkIO& input,
       source_.WriteTimeStepPart(t, ni_ + nf_ + ns_, ns_, outputs[mod_t]);
     if (!source_.int_mode()) source_.ReadTimeStep(t, curr_input);
     // Matrix multiply the inputs with the source.
-    PARALLEL_IF_OPENMP(GFS)
-    // It looks inefficient to create the threads on each t iteration, but the
-    // alternative of putting the parallel outside the t loop, a single around
-    // the t-loop and then tasks in place of the sections is a *lot* slower.
-    // Cell inputs.
-    if (source_.int_mode())
-      gate_weights_[CI].MatrixDotVector(source_.i(t), temp_lines[CI]);
-    else
-      gate_weights_[CI].MatrixDotVector(curr_input, temp_lines[CI]);
-    FuncInplace<GFunc>(ns_, temp_lines[CI]);
+      
+      struct ParallelContext {
+          int t;
+          bool int_mode;
+          LSTM* self;
+          NetworkScratch::FloatVec* curr_input;
+          NetworkScratch::FloatVec* temp_lines;
+      } context;
 
-    SECTION_IF_OPENMP
-    // Input Gates.
-    if (source_.int_mode())
-      gate_weights_[GI].MatrixDotVector(source_.i(t), temp_lines[GI]);
-    else
-      gate_weights_[GI].MatrixDotVector(curr_input, temp_lines[GI]);
-    FuncInplace<FFunc>(ns_, temp_lines[GI]);
+      context.int_mode = source_.int_mode();
+      context.t = t;
+      context.self = this;
+      context.curr_input = &curr_input;
+      context.temp_lines = temp_lines;
+#if HAS_GCD
+      dispatch_queue_t concurrent_queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_apply_f(Is2D() ? WT_COUNT : GFS, concurrent_queue, &context, [](void* _ctx, size_t iteration) {
+            auto ctx = (ParallelContext*) _ctx;
+            WeightType weightType = (WeightType) iteration;
+#else
+      for (WeightType weightType = CI; weightType < (Is2D() ? WT_COUNT : GFS); weightType = (WeightType) (weightType+1)) {
+          auto ctx = &context;
+#endif
 
-    SECTION_IF_OPENMP
-    // 1-D forget gates.
-    if (source_.int_mode())
-      gate_weights_[GF1].MatrixDotVector(source_.i(t), temp_lines[GF1]);
-    else
-      gate_weights_[GF1].MatrixDotVector(curr_input, temp_lines[GF1]);
-    FuncInplace<FFunc>(ns_, temp_lines[GF1]);
+          if (ctx->int_mode)
+              ctx->self->gate_weights_[weightType].MatrixDotVector(ctx->self->source_.i(ctx->t), ctx->temp_lines[weightType]);
+          else
+              ctx->self->gate_weights_[weightType].MatrixDotVector(*ctx->curr_input, ctx->temp_lines[weightType]);
 
-    // 2-D forget gates.
-    if (Is2D()) {
-      if (source_.int_mode())
-        gate_weights_[GFS].MatrixDotVector(source_.i(t), temp_lines[GFS]);
-      else
-        gate_weights_[GFS].MatrixDotVector(curr_input, temp_lines[GFS]);
-      FuncInplace<FFunc>(ns_, temp_lines[GFS]);
-    }
-
-    SECTION_IF_OPENMP
-    // Output gates.
-    if (source_.int_mode())
-      gate_weights_[GO].MatrixDotVector(source_.i(t), temp_lines[GO]);
-    else
-      gate_weights_[GO].MatrixDotVector(curr_input, temp_lines[GO]);
-    FuncInplace<FFunc>(ns_, temp_lines[GO]);
-    END_PARALLEL_IF_OPENMP
+          if (weightType == CI) {
+#if USE_ACCELERATE
+              vvtanh(ctx->temp_lines[CI], ctx->temp_lines[CI], &ctx->self->ns_);
+#else
+              FuncInplace<GFunc>(ctx->self->ns_, ctx->temp_lines[CI]);
+#endif
+          } else {
+//              static const double HALF = 0.5;
+//              vDSP_vsmulD(ctx->temp_lines[weightType], 1, &HALF, ctx->temp_lines[weightType], 1, ctx->self->ns_);
+//              vvtanh(ctx->temp_lines[weightType], ctx->temp_lines[weightType], &ctx->self->ns_);
+//              vDSP_vsmsaD(ctx->temp_lines[weightType], 1, &HALF, &HALF, ctx->temp_lines[weightType], 1, ctx->self->ns_);
+              FuncInplace<FFunc>(ctx->self->ns_, ctx->temp_lines[weightType]);
+          }
+#if HAS_GCD
+      });
+#else
+      }
+#endif
 
     // Apply forget gate to state.
     MultiplyVectorsInPlace(ns_, temp_lines[GF1], curr_state);
@@ -380,9 +386,9 @@ void LSTM::Forward(bool debug, const NetworkIO& input,
         }
       }
     }
-    MultiplyAccumulate(ns_, temp_lines[CI], temp_lines[GI], curr_state);
+    MultiplyAccumulate(ns_, temp_lines[CI], temp_lines[GI], curr_state, scratchVec);
     // Clip curr_state to a sane range.
-    ClipVector<double>(ns_, -kStateClip, kStateClip, curr_state);
+    ClipVector(ns_, -kStateClip, kStateClip, curr_state.get());
     if (IsTraining()) {
       // Save the gate node values.
       node_values_[CI].WriteTimeStep(t, temp_lines[CI]);
@@ -391,7 +397,12 @@ void LSTM::Forward(bool debug, const NetworkIO& input,
       node_values_[GO].WriteTimeStep(t, temp_lines[GO]);
       if (Is2D()) node_values_[GFS].WriteTimeStep(t, temp_lines[GFS]);
     }
+#if USE_ACCELERATE && false
+     vvtanh(scratchVec, curr_state, &ns_);
+     vDSP_vmulD(scratchVec, 1, temp_lines[GO], 1, curr_output, 1, ns_);
+#else
     FuncMultiply<HFunc>(curr_state, temp_lines[GO], ns_, curr_output);
+#endif
     if (IsTraining()) state_.WriteTimeStep(t, curr_state);
     if (softmax_ != nullptr) {
       if (input.int_mode()) {
@@ -573,59 +584,80 @@ bool LSTM::Backward(bool debug, const NetworkIO& fwd_deltas,
       tprintf("\n");
     }
 #endif
+      
+      auto& gate_errors_CI = gate_errors[CI];
+      auto& sourceerr_temps_CI = sourceerr_temps[CI];
+      auto& gate_errors_t_CI = gate_errors_t[CI];
+      
+      auto& gate_errors_GI = gate_errors[GI];
+      auto& sourceerr_temps_GI = sourceerr_temps[GI];
+      auto& gate_errors_t_GI = gate_errors_t[GI];
+      
+      auto& gate_errors_GF1 = gate_errors[GF1];
+      auto& sourceerr_temps_GF1 = sourceerr_temps[GF1];
+      auto& gate_errors_t_GF1 = gate_errors_t[GF1];
+      
+      auto& gate_errors_GFS = gate_errors[GFS];
+      auto& sourceerr_temps_GFS = sourceerr_temps[GFS];
+      auto& gate_errors_t_GFS = gate_errors_t[GFS];
+      
+      auto& gate_errors_GO = gate_errors[GO];
+      auto& sourceerr_temps_GO = sourceerr_temps[GO];
+      auto& gate_errors_t_GO = gate_errors_t[GO];
+
     // Matrix multiply to get the source errors.
-    PARALLEL_IF_OPENMP(GFS)
+//    PARALLEL_IF_OPENMP(GFS)
 
     // Cell inputs.
     node_values_[CI].FuncMultiply3<GPrime>(t, node_values_[GI], t,
-                                           curr_stateerr, gate_errors[CI]);
-    ClipVector(ns_, -kErrClip, kErrClip, gate_errors[CI].get());
-    gate_weights_[CI].VectorDotMatrix(gate_errors[CI], sourceerr_temps[CI]);
-    gate_errors_t[CI].get()->WriteStrided(t, gate_errors[CI]);
+                                           curr_stateerr, gate_errors_CI);
+    ClipVector(ns_, -kErrClip, kErrClip, gate_errors_CI.get());
+    gate_weights_[CI].VectorDotMatrix(gate_errors_CI, sourceerr_temps_CI);
+    gate_errors_t_CI.get()->WriteStrided(t, gate_errors_CI);
 
-    SECTION_IF_OPENMP
+//    SECTION_IF_OPENMP
     // Input Gates.
     node_values_[GI].FuncMultiply3<FPrime>(t, node_values_[CI], t,
-                                           curr_stateerr, gate_errors[GI]);
-    ClipVector(ns_, -kErrClip, kErrClip, gate_errors[GI].get());
-    gate_weights_[GI].VectorDotMatrix(gate_errors[GI], sourceerr_temps[GI]);
-    gate_errors_t[GI].get()->WriteStrided(t, gate_errors[GI]);
+                                           curr_stateerr, gate_errors_GI);
+    ClipVector(ns_, -kErrClip, kErrClip, gate_errors_GI.get());
+    gate_weights_[GI].VectorDotMatrix(gate_errors_GI, sourceerr_temps_GI);
+    gate_errors_t_GI.get()->WriteStrided(t, gate_errors_GI);
 
-    SECTION_IF_OPENMP
+//    SECTION_IF_OPENMP
     // 1-D forget Gates.
     if (t > 0) {
       node_values_[GF1].FuncMultiply3<FPrime>(t, state_, t - 1, curr_stateerr,
-                                              gate_errors[GF1]);
-      ClipVector(ns_, -kErrClip, kErrClip, gate_errors[GF1].get());
-      gate_weights_[GF1].VectorDotMatrix(gate_errors[GF1],
-                                         sourceerr_temps[GF1]);
+                                              gate_errors_GF1);
+      ClipVector(ns_, -kErrClip, kErrClip, gate_errors_GF1.get());
+      gate_weights_[GF1].VectorDotMatrix(gate_errors_GF1,
+                                         sourceerr_temps_GF1);
     } else {
-      memset(gate_errors[GF1], 0, ns_ * sizeof(gate_errors[GF1][0]));
-      memset(sourceerr_temps[GF1], 0, na_ * sizeof(*sourceerr_temps[GF1]));
+      memset(gate_errors_GF1, 0, ns_ * sizeof(gate_errors_GF1[0]));
+      memset(sourceerr_temps_GF1, 0, na_ * sizeof(*sourceerr_temps_GF1));
     }
-    gate_errors_t[GF1].get()->WriteStrided(t, gate_errors[GF1]);
+    gate_errors_t_GF1.get()->WriteStrided(t, gate_errors_GF1);
 
     // 2-D forget Gates.
     if (up_pos >= 0) {
       node_values_[GFS].FuncMultiply3<FPrime>(t, state_, up_pos, curr_stateerr,
-                                              gate_errors[GFS]);
-      ClipVector(ns_, -kErrClip, kErrClip, gate_errors[GFS].get());
-      gate_weights_[GFS].VectorDotMatrix(gate_errors[GFS],
-                                         sourceerr_temps[GFS]);
+                                              gate_errors_GFS);
+      ClipVector(ns_, -kErrClip, kErrClip, gate_errors_GFS.get());
+      gate_weights_[GFS].VectorDotMatrix(gate_errors_GFS,
+                                         sourceerr_temps_GF1);
     } else {
-      memset(gate_errors[GFS], 0, ns_ * sizeof(gate_errors[GFS][0]));
-      memset(sourceerr_temps[GFS], 0, na_ * sizeof(*sourceerr_temps[GFS]));
+      memset(gate_errors_GFS, 0, ns_ * sizeof(gate_errors_GFS[0]));
+      memset(sourceerr_temps_GFS, 0, na_ * sizeof(*sourceerr_temps_GFS));
     }
-    if (Is2D()) gate_errors_t[GFS].get()->WriteStrided(t, gate_errors[GFS]);
+    if (Is2D()) gate_errors_t_GFS.get()->WriteStrided(t, gate_errors_GFS);
 
-    SECTION_IF_OPENMP
+//    SECTION_IF_OPENMP
     // Output gates.
     state_.Func2Multiply3<HFunc, FPrime>(node_values_[GO], t, outputerr,
-                                         gate_errors[GO]);
-    ClipVector(ns_, -kErrClip, kErrClip, gate_errors[GO].get());
-    gate_weights_[GO].VectorDotMatrix(gate_errors[GO], sourceerr_temps[GO]);
-    gate_errors_t[GO].get()->WriteStrided(t, gate_errors[GO]);
-    END_PARALLEL_IF_OPENMP
+                                         gate_errors_GO);
+    ClipVector(ns_, -kErrClip, kErrClip, gate_errors_GO.get());
+    gate_weights_[GO].VectorDotMatrix(gate_errors_GO, sourceerr_temps_GO);
+    gate_errors_t_GO.get()->WriteStrided(t, gate_errors_GO);
+//    END_PARALLEL_IF_OPENMP
 
     SumVectors(na_, sourceerr_temps[CI], sourceerr_temps[GI],
                sourceerr_temps[GF1], sourceerr_temps[GO], sourceerr_temps[GFS],

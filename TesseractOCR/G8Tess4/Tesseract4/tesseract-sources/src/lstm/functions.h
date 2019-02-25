@@ -31,6 +31,16 @@
 #undef _OPENMP  // Disable open mp to get the outputs in sync.
 #endif
 
+#if __APPLE__
+#define USE_ACCELERATE 1
+#else
+#define USE_ACCELERATE 0
+#endif
+
+#if USE_ACCELERATE
+#include <Accelerate/Accelerate.h>
+#endif
+
 namespace tesseract {
 
 // Size of static tables.
@@ -158,6 +168,7 @@ inline void FuncMultiply(const double* u, const double* v, int n, double* out) {
     out[i] = f(u[i]) * v[i];
   }
 }
+    
 // Applies the Softmax function in-place to inout, of size n.
 template <typename T>
 inline void SoftmaxInPlace(int n, T* inout) {
@@ -194,15 +205,24 @@ inline void AccumulateVector(int n, const double* src, double* dest) {
 
 // Multiplies n values of inout in-place element-wise by the given src vector.
 inline void MultiplyVectorsInPlace(int n, const double* src, double* inout) {
-  for (int i = 0; i < n; ++i) inout[i] *= src[i];
+#if USE_ACCELERATE
+    vDSP_vmulD(src, 1, inout, 1, inout, 1, n);
+#else
+    for (int i = 0; i < n; ++i) inout[i] *= src[i];
+#endif
 }
 
 // Multiplies n values of u by v, element-wise, accumulating to out.
 inline void MultiplyAccumulate(int n, const double* u, const double* v,
-                               double* out) {
+                               double* out, double* scratch) {
+#if USE_ACCELERATE
+    vDSP_vmulD(u, 1, v, 1, scratch, 1, n);
+    vDSP_vaddD(scratch, 1, out, 1, out, 1, n);
+#else
   for (int i = 0; i < n; i++) {
     out[i] += u[i] * v[i];
   }
+#endif
 }
 
 // Sums the given 5 n-vectors putting the result into sum.
@@ -224,6 +244,14 @@ inline void ZeroVector(int n, T* vec) {
 template <typename T>
 inline void ClipVector(int n, T lower, T upper, T* vec) {
   for (int i = 0; i < n; ++i) vec[i] = ClipToRange(vec[i], lower, upper);
+}
+    
+inline void ClipVector(int n, double lower, double upper, double* vec) {
+#if USE_ACCELERATE
+    vDSP_vclipD(vec, 1, &lower, &upper, vec, 1, n);
+#else
+    ClipVector<double>(n, lower, upper, vec);
+#endif
 }
 
 // Converts the given n-vector to a binary encoding of the maximum value,
