@@ -283,6 +283,10 @@ extern NSInteger const kG8MaxCredibleResolution;
  */
 - (instancetype)init;
 
+
+- (instancetype)initWithLanguage:(NSString *)language
+                absoluteDataPath:(NSString *)datapath;
+
 /**
  *  Initialize Tesseract with the provided language.
  *

@@ -296,6 +296,9 @@ extern NSInteger const kG8MaxCredibleResolution;
  */
 - (instancetype)initWithLanguage:(NSString*)language;
 
+
+- (instancetype)initWithLanguage:(NSString *)language
+                absoluteDataPath:(NSString *)datapath;
 /**
  *  Initialize Tesseract with the provided language and engine mode.
  *

@@ -88,6 +88,17 @@ namespace tesseract {
     return [self initWithLanguage:nil];
 }
 
+- (instancetype)initWithLanguage:(NSString *)language
+                absoluteDataPath:(NSString *)datapath
+{
+    self = [self initWithLanguage:language
+                 configDictionary:nil
+                  configFileNames:nil
+                 absoluteDataPath:datapath
+                       engineMode:G8OCREngineModeBest];
+    return self;
+}
+
 - (instancetype)initWithLanguage:(NSString*)language
 {
     return [self initWithLanguage:language

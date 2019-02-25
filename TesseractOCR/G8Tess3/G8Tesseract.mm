@@ -93,6 +93,31 @@ namespace tesseract {
     return [self initWithLanguage:language configDictionary:nil configFileNames:nil cachesRelatedDataPath:nil engineMode:G8OCREngineModeTesseractOnly];
 }
 
+- (instancetype)initWithLanguage:(NSString *)language
+                absoluteDataPath:(NSString *)datapath
+{
+    
+    NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+    [parameters setObject:@"1" forKey:@"tessedit_parallelize"];
+    [parameters setObject:@"T" forKey:@"tessedit_enable_dict_correction"];
+    [parameters setObject:@"T" forKey:@"tessedit_prefer_joined_punct"];
+    [parameters setObject:@"T" forKey:@"rej_trust_doc_dawg"];
+    [parameters setObject:@"T" forKey:@"rej_1Il_use_dict_word"];
+    [parameters setObject:@"F" forKey:@"rej_1Il_trust_permuter_type"];
+    [parameters setObject:@"T" forKey:@"rej_use_sensible_wd"];
+    [parameters setObject:@"T" forKey:@"rej_alphas_in_number_perm"];
+    [parameters setObject:@"F" forKey:@"unlv_tilde_crunching"];
+    [parameters setObject:@"ﬀﬁﬂﬃﬄﬅﬆ" forKey:@"tessedit_char_blacklist"];
+
+    self = [self initWithLanguage:language
+                 configDictionary:parameters
+                  configFileNames:nil
+                 absoluteDataPath:datapath
+                       engineMode:G8OCREngineModeTesseractOnly];
+    
+    return self;
+}
+
 - (instancetype)initWithLanguage:(NSString *)language engineMode:(G8OCREngineMode)engineMode
 {
     return [self initWithLanguage:language configDictionary:nil configFileNames:nil cachesRelatedDataPath:nil engineMode:engineMode];
