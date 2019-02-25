@@ -1568,7 +1568,7 @@
 		08D4F53F21089D6A00BEB3D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "doo GmbH";
 				TargetAttributes = {
 					08395AE52215790B00897C50 = {
