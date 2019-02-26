@@ -1,0 +1,11 @@
+prefix=/Users/sebastianhusche/Downloads/libtiff-ios-master/tiff-4.0.10/x86_64-apple-darwin
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libtiff
+Description:  Tag Image File Format (TIFF) library.
+Version: 4.0.10
+Libs: -L${libdir} -ltiff
+Libs.private: -ljpeg -lz 
+Cflags: -I${includedir}
