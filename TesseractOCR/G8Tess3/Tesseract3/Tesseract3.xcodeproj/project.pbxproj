@@ -831,9 +831,6 @@
 		085A515D2216C2A000183FD3 /* dawg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dawg.cpp; sourceTree = "<group>"; };
 		085A515E2216C2A000183FD3 /* trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trie.h; sourceTree = "<group>"; };
 		08D4F54721089D6A00BEB3D1 /* libtesseract.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtesseract.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		08D4FA612108A07700BEB3D1 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = Tesseract/libjpeg.a; sourceTree = "<group>"; };
-		08D4FA622108A07700BEB3D1 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtiff.a; path = Tesseract/libtiff.a; sourceTree = "<group>"; };
-		08D4FA632108A07700BEB3D1 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = Tesseract/libpng.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1535,9 +1532,6 @@
 		08D4FA5A2108A01B00BEB3D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				08D4FA612108A07700BEB3D1 /* libjpeg.a */,
-				08D4FA632108A07700BEB3D1 /* libpng.a */,
-				08D4FA622108A07700BEB3D1 /* libtiff.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -433,7 +433,6 @@
 		085A536A2216C33F00183FD3 /* dwacomb.2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dwacomb.2.c; sourceTree = "<group>"; };
 		085A536B2216C33F00183FD3 /* coloring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coloring.c; sourceTree = "<group>"; };
 		085A536C2216C33F00183FD3 /* bmf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bmf.c; sourceTree = "<group>"; };
-		087F95692220100B00EF06BE /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ../libs/dependencies/lib/libjpeg.a; sourceTree = "<group>"; };
 		087F956B222010EA00EF06BE /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = libs/dependencies/lib/libjpeg.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -709,7 +708,6 @@
 				084736AF2223EC7C00DCCBAF /* libpng.a */,
 				084736B02223EC7C00DCCBAF /* libtiff.a */,
 				087F956B222010EA00EF06BE /* libjpeg.a */,
-				087F95692220100B00EF06BE /* libjpeg.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
