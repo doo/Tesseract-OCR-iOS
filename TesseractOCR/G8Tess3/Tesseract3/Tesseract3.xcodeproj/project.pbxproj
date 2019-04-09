@@ -1562,7 +1562,7 @@
 		08D4F53F21089D6A00BEB3D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "doo GmbH";
 				TargetAttributes = {
 					08395AE52215790B00897C50 = {
@@ -1579,6 +1579,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 08D4F53E21089D6A00BEB3D1;
 			productRefGroup = 08D4F54821089D6A00BEB3D1 /* Products */;
@@ -2010,7 +2011,6 @@
 		08D4F55121089D6A00BEB3D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_LINK_OBJC_RUNTIME = YES;
 				CLANG_MODULES_AUTOLINK = YES;
@@ -2043,7 +2043,6 @@
 		08D4F55221089D6A00BEB3D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_LINK_OBJC_RUNTIME = YES;
 				CLANG_MODULES_AUTOLINK = YES;
