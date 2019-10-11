@@ -509,6 +509,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TesseractOCR/lib",
 				);
+				LLVM_LTO = YES_THIN;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = "-fembed-bitcode-marker";
@@ -573,6 +574,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TesseractOCR/lib",
 				);
+				LLVM_LTO = YES_THIN;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = "-fembed-bitcode";
@@ -637,6 +639,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TesseractOCR/lib",
 				);
+				LLVM_LTO = YES_THIN;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = "-fembed-bitcode";
@@ -700,6 +703,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TesseractOCR/lib",
 				);
+				LLVM_LTO = YES_THIN;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = "-fembed-bitcode-marker";
@@ -764,6 +768,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TesseractOCR/lib",
 				);
+				LLVM_LTO = YES_THIN;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = "-fembed-bitcode";
@@ -828,6 +833,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TesseractOCR/lib",
 				);
+				LLVM_LTO = YES_THIN;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_CFLAGS = "-fembed-bitcode";

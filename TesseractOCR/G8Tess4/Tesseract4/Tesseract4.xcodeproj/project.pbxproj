@@ -1900,6 +1900,7 @@
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/PrefixHeader.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
+				LLVM_LTO = YES_THIN;
 				OTHER_CFLAGS = "-fembed-bitcode-marker";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
@@ -1932,6 +1933,7 @@
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/PrefixHeader.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
+				LLVM_LTO = YES_THIN;
 				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
