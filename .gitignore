@@ -68,3 +68,4 @@ crashlytics.properties
 crashlytics-build.properties
 
 .DS_Store
+/TesseractOCR/.DS_Store
