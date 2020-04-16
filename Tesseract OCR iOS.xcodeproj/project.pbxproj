@@ -695,8 +695,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/TesseractOCR/G8Tess4/**",
-					"$(PROJECT_DIR)/TesseractOCR/Leptonica/**",
+					"$(PROJECT_DIR)/TesseractOCR/G8Tess4/Tesseract4/tesseract-sources/src/**",
+					"$(PROJECT_DIR)/TesseractOCR/G8Tess4/Tesseract4/config",
+					"$(PROJECT_DIR)/TesseractOCR/Leptonica/leptonica-sources/src",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -760,8 +761,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/TesseractOCR/G8Tess4/**",
-					"$(PROJECT_DIR)/TesseractOCR/Leptonica/**",
+					"$(PROJECT_DIR)/TesseractOCR/G8Tess4/Tesseract4/tesseract-sources/src/**",
+					"$(PROJECT_DIR)/TesseractOCR/G8Tess4/Tesseract4/config",
+					"$(PROJECT_DIR)/TesseractOCR/Leptonica/leptonica-sources/src",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -825,8 +827,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/TesseractOCR/G8Tess4/**",
-					"$(PROJECT_DIR)/TesseractOCR/Leptonica/**",
+					"$(PROJECT_DIR)/TesseractOCR/G8Tess4/Tesseract4/tesseract-sources/src/**",
+					"$(PROJECT_DIR)/TesseractOCR/G8Tess4/Tesseract4/config",
+					"$(PROJECT_DIR)/TesseractOCR/Leptonica/leptonica-sources/src",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
