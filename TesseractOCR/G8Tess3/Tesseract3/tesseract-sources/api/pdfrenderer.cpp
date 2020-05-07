@@ -665,7 +665,7 @@ bool TessPDFRenderer::BeginDocumentHandler() {
   if (n >= sizeof(buf)) return false;
   AppendPDFObject(buf);
 
-  n = snprintf(buf, sizeof(buf), "%s/pdf.ttf", datadir_);
+  n = snprintf(buf, sizeof(buf), "%s/pdf.dat", datadir_);
   if (n >= sizeof(buf)) return false;
   FILE *fp = fopen(buf, "rb");
   if (!fp) {
