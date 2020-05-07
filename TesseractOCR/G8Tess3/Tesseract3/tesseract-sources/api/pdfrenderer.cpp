@@ -665,12 +665,17 @@ bool TessPDFRenderer::BeginDocumentHandler() {
   if (n >= sizeof(buf)) return false;
   AppendPDFObject(buf);
 
-  n = snprintf(buf, sizeof(buf), "%s/pdf.ttf", datadir_);
+  n = snprintf(buf, sizeof(buf), "%s/pdf.dat", datadir_);
   if (n >= sizeof(buf)) return false;
   FILE *fp = fopen(buf, "rb");
   if (!fp) {
-    tprintf("Can not open file \"%s\"!\n", buf);
-    return false;
+    n = snprintf(buf, sizeof(buf), "%s/pdf.ttf", datadir_);
+    if (n >= sizeof(buf)) return false;
+    fp = fopen(buf, "rb");
+    if (!fp) {
+      tprintf("Can not open file \"%s\"!\n", buf);
+      return false;
+    }
   }
   fseek(fp, 0, SEEK_END);
   long int size = ftell(fp);
