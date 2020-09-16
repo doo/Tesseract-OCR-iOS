@@ -21,6 +21,482 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		083F00292512653100D9EF7C /* Tesseract4_fw.h in Headers */ = {isa = PBXBuildFile; fileRef = 083F00272512653100D9EF7C /* Tesseract4_fw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083F0035251265F600D9EF7C /* ltrresultiterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBAF2448632500FDF310 /* ltrresultiterator.cpp */; };
+		083F0036251265F600D9EF7C /* tesseractmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC442448632600FDF310 /* tesseractmain.cpp */; };
+		083F0037251265F600D9EF7C /* cjkpitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAE12448632500FDF310 /* cjkpitch.cpp */; };
+		083F0038251265F600D9EF7C /* tessvars.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB9D2448632500FDF310 /* tessvars.cpp */; };
+		083F0039251265F600D9EF7C /* reject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBA92448632500FDF310 /* reject.cpp */; };
+		083F003A251265F600D9EF7C /* imagedata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC722448632600FDF310 /* imagedata.cpp */; };
+		083F003B251265F600D9EF7C /* float2int.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB482448632500FDF310 /* float2int.cpp */; };
+		083F003C251265F600D9EF7C /* mf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB4D2448632500FDF310 /* mf.cpp */; };
+		083F003D251265F600D9EF7C /* tablerecog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAF72448632500FDF310 /* tablerecog.cpp */; };
+		083F003E251265F600D9EF7C /* linefind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CADD2448632500FDF310 /* linefind.cpp */; };
+		083F003F251265F600D9EF7C /* trainingsampleset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB312448632500FDF310 /* trainingsampleset.cpp */; };
+		083F0040251265F600D9EF7C /* bbgrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAD12448632500FDF310 /* bbgrid.cpp */; };
+		083F0041251265F600D9EF7C /* quadlsq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC8D2448632600FDF310 /* quadlsq.cpp */; };
+		083F0042251265F600D9EF7C /* unicharcompress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBF32448632600FDF310 /* unicharcompress.cpp */; };
+		083F0043251265F600D9EF7C /* osdetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBBA2448632500FDF310 /* osdetect.cpp */; };
+		083F0044251265F600D9EF7C /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC872448632600FDF310 /* matrix.cpp */; };
+		083F0045251265F600D9EF7C /* altorenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC412448632600FDF310 /* altorenderer.cpp */; };
+		083F0046251265F600D9EF7C /* associate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CA9D2448632500FDF310 /* associate.cpp */; };
+		083F0047251265F600D9EF7C /* underlin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAF22448632500FDF310 /* underlin.cpp */; };
+		083F0048251265F600D9EF7C /* intsimdmatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC2F2448632600FDF310 /* intsimdmatrix.cpp */; };
+		083F0049251265F600D9EF7C /* pgedit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBA22448632500FDF310 /* pgedit.cpp */; };
+		083F004A251265F600D9EF7C /* callcpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC252448632600FDF310 /* callcpp.cpp */; };
+		083F004B251265F600D9EF7C /* ccnontextdetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAC72448632500FDF310 /* ccnontextdetect.cpp */; };
+		083F004C251265F600D9EF7C /* wordstrboxrenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC3F2448632600FDF310 /* wordstrboxrenderer.cpp */; };
+		083F004D251265F600D9EF7C /* seam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC512448632600FDF310 /* seam.cpp */; };
+		083F004E251265F600D9EF7C /* recogtraining.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBB82448632500FDF310 /* recogtraining.cpp */; };
+		083F004F251265F600D9EF7C /* recodebeam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCDA2448632600FDF310 /* recodebeam.cpp */; };
+		083F0050251265F600D9EF7C /* drawedg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CADA2448632500FDF310 /* drawedg.cpp */; };
+		083F0051251265F600D9EF7C /* paramsd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBC72448632500FDF310 /* paramsd.cpp */; };
+		083F0052251265F600D9EF7C /* quspline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC8C2448632600FDF310 /* quspline.cpp */; };
+		083F0053251265F600D9EF7C /* sortflts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAC52448632500FDF310 /* sortflts.cpp */; };
+		083F0054251265F600D9EF7C /* rejctmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC9B2448632600FDF310 /* rejctmap.cpp */; };
+		083F0055251265F600D9EF7C /* drawtord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAD02448632500FDF310 /* drawtord.cpp */; };
+		083F0056251265F600D9EF7C /* tovars.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAEC2448632500FDF310 /* tovars.cpp */; };
+		083F0057251265F600D9EF7C /* gradechop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CA9E2448632500FDF310 /* gradechop.cpp */; };
+		083F0058251265F600D9EF7C /* lstmrecognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCD62448632600FDF310 /* lstmrecognizer.cpp */; };
+		083F0059251265F600D9EF7C /* split.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC5E2448632600FDF310 /* split.cpp */; };
+		083F005A251265F600D9EF7C /* mfx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB222448632500FDF310 /* mfx.cpp */; };
+		083F005B251265F600D9EF7C /* structures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC222448632600FDF310 /* structures.cpp */; };
+		083F005C251265F600D9EF7C /* maxpool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCCB2448632600FDF310 /* maxpool.cpp */; };
+		083F005D251265F600D9EF7C /* simddetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC302448632600FDF310 /* simddetect.cpp */; };
+		083F005E251265F600D9EF7C /* fixspace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBA62448632500FDF310 /* fixspace.cpp */; };
+		083F005F251265F600D9EF7C /* control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBBE2448632500FDF310 /* control.cpp */; };
+		083F0060251265F600D9EF7C /* adaptmatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB342448632500FDF310 /* adaptmatch.cpp */; };
+		083F0061251265F600D9EF7C /* scanutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBEB2448632600FDF310 /* scanutils.cpp */; };
+		083F0062251265F600D9EF7C /* clusttool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB472448632500FDF310 /* clusttool.cpp */; };
+		083F0063251265F600D9EF7C /* permdawg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC9D2448632600FDF310 /* permdawg.cpp */; };
+		083F0064251265F600D9EF7C /* fixxht.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBBB2448632500FDF310 /* fixxht.cpp */; };
+		083F0065251265F600D9EF7C /* ccstruct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC6A2448632600FDF310 /* ccstruct.cpp */; };
+		083F0066251265F600D9EF7C /* blobbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC962448632600FDF310 /* blobbox.cpp */; };
+		083F0067251265F600D9EF7C /* tessclassifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB3B2448632500FDF310 /* tessclassifier.cpp */; };
+		083F0068251265F700D9EF7C /* output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBB32448632500FDF310 /* output.cpp */; };
+		083F0069251265F700D9EF7C /* pageiterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBC02448632500FDF310 /* pageiterator.cpp */; };
+		083F006A251265F700D9EF7C /* params_training_featdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC992448632600FDF310 /* params_training_featdef.cpp */; };
+		083F006B251265F700D9EF7C /* findseam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAA42448632500FDF310 /* findseam.cpp */; };
+		083F006C251265F700D9EF7C /* blobgrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAD52448632500FDF310 /* blobgrid.cpp */; };
+		083F006D251265F700D9EF7C /* tablefind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB112448632500FDF310 /* tablefind.cpp */; };
+		083F006E251265F700D9EF7C /* svutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CDFA2448638900FDF310 /* svutil.cpp */; };
+		083F006F251265F700D9EF7C /* dppoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC8F2448632600FDF310 /* dppoint.cpp */; };
+		083F0070251265F700D9EF7C /* superscript.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBA52448632500FDF310 /* superscript.cpp */; };
+		083F0071251265F700D9EF7C /* stepblob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC522448632600FDF310 /* stepblob.cpp */; };
+		083F0072251265F700D9EF7C /* dotproduct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC3A2448632600FDF310 /* dotproduct.cpp */; };
+		083F0073251265F700D9EF7C /* blobclass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB3D2448632500FDF310 /* blobclass.cpp */; };
+		083F0074251265F700D9EF7C /* adaptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBC52448632500FDF310 /* adaptions.cpp */; };
+		083F0075251265F700D9EF7C /* convolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCB22448632600FDF310 /* convolve.cpp */; };
+		083F0076251265F700D9EF7C /* fullyconnected.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCAE2448632600FDF310 /* fullyconnected.cpp */; };
+		083F0077251265F700D9EF7C /* chopper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAA02448632500FDF310 /* chopper.cpp */; };
+		083F0078251265F700D9EF7C /* intproto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB542448632500FDF310 /* intproto.cpp */; };
+		083F0079251265F700D9EF7C /* pdblock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC682448632600FDF310 /* pdblock.cpp */; };
+		083F007A251265F700D9EF7C /* dict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCA32448632600FDF310 /* dict.cpp */; };
+		083F007B251265F700D9EF7C /* detlinefit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC942448632600FDF310 /* detlinefit.cpp */; };
+		083F007C251265F700D9EF7C /* coutln.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC982448632600FDF310 /* coutln.cpp */; };
+		083F007D251265F700D9EF7C /* intfeaturemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB2D2448632500FDF310 /* intfeaturemap.cpp */; };
+		083F007E251265F700D9EF7C /* normalis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC662448632600FDF310 /* normalis.cpp */; };
+		083F007F251265F700D9EF7C /* protos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB382448632500FDF310 /* protos.cpp */; };
+		083F0080251265F700D9EF7C /* alignedblob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB012448632500FDF310 /* alignedblob.cpp */; };
+		083F0081251265F700D9EF7C /* colpartitionset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAE82448632500FDF310 /* colpartitionset.cpp */; };
+		083F0082251265F700D9EF7C /* dawg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCAA2448632600FDF310 /* dawg.cpp */; };
+		083F0083251265F700D9EF7C /* plotedges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAAE2448632500FDF310 /* plotedges.cpp */; };
+		083F0084251265F700D9EF7C /* lm_state.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAAD2448632500FDF310 /* lm_state.cpp */; };
+		083F0085251265F700D9EF7C /* elst2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBF92448632600FDF310 /* elst2.cpp */; };
+		083F0086251265F700D9EF7C /* resultiterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBB12448632500FDF310 /* resultiterator.cpp */; };
+		083F0087251265F700D9EF7C /* ocrfeatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB412448632500FDF310 /* ocrfeatures.cpp */; };
+		083F0088251265F700D9EF7C /* unichar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBE02448632600FDF310 /* unichar.cpp */; };
+		083F0089251265F700D9EF7C /* wordseg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAE52448632500FDF310 /* wordseg.cpp */; };
+		083F008A251265F700D9EF7C /* stridemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCCF2448632600FDF310 /* stridemap.cpp */; };
+		083F008B251265F700D9EF7C /* fpchop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CACD2448632500FDF310 /* fpchop.cpp */; };
+		083F008C251265F700D9EF7C /* statistc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC572448632600FDF310 /* statistc.cpp */; };
+		083F008D251265F700D9EF7C /* universalambigs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBF72448632600FDF310 /* universalambigs.cpp */; };
+		083F008E251265F700D9EF7C /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCAD2448632600FDF310 /* network.cpp */; };
+		083F008F251265F700D9EF7C /* colpartitiongrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB052448632500FDF310 /* colpartitiongrid.cpp */; };
+		083F0090251265F700D9EF7C /* intfx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB392448632500FDF310 /* intfx.cpp */; };
+		083F0091251265F700D9EF7C /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCD72448632600FDF310 /* functions.cpp */; };
+		083F0092251265F700D9EF7C /* reconfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCC82448632600FDF310 /* reconfig.cpp */; };
+		083F0093251265F700D9EF7C /* outlines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAA22448632500FDF310 /* outlines.cpp */; };
+		083F0094251265F700D9EF7C /* makerow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAEA2448632500FDF310 /* makerow.cpp */; };
+		083F0095251265F700D9EF7C /* fileio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBED2448632600FDF310 /* fileio.cpp */; };
+		083F0096251265F700D9EF7C /* indexmapbidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC082448632600FDF310 /* indexmapbidi.cpp */; };
+		083F0097251265F700D9EF7C /* colfind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAE02448632500FDF310 /* colfind.cpp */; };
+		083F0098251265F700D9EF7C /* tordmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAFC2448632500FDF310 /* tordmain.cpp */; };
+		083F0099251265F700D9EF7C /* renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC492448632600FDF310 /* renderer.cpp */; };
+		083F009A251265F700D9EF7C /* unicharset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBD92448632500FDF310 /* unicharset.cpp */; };
+		083F009B251265F700D9EF7C /* docqual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBB52448632500FDF310 /* docqual.cpp */; };
+		083F009C251265F700D9EF7C /* blkocc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB0B2448632500FDF310 /* blkocc.cpp */; };
+		083F009D251265F700D9EF7C /* edgloop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CADE2448632500FDF310 /* edgloop.cpp */; };
+		083F009E251265F700D9EF7C /* boxread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC5D2448632600FDF310 /* boxread.cpp */; };
+		083F009F251265F700D9EF7C /* blamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC902448632600FDF310 /* blamer.cpp */; };
+		083F00A0251265F700D9EF7C /* workingpartset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAEE2448632500FDF310 /* workingpartset.cpp */; };
+		083F00A1251265F700D9EF7C /* tfacepp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBC82448632500FDF310 /* tfacepp.cpp */; };
+		083F00A2251265F700D9EF7C /* lstm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCC12448632600FDF310 /* lstm.cpp */; };
+		083F00A3251265F700D9EF7C /* language_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAB12448632500FDF310 /* language_model.cpp */; };
+		083F00A4251265F700D9EF7C /* pagesegmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBA12448632500FDF310 /* pagesegmain.cpp */; };
+		083F00A5251265F700D9EF7C /* imagefind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAE32448632500FDF310 /* imagefind.cpp */; };
+		083F00A6251265F700D9EF7C /* strngs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC002448632600FDF310 /* strngs.cpp */; };
+		083F00A7251265F700D9EF7C /* equationdetectbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB042448632500FDF310 /* equationdetectbase.cpp */; };
+		083F00A8251265F800D9EF7C /* oldbasel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB0A2448632500FDF310 /* oldbasel.cpp */; };
+		083F00A9251265F800D9EF7C /* tabvector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB0E2448632500FDF310 /* tabvector.cpp */; };
+		083F00AA251265F800D9EF7C /* tface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAA32448632500FDF310 /* tface.cpp */; };
+		083F00AB251265F800D9EF7C /* mod128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC5F2448632600FDF310 /* mod128.cpp */; };
+		083F00AC251265F800D9EF7C /* tospace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CADF2448632500FDF310 /* tospace.cpp */; };
+		083F00AD251265F800D9EF7C /* mutableiterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBCD2448632500FDF310 /* mutableiterator.cpp */; };
+		083F00AE251265F800D9EF7C /* tessbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBB42448632500FDF310 /* tessbox.cpp */; };
+		083F00AF251265F800D9EF7C /* normmatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB4E2448632500FDF310 /* normmatch.cpp */; };
+		083F00B0251265F800D9EF7C /* cluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB502448632500FDF310 /* cluster.cpp */; };
+		083F00B1251265F800D9EF7C /* adaptive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB572448632500FDF310 /* adaptive.cpp */; };
+		083F00B2251265F800D9EF7C /* cutoffs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB442448632500FDF310 /* cutoffs.cpp */; };
+		083F00B3251265F800D9EF7C /* blread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC622448632600FDF310 /* blread.cpp */; };
+		083F00B4251265F800D9EF7C /* elst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBE72448632600FDF310 /* elst.cpp */; };
+		083F00B5251265F800D9EF7C /* networkbuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCBD2448632600FDF310 /* networkbuilder.cpp */; };
+		083F00B6251265F800D9EF7C /* ambigs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBD72448632500FDF310 /* ambigs.cpp */; };
+		083F00B7251265F800D9EF7C /* colpartition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CACB2448632500FDF310 /* colpartition.cpp */; };
+		083F00B8251265F800D9EF7C /* clst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBEC2448632600FDF310 /* clst.cpp */; };
+		083F00B9251265F800D9EF7C /* fpoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB2A2448632500FDF310 /* fpoint.cpp */; };
+		083F00BA251265F800D9EF7C /* kdtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB562448632500FDF310 /* kdtree.cpp */; };
+		083F00BB251265F800D9EF7C /* reversed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCBF2448632600FDF310 /* reversed.cpp */; };
+		083F00BC251265F800D9EF7C /* serialis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBDD2448632500FDF310 /* serialis.cpp */; };
+		083F00BD251265F800D9EF7C /* polyaprx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC5B2448632600FDF310 /* polyaprx.cpp */; };
+		083F00BE251265F800D9EF7C /* errcode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBDE2448632500FDF310 /* errcode.cpp */; };
+		083F00BF251265F800D9EF7C /* trainingsample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB1D2448632500FDF310 /* trainingsample.cpp */; };
+		083F00C0251265F800D9EF7C /* baselinedetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAD22448632500FDF310 /* baselinedetect.cpp */; };
+		083F00C1251265F800D9EF7C /* normfeat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB492448632500FDF310 /* normfeat.cpp */; };
+		083F00C2251265F800D9EF7C /* emalloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC202448632600FDF310 /* emalloc.cpp */; };
+		083F00C3251265F800D9EF7C /* pitsync1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CADB2448632500FDF310 /* pitsync1.cpp */; };
+		083F00C4251265F800D9EF7C /* textord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAD92448632500FDF310 /* textord.cpp */; };
+		083F00C5251265F800D9EF7C /* applybox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBB92448632500FDF310 /* applybox.cpp */; };
+		083F00C6251265F800D9EF7C /* thresholder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBC22448632500FDF310 /* thresholder.cpp */; };
+		083F00C7251265F800D9EF7C /* pageres.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC4F2448632600FDF310 /* pageres.cpp */; };
+		083F00C8251265F800D9EF7C /* tessdatamanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBDB2448632500FDF310 /* tessdatamanager.cpp */; };
+		083F00C9251265F800D9EF7C /* publictypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC842448632600FDF310 /* publictypes.cpp */; };
+		083F00CA251265F800D9EF7C /* ratngs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC922448632600FDF310 /* ratngs.cpp */; };
+		083F00CB251265F800D9EF7C /* svmnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CDFD2448638A00FDF310 /* svmnode.cpp */; };
+		083F00CC251265F800D9EF7C /* otsuthr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC532448632600FDF310 /* otsuthr.cpp */; };
+		083F00CD251265F800D9EF7C /* mastertrainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB3A2448632500FDF310 /* mastertrainer.cpp */; };
+		083F00CE251265F800D9EF7C /* context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCA12448632600FDF310 /* context.cpp */; };
+		083F00CF251265F800D9EF7C /* topitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAF12448632500FDF310 /* topitch.cpp */; };
+		083F00D0251265F800D9EF7C /* dawg_cache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCA92448632600FDF310 /* dawg_cache.cpp */; };
+		083F00D1251265F800D9EF7C /* networkio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCCD2448632600FDF310 /* networkio.cpp */; };
+		083F00D2251265F800D9EF7C /* chop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAB72448632500FDF310 /* chop.cpp */; };
+		083F00D3251265F800D9EF7C /* ocrblock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC702448632600FDF310 /* ocrblock.cpp */; };
+		083F00D4251265F800D9EF7C /* oldlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC242448632600FDF310 /* oldlist.cpp */; };
+		083F00D5251265F800D9EF7C /* globaloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBE92448632600FDF310 /* globaloc.cpp */; };
+		083F00D6251265F800D9EF7C /* mfoutline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB1A2448632500FDF310 /* mfoutline.cpp */; };
+		083F00D7251265F800D9EF7C /* capi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC482448632600FDF310 /* capi.cpp */; };
+		083F00D8251265F800D9EF7C /* baseapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC402448632600FDF310 /* baseapi.cpp */; };
+		083F00D9251265F800D9EF7C /* lstmboxrenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC4A2448632600FDF310 /* lstmboxrenderer.cpp */; };
+		083F00DA251265F800D9EF7C /* tesseractclass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBC42448632500FDF310 /* tesseractclass.cpp */; };
+		083F00DB251265F800D9EF7C /* trie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCA42448632600FDF310 /* trie.cpp */; };
+		083F00DC251265F800D9EF7C /* devanagari_processing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAE72448632500FDF310 /* devanagari_processing.cpp */; };
+		083F00DD251265F800D9EF7C /* paragraphs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBCA2448632500FDF310 /* paragraphs.cpp */; };
+		083F00DE251265F800D9EF7C /* strokewidth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAC82448632500FDF310 /* strokewidth.cpp */; };
+		083F00DF251265F800D9EF7C /* featdefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB242448632500FDF310 /* featdefs.cpp */; };
+		083F00E0251265F800D9EF7C /* ocrpara.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC6F2448632600FDF310 /* ocrpara.cpp */; };
+		083F00E1251265F800D9EF7C /* lstmtrainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCBE2448632600FDF310 /* lstmtrainer.cpp */; };
+		083F00E2251265F800D9EF7C /* par_control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBAB2448632500FDF310 /* par_control.cpp */; };
+		083F00E3251265F800D9EF7C /* render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CA9B2448632500FDF310 /* render.cpp */; };
+		083F00E4251265F800D9EF7C /* linerec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBA32448632500FDF310 /* linerec.cpp */; };
+		083F00E5251265F800D9EF7C /* tessedit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBAE2448632500FDF310 /* tessedit.cpp */; };
+		083F00E6251265F800D9EF7C /* vecfuncs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC612448632600FDF310 /* vecfuncs.cpp */; };
+		083F00E7251265F900D9EF7C /* wordrec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CA992448632500FDF310 /* wordrec.cpp */; };
+		083F00E8251265F900D9EF7C /* unicharmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC022448632600FDF310 /* unicharmap.cpp */; };
+		083F00E9251265F900D9EF7C /* drawfx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAB32448632500FDF310 /* drawfx.cpp */; };
+		083F00EA251265F900D9EF7C /* mfdefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB3F2448632500FDF310 /* mfdefs.cpp */; };
+		083F00EB251265F900D9EF7C /* pithsync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAC22448632500FDF310 /* pithsync.cpp */; };
+		083F00EC251265F900D9EF7C /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCB12448632600FDF310 /* input.cpp */; };
+		083F00ED251265F900D9EF7C /* intmatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB3C2448632500FDF310 /* intmatcher.cpp */; };
+		083F00EE251265F900D9EF7C /* picofeat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB162448632500FDF310 /* picofeat.cpp */; };
+		083F00EF251265F900D9EF7C /* werdit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBBC2448632500FDF310 /* werdit.cpp */; };
+		083F00F0251265F900D9EF7C /* intfeaturedist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB4A2448632500FDF310 /* intfeaturedist.cpp */; };
+		083F00F1251265F900D9EF7C /* unicodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBFE2448632600FDF310 /* unicodes.cpp */; };
+		083F00F2251265F900D9EF7C /* params_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAA92448632500FDF310 /* params_model.cpp */; };
+		083F00F3251265F900D9EF7C /* errorcounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB352448632500FDF310 /* errorcounter.cpp */; };
+		083F00F4251265F900D9EF7C /* tabfind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAF52448632500FDF310 /* tabfind.cpp */; };
+		083F00F5251265F900D9EF7C /* scrollview.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CDFE2448638A00FDF310 /* scrollview.cpp */; };
+		083F00F6251265F900D9EF7C /* params.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC142448632600FDF310 /* params.cpp */; };
+		083F00F7251265F900D9EF7C /* ocrrow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC7D2448632600FDF310 /* ocrrow.cpp */; };
+		083F00F8251265F900D9EF7C /* boxword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC652448632600FDF310 /* boxword.cpp */; };
+		083F00F9251265F900D9EF7C /* linlsq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC972448632600FDF310 /* linlsq.cpp */; };
+		083F00FA251265F900D9EF7C /* pagewalk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBA72448632500FDF310 /* pagewalk.cpp */; };
+		083F00FB251265F900D9EF7C /* equationdetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBBD2448632500FDF310 /* equationdetect.cpp */; };
+		083F00FC251265F900D9EF7C /* ctc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCB72448632600FDF310 /* ctc.cpp */; };
+		083F00FD251265F900D9EF7C /* parallel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCB52448632600FDF310 /* parallel.cpp */; };
+		083F00FE251265F900D9EF7C /* polyblk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC552448632600FDF310 /* polyblk.cpp */; };
+		083F00FF251265F900D9EF7C /* rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC822448632600FDF310 /* rect.cpp */; };
+		083F0100251265F900D9EF7C /* sampleiterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB1F2448632500FDF310 /* sampleiterator.cpp */; };
+		083F0101251265F900D9EF7C /* mainblk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBF12448632600FDF310 /* mainblk.cpp */; };
+		083F0102251265F900D9EF7C /* blobs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC7B2448632600FDF310 /* blobs.cpp */; };
+		083F0103251265F900D9EF7C /* points.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC732448632600FDF310 /* points.cpp */; };
+		083F0104251265F900D9EF7C /* basedir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC122448632600FDF310 /* basedir.cpp */; };
+		083F0105251265F900D9EF7C /* segsearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAA52448632500FDF310 /* segsearch.cpp */; };
+		083F0106251265F900D9EF7C /* classify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB422448632500FDF310 /* classify.cpp */; };
+		083F0107251265F900D9EF7C /* outfeat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB172448632500FDF310 /* outfeat.cpp */; };
+		083F0108251265F900D9EF7C /* bitvec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC272448632600FDF310 /* bitvec.cpp */; };
+		083F0109251265F900D9EF7C /* lm_consistency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAAC2448632500FDF310 /* lm_consistency.cpp */; };
+		083F010A251265F900D9EF7C /* shapetable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB402448632500FDF310 /* shapetable.cpp */; };
+		083F010B251265F900D9EF7C /* tprintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBFF2448632600FDF310 /* tprintf.cpp */; };
+		083F010C251265F900D9EF7C /* stopper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCA22448632600FDF310 /* stopper.cpp */; };
+		083F010D251265F900D9EF7C /* hyphen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCA72448632600FDF310 /* hyphen.cpp */; };
+		083F010E251265F900D9EF7C /* wordclass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAB02448632500FDF310 /* wordclass.cpp */; };
+		083F010F251265F900D9EF7C /* intfeaturespace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB182448632500FDF310 /* intfeaturespace.cpp */; };
+		083F0110251265F900D9EF7C /* ccutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBFA2448632600FDF310 /* ccutil.cpp */; };
+		083F0111251265F900D9EF7C /* hocrrenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC472448632600FDF310 /* hocrrenderer.cpp */; };
+		083F0112251265F900D9EF7C /* pdfrenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC3C2448632600FDF310 /* pdfrenderer.cpp */; };
+		083F0113251265F900D9EF7C /* edgblob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAC12448632500FDF310 /* edgblob.cpp */; };
+		083F0114251265F900D9EF7C /* scanedg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB022448632500FDF310 /* scanedg.cpp */; };
+		083F0115251265F900D9EF7C /* pieces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAB82448632500FDF310 /* pieces.cpp */; };
+		083F0116251265F900D9EF7C /* lm_pain_points.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CA9F2448632500FDF310 /* lm_pain_points.cpp */; };
+		083F0117251265F900D9EF7C /* bitvector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CBDA2448632500FDF310 /* bitvector.cpp */; };
+		083F0118251265F900D9EF7C /* gap_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CAC42448632500FDF310 /* gap_map.cpp */; };
+		083F0119251265F900D9EF7C /* cutil_class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC282448632600FDF310 /* cutil_class.cpp */; };
+		083F011A251265F900D9EF7C /* plumbing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCB92448632600FDF310 /* plumbing.cpp */; };
+		083F011B251265F900D9EF7C /* shapeclassifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB432448632500FDF310 /* shapeclassifier.cpp */; };
+		083F011C251265F900D9EF7C /* series.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCD42448632600FDF310 /* series.cpp */; };
+		083F011D251265F900D9EF7C /* werd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC932448632600FDF310 /* werd.cpp */; };
+		083F011E251265F900D9EF7C /* weightmatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CCBB2448632600FDF310 /* weightmatrix.cpp */; };
+		083F011F251265F900D9EF7C /* textlineprojection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CB092448632500FDF310 /* textlineprojection.cpp */; };
+		083F0120251265F900D9EF7C /* fontinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CC642448632600FDF310 /* fontinfo.cpp */; };
+		083F0121251265F900D9EF7C /* svpaint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CDF72448638900FDF310 /* svpaint.cpp */; };
+		083F0128251266C100D9EF7C /* baselinedetect.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAE92448632500FDF310 /* baselinedetect.h */; };
+		083F0129251266C100D9EF7C /* normalis.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC742448632600FDF310 /* normalis.h */; };
+		083F012A251266C100D9EF7C /* tess_glue.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CA9324485FAD00FDF310 /* tess_glue.h */; };
+		083F012B251266C100D9EF7C /* colfind.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAD42448632500FDF310 /* colfind.h */; };
+		083F012C251266C100D9EF7C /* intfeaturemap.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB2B2448632500FDF310 /* intfeaturemap.h */; };
+		083F012D251266C100D9EF7C /* ambigs.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBD52448632500FDF310 /* ambigs.h */; };
+		083F012E251266C100D9EF7C /* elst.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBD82448632500FDF310 /* elst.h */; };
+		083F012F251266C100D9EF7C /* intfeaturedist.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB272448632500FDF310 /* intfeaturedist.h */; };
+		083F0130251266C200D9EF7C /* svutil.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CDFB2448638900FDF310 /* svutil.h */; };
+		083F0131251266C200D9EF7C /* pgedit.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBC62448632500FDF310 /* pgedit.h */; };
+		083F0132251266C200D9EF7C /* tablefind.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAE22448632500FDF310 /* tablefind.h */; };
+		083F0133251266C200D9EF7C /* unicharcompress.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBF62448632600FDF310 /* unicharcompress.h */; };
+		083F0134251266C200D9EF7C /* boxread.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC4E2448632600FDF310 /* boxread.h */; };
+		083F0135251266C200D9EF7C /* unicharset.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBDF2448632600FDF310 /* unicharset.h */; };
+		083F0136251266C200D9EF7C /* blobgrid.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAE62448632500FDF310 /* blobgrid.h */; };
+		083F0137251266C200D9EF7C /* quadratc.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC792448632600FDF310 /* quadratc.h */; };
+		083F0138251266C200D9EF7C /* clusttool.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB1E2448632500FDF310 /* clusttool.h */; };
+		083F0139251266C300D9EF7C /* oldbasel.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAF32448632500FDF310 /* oldbasel.h */; };
+		083F013A251266C300D9EF7C /* blobbox.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC892448632600FDF310 /* blobbox.h */; };
+		083F013B251266C300D9EF7C /* colpartition.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAE42448632500FDF310 /* colpartition.h */; };
+		083F013C251266C300D9EF7C /* paramsd.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBC12448632500FDF310 /* paramsd.h */; };
+		083F013D251266C300D9EF7C /* recodebeam.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCD32448632600FDF310 /* recodebeam.h */; };
+		083F013E251266C300D9EF7C /* trainingsampleset.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB522448632500FDF310 /* trainingsampleset.h */; };
+		083F013F251266C300D9EF7C /* trie.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCAB2448632600FDF310 /* trie.h */; };
+		083F0140251266C300D9EF7C /* lsterr.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBF52448632600FDF310 /* lsterr.h */; };
+		083F0141251266C300D9EF7C /* fullyconnected.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCD22448632600FDF310 /* fullyconnected.h */; };
+		083F0142251266C400D9EF7C /* tesseractclass.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBA82448632500FDF310 /* tesseractclass.h */; };
+		083F0143251266C400D9EF7C /* ratngs.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC912448632600FDF310 /* ratngs.h */; };
+		083F0144251266C400D9EF7C /* mfdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB1C2448632500FDF310 /* mfdefs.h */; };
+		083F0145251266C400D9EF7C /* drawedg.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAEF2448632500FDF310 /* drawedg.h */; };
+		083F0146251266C400D9EF7C /* osdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBAA2448632500FDF310 /* osdetect.h */; };
+		083F0147251266C400D9EF7C /* baseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC452448632600FDF310 /* baseapi.h */; };
+		083F0148251266C400D9EF7C /* quspline.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC812448632600FDF310 /* quspline.h */; };
+		083F0149251266C400D9EF7C /* kdpair.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC112448632600FDF310 /* kdpair.h */; };
+		083F014A251266C400D9EF7C /* float2int.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB3E2448632500FDF310 /* float2int.h */; };
+		083F014B251266C500D9EF7C /* maxpool.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCB82448632600FDF310 /* maxpool.h */; };
+		083F014C251266C500D9EF7C /* unicity_table.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC102448632600FDF310 /* unicity_table.h */; };
+		083F014D251266C500D9EF7C /* structures.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC2B2448632600FDF310 /* structures.h */; };
+		083F014E251266C500D9EF7C /* errcode.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBDC2448632500FDF310 /* errcode.h */; };
+		083F014F251266C500D9EF7C /* reconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCD82448632600FDF310 /* reconfig.h */; };
+		083F0150251266C500D9EF7C /* dotproductsse.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC2E2448632600FDF310 /* dotproductsse.h */; };
+		083F0151251266C500D9EF7C /* bitvector.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBE12448632600FDF310 /* bitvector.h */; };
+		083F0152251266C500D9EF7C /* adaptive.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB512448632500FDF310 /* adaptive.h */; };
+		083F0153251266C500D9EF7C /* object_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC0F2448632600FDF310 /* object_cache.h */; };
+		083F0154251266C600D9EF7C /* networkio.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCB32448632600FDF310 /* networkio.h */; };
+		083F0155251266C600D9EF7C /* universalambigs.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBE62448632600FDF310 /* universalambigs.h */; };
+		083F0156251266C600D9EF7C /* ccnontextdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAFF2448632500FDF310 /* ccnontextdetect.h */; };
+		083F0157251266C600D9EF7C /* vecfuncs.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC752448632600FDF310 /* vecfuncs.h */; };
+		083F0158251266C600D9EF7C /* lm_consistency.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAB52448632500FDF310 /* lm_consistency.h */; };
+		083F0159251266C600D9EF7C /* params.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBE22448632600FDF310 /* params.h */; };
+		083F015A251266C600D9EF7C /* scrollview.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CDF82448638900FDF310 /* scrollview.h */; };
+		083F015B251266C600D9EF7C /* workingpartset.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAD62448632500FDF310 /* workingpartset.h */; };
+		083F015C251266C600D9EF7C /* serialis.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBF82448632600FDF310 /* serialis.h */; };
+		083F015D251266C700D9EF7C /* dotproductavx.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC382448632600FDF310 /* dotproductavx.h */; };
+		083F015E251266C700D9EF7C /* tessvars.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBCB2448632500FDF310 /* tessvars.h */; };
+		083F015F251266C700D9EF7C /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAB92448632500FDF310 /* render.h */; };
+		083F0160251266C700D9EF7C /* dotproduct.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC392448632600FDF310 /* dotproduct.h */; };
+		083F0161251266C700D9EF7C /* doubleptr.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBE82448632600FDF310 /* doubleptr.h */; };
+		083F0162251266C700D9EF7C /* picofeat.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB2F2448632500FDF310 /* picofeat.h */; };
+		083F0163251266C700D9EF7C /* clst.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBEA2448632600FDF310 /* clst.h */; };
+		083F0164251266C700D9EF7C /* blread.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC802448632600FDF310 /* blread.h */; };
+		083F0165251266C700D9EF7C /* output.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBB02448632500FDF310 /* output.h */; };
+		083F0166251266C800D9EF7C /* mastertrainer.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB262448632500FDF310 /* mastertrainer.h */; };
+		083F0167251266C800D9EF7C /* findseam.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CA9C2448632500FDF310 /* findseam.h */; };
+		083F0168251266C800D9EF7C /* plotedges.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CABA2448632500FDF310 /* plotedges.h */; };
+		083F0169251266C800D9EF7C /* otsuthr.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC562448632600FDF310 /* otsuthr.h */; };
+		083F016A251266C800D9EF7C /* docqual.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBCC2448632500FDF310 /* docqual.h */; };
+		083F016B251266C800D9EF7C /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC6C2448632600FDF310 /* matrix.h */; };
+		083F016C251266C800D9EF7C /* blobs.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC832448632600FDF310 /* blobs.h */; };
+		083F016D251266C800D9EF7C /* wordrec.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAAA2448632500FDF310 /* wordrec.h */; };
+		083F016E251266C800D9EF7C /* fpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB252448632500FDF310 /* fpoint.h */; };
+		083F016F251266C900D9EF7C /* pdblock.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC862448632600FDF310 /* pdblock.h */; };
+		083F0170251266C900D9EF7C /* plumbing.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCBC2448632600FDF310 /* plumbing.h */; };
+		083F0171251266C900D9EF7C /* lm_state.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAB42448632500FDF310 /* lm_state.h */; };
+		083F0172251266C900D9EF7C /* normfeat.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB192448632500FDF310 /* normfeat.h */; };
+		083F0173251266C900D9EF7C /* imagedata.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC632448632600FDF310 /* imagedata.h */; };
+		083F0174251266C900D9EF7C /* genericheap.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBE42448632600FDF310 /* genericheap.h */; };
+		083F0175251266C900D9EF7C /* mfoutline.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB322448632500FDF310 /* mfoutline.h */; };
+		083F0176251266C900D9EF7C /* qrsequence.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC0A2448632600FDF310 /* qrsequence.h */; };
+		083F0177251266C900D9EF7C /* dawg_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCA02448632600FDF310 /* dawg_cache.h */; };
+		083F0178251266CA00D9EF7C /* renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC3E2448632600FDF310 /* renderer.h */; };
+		083F0179251266CA00D9EF7C /* parallel.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCD92448632600FDF310 /* parallel.h */; };
+		083F017A251266CA00D9EF7C /* params_model.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAA12448632500FDF310 /* params_model.h */; };
+		083F017B251266CA00D9EF7C /* apitypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC3D2448632600FDF310 /* apitypes.h */; };
+		083F017C251266CA00D9EF7C /* sortflts.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAF82448632500FDF310 /* sortflts.h */; };
+		083F017D251266CA00D9EF7C /* rejctmap.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC782448632600FDF310 /* rejctmap.h */; };
+		083F017E251266CA00D9EF7C /* pageres.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC8A2448632600FDF310 /* pageres.h */; };
+		083F017F251266CA00D9EF7C /* dict.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCA82448632600FDF310 /* dict.h */; };
+		083F0180251266CA00D9EF7C /* reject.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBA42448632500FDF310 /* reject.h */; };
+		083F0181251266CB00D9EF7C /* language_model.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAA72448632500FDF310 /* language_model.h */; };
+		083F0182251266CB00D9EF7C /* mutableiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBAC2448632500FDF310 /* mutableiterator.h */; };
+		083F0183251266CB00D9EF7C /* lstmtrainer.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCC92448632600FDF310 /* lstmtrainer.h */; };
+		083F0184251266CB00D9EF7C /* intsimdmatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC372448632600FDF310 /* intsimdmatrix.h */; };
+		083F0185251266CB00D9EF7C /* bbgrid.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB0C2448632500FDF310 /* bbgrid.h */; };
+		083F0186251266CB00D9EF7C /* paragraphs_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBB22448632500FDF310 /* paragraphs_internal.h */; };
+		083F0187251266CB00D9EF7C /* tabfind.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAF62448632500FDF310 /* tabfind.h */; };
+		083F0188251266CB00D9EF7C /* ltrresultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB9E2448632500FDF310 /* ltrresultiterator.h */; };
+		083F0189251266CB00D9EF7C /* boxword.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC4C2448632600FDF310 /* boxword.h */; };
+		083F018A251266CC00D9EF7C /* unicodes.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBEE2448632600FDF310 /* unicodes.h */; };
+		083F018B251266CC00D9EF7C /* unicharmap.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC072448632600FDF310 /* unicharmap.h */; };
+		083F018C251266CC00D9EF7C /* rect.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC7F2448632600FDF310 /* rect.h */; };
+		083F018D251266CC00D9EF7C /* cutil_class.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC212448632600FDF310 /* cutil_class.h */; };
+		083F018E251266CC00D9EF7C /* textord.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB122448632500FDF310 /* textord.h */; };
+		083F018F251266CC00D9EF7C /* ocrblock.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC712448632600FDF310 /* ocrblock.h */; };
+		083F0190251266CC00D9EF7C /* textlineprojection.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAD72448632500FDF310 /* textlineprojection.h */; };
+		083F0191251266CC00D9EF7C /* reversed.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCDC2448632600FDF310 /* reversed.h */; };
+		083F0192251266CD00D9EF7C /* blamer.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC592448632600FDF310 /* blamer.h */; };
+		083F0193251266CD00D9EF7C /* featdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB282448632500FDF310 /* featdefs.h */; };
+		083F0194251266CD00D9EF7C /* resultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBB62448632500FDF310 /* resultiterator.h */; };
+		083F0195251266CD00D9EF7C /* stepblob.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC852448632600FDF310 /* stepblob.h */; };
+		083F0196251266CD00D9EF7C /* shapetable.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB212448632500FDF310 /* shapetable.h */; };
+		083F0197251266CD00D9EF7C /* tablerecog.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAF02448632500FDF310 /* tablerecog.h */; };
+		083F0198251266CD00D9EF7C /* wordseg.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAEB2448632500FDF310 /* wordseg.h */; };
+		083F0199251266CD00D9EF7C /* cjkpitch.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CACA2448632500FDF310 /* cjkpitch.h */; };
+		083F019A251266CD00D9EF7C /* fpchop.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAC62448632500FDF310 /* fpchop.h */; };
+		083F019B251266CE00D9EF7C /* static_shape.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCAF2448632600FDF310 /* static_shape.h */; };
+		083F019C251266CE00D9EF7C /* convolve.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCC32448632600FDF310 /* convolve.h */; };
+		083F019D251266CE00D9EF7C /* ocrfeatures.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB302448632500FDF310 /* ocrfeatures.h */; };
+		083F019E251266CE00D9EF7C /* scanedg.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAC92448632500FDF310 /* scanedg.h */; };
+		083F019F251266CE00D9EF7C /* fileerr.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBFC2448632600FDF310 /* fileerr.h */; };
+		083F01A0251266CE00D9EF7C /* simddetect.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC322448632600FDF310 /* simddetect.h */; };
+		083F01A1251266CE00D9EF7C /* network.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCCC2448632600FDF310 /* network.h */; };
+		083F01A2251266CE00D9EF7C /* unichar.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBF02448632600FDF310 /* unichar.h */; };
+		083F01A3251266CE00D9EF7C /* weightmatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCCE2448632600FDF310 /* weightmatrix.h */; };
+		083F01A4251266CF00D9EF7C /* intproto.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB152448632500FDF310 /* intproto.h */; };
+		083F01A5251266CF00D9EF7C /* emalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC1F2448632600FDF310 /* emalloc.h */; };
+		083F01A6251266CF00D9EF7C /* networkscratch.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCB42448632600FDF310 /* networkscratch.h */; };
+		083F01A7251266CF00D9EF7C /* lstmrecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCC52448632600FDF310 /* lstmrecognizer.h */; };
+		083F01A8251266CF00D9EF7C /* svmnode.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CDF92448638900FDF310 /* svmnode.h */; };
+		083F01A9251266CF00D9EF7C /* detlinefit.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC5C2448632600FDF310 /* detlinefit.h */; };
+		083F01AA251266CF00D9EF7C /* sorthelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC012448632600FDF310 /* sorthelper.h */; };
+		083F01AB251266CF00D9EF7C /* alignedblob.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAFB2448632500FDF310 /* alignedblob.h */; };
+		083F01AC251266CF00D9EF7C /* equationdetectbase.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAFD2448632500FDF310 /* equationdetectbase.h */; };
+		083F01AD251266D000D9EF7C /* topitch.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAD32448632500FDF310 /* topitch.h */; };
+		083F01AE251266D000D9EF7C /* blobclass.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB332448632500FDF310 /* blobclass.h */; };
+		083F01AF251266D000D9EF7C /* strokewidth.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB0D2448632500FDF310 /* strokewidth.h */; };
+		083F01B0251266D000D9EF7C /* tess_version.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CA9424485FAE00FDF310 /* tess_version.h */; };
+		083F01B1251266D000D9EF7C /* elst2.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBD62448632500FDF310 /* elst2.h */; };
+		083F01B2251266D000D9EF7C /* paragraphs.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBCE2448632500FDF310 /* paragraphs.h */; };
+		083F01B3251266D000D9EF7C /* pitsync1.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAFA2448632500FDF310 /* pitsync1.h */; };
+		083F01B4251266D000D9EF7C /* publictypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC6E2448632600FDF310 /* publictypes.h */; };
+		083F01B5251266D000D9EF7C /* scanutils.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBE32448632600FDF310 /* scanutils.h */; };
+		083F01B6251266D100D9EF7C /* intfeaturespace.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB552448632500FDF310 /* intfeaturespace.h */; };
+		083F01B7251266D100D9EF7C /* mod128.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC582448632600FDF310 /* mod128.h */; };
+		083F01B8251266D100D9EF7C /* ocrpara.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC692448632600FDF310 /* ocrpara.h */; };
+		083F01B9251266D100D9EF7C /* seam.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC7E2448632600FDF310 /* seam.h */; };
+		083F01BA251266D100D9EF7C /* errorcounter.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB532448632500FDF310 /* errorcounter.h */; };
+		083F01BB251266D100D9EF7C /* networkbuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCD12448632600FDF310 /* networkbuilder.h */; };
+		083F01BC251266D100D9EF7C /* chop.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAA82448632500FDF310 /* chop.h */; };
+		083F01BD251266D100D9EF7C /* polyaprx.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC672448632600FDF310 /* polyaprx.h */; };
+		083F01BE251266D100D9EF7C /* basedir.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC092448632600FDF310 /* basedir.h */; };
+		083F01BF251266D200D9EF7C /* input.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCB02448632600FDF310 /* input.h */; };
+		083F01C0251266D200D9EF7C /* drawtord.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB032448632500FDF310 /* drawtord.h */; };
+		083F01C1251266D200D9EF7C /* tess_version.h.in in Headers */ = {isa = PBXBuildFile; fileRef = F865CC432448632600FDF310 /* tess_version.h.in */; };
+		083F01C2251266D200D9EF7C /* indexmapbidi.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC032448632600FDF310 /* indexmapbidi.h */; };
+		083F01C3251266D200D9EF7C /* stridemap.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCBA2448632600FDF310 /* stridemap.h */; };
+		083F01C4251266D200D9EF7C /* edgloop.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CACF2448632500FDF310 /* edgloop.h */; };
+		083F01C5251266D200D9EF7C /* imagefind.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CADC2448632500FDF310 /* imagefind.h */; };
+		083F01C6251266D200D9EF7C /* devanagari_processing.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAC32448632500FDF310 /* devanagari_processing.h */; };
+		083F01C7251266D200D9EF7C /* tovars.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB002448632500FDF310 /* tovars.h */; };
+		083F01C8251266D200D9EF7C /* ccstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC8B2448632600FDF310 /* ccstruct.h */; };
+		083F01C9251266D300D9EF7C /* quadlsq.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC7A2448632600FDF310 /* quadlsq.h */; };
+		083F01CA251266D300D9EF7C /* debugpixa.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC7C2448632600FDF310 /* debugpixa.h */; };
+		083F01CB251266D300D9EF7C /* dppoint.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC542448632600FDF310 /* dppoint.h */; };
+		083F01CC251266D300D9EF7C /* pageiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB9F2448632500FDF310 /* pageiterator.h */; };
+		083F01CD251266D300D9EF7C /* stopper.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCA52448632600FDF310 /* stopper.h */; };
+		083F01CE251266D300D9EF7C /* linefind.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAF42448632500FDF310 /* linefind.h */; };
+		083F01CF251266D300D9EF7C /* normmatch.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB232448632500FDF310 /* normmatch.h */; };
+		083F01D0251266D300D9EF7C /* lstm.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCC02448632600FDF310 /* lstm.h */; };
+		083F01D1251266D300D9EF7C /* underlin.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB102448632500FDF310 /* underlin.h */; };
+		083F01D2251266D400D9EF7C /* mf.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB582448632500FDF310 /* mf.h */; };
+		083F01D3251266D400D9EF7C /* mfx.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB2C2448632500FDF310 /* mfx.h */; };
+		083F01D4251266D400D9EF7C /* params_training_featdef.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC5A2448632600FDF310 /* params_training_featdef.h */; };
+		083F01D5251266D400D9EF7C /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC0C2448632600FDF310 /* platform.h */; };
+		083F01D6251266D400D9EF7C /* tessdatamanager.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC052448632600FDF310 /* tessdatamanager.h */; };
+		083F01D7251266D400D9EF7C /* host.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBE52448632600FDF310 /* host.h */; };
+		083F01D8251266D400D9EF7C /* classify.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB4C2448632500FDF310 /* classify.h */; };
+		083F01D9251266D400D9EF7C /* strngs.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC042448632600FDF310 /* strngs.h */; };
+		083F01DA251266D400D9EF7C /* tabvector.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CACC2448632500FDF310 /* tabvector.h */; };
+		083F01DB251266D500D9EF7C /* intmatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB462448632500FDF310 /* intmatcher.h */; };
+		083F01DC251266D500D9EF7C /* makerow.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAD82448632500FDF310 /* makerow.h */; };
+		083F01DD251266D500D9EF7C /* thresholder.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBC92448632500FDF310 /* thresholder.h */; };
+		083F01DE251266D500D9EF7C /* split.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC952448632600FDF310 /* split.h */; };
+		083F01DF251266D500D9EF7C /* equationdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBBF2448632500FDF310 /* equationdetect.h */; };
+		083F01E0251266D500D9EF7C /* trainingsample.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB4F2448632500FDF310 /* trainingsample.h */; };
+		083F01E1251266D500D9EF7C /* outlines.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAB62448632500FDF310 /* outlines.h */; };
+		083F01E2251266D500D9EF7C /* intfx.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB4B2448632500FDF310 /* intfx.h */; };
+		083F01E3251266D500D9EF7C /* globaloc.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBFB2448632600FDF310 /* globaloc.h */; };
+		083F01E4251266D600D9EF7C /* fileio.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBFD2448632600FDF310 /* fileio.h */; };
+		083F01E5251266D600D9EF7C /* tordmain.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CACE2448632500FDF310 /* tordmain.h */; };
+		083F01E6251266D600D9EF7C /* config_auto.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CA962448604000FDF310 /* config_auto.h */; };
+		083F01E7251266D600D9EF7C /* measure.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAA62448632500FDF310 /* measure.h */; };
+		083F01E8251266D600D9EF7C /* pithsync.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB0F2448632500FDF310 /* pithsync.h */; };
+		083F01E9251266D600D9EF7C /* statistc.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC6D2448632600FDF310 /* statistc.h */; };
+		083F01EA251266D600D9EF7C /* blkocc.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB062448632500FDF310 /* blkocc.h */; };
+		083F01EB251266D600D9EF7C /* drawfx.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CA9A2448632500FDF310 /* drawfx.h */; };
+		083F01EC251266D600D9EF7C /* dawg.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC9F2448632600FDF310 /* dawg.h */; };
+		083F01ED251266D700D9EF7C /* outfeat.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB362448632500FDF310 /* outfeat.h */; };
+		083F01EE251266D700D9EF7C /* matchdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC9E2448632600FDF310 /* matchdefs.h */; };
+		083F01EF251266D700D9EF7C /* lm_pain_points.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAB22448632500FDF310 /* lm_pain_points.h */; };
+		083F01F0251266D700D9EF7C /* ocrclass.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBF22448632600FDF310 /* ocrclass.h */; };
+		083F01F1251266D700D9EF7C /* control.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBA02448632500FDF310 /* control.h */; };
+		083F01F2251266D700D9EF7C /* kdtree.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB202448632500FDF310 /* kdtree.h */; };
+		083F01F3251266D700D9EF7C /* coutln.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC882448632600FDF310 /* coutln.h */; };
+		083F01F4251266D700D9EF7C /* linlsq.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC762448632600FDF310 /* linlsq.h */; };
+		083F01F5251266D700D9EF7C /* edgblob.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAFE2448632500FDF310 /* edgblob.h */; };
+		083F01F6251266D800D9EF7C /* werd.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC602448632600FDF310 /* werd.h */; };
+		083F01F7251266D800D9EF7C /* colpartitiongrid.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB082448632500FDF310 /* colpartitiongrid.h */; };
+		083F01F8251266D800D9EF7C /* gap_map.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAF92448632500FDF310 /* gap_map.h */; };
+		083F01F9251266D800D9EF7C /* werdit.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBC32448632500FDF310 /* werdit.h */; };
+		083F01FA251266D800D9EF7C /* polyblk.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC502448632600FDF310 /* polyblk.h */; };
+		083F01FB251266D800D9EF7C /* bitvec.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC292448632600FDF310 /* bitvec.h */; };
+		083F01FC251266D800D9EF7C /* cluster.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB142448632500FDF310 /* cluster.h */; };
+		083F01FD251266D800D9EF7C /* series.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCDB2448632600FDF310 /* series.h */; };
+		083F01FE251266D800D9EF7C /* ctc.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCC62448632600FDF310 /* ctc.h */; };
+		083F01FF251266D900D9EF7C /* protos.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB452448632500FDF310 /* protos.h */; };
+		083F0200251266D900D9EF7C /* associate.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CAAB2448632500FDF310 /* associate.h */; };
+		083F0201251266D900D9EF7C /* sampleiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB1B2448632500FDF310 /* sampleiterator.h */; };
+		083F0202251266D900D9EF7C /* fixspace.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBAD2448632500FDF310 /* fixspace.h */; };
+		083F0203251266D900D9EF7C /* tprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CBEF2448632600FDF310 /* tprintf.h */; };
+		083F0204251266D900D9EF7C /* helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC0B2448632600FDF310 /* helpers.h */; };
+		083F0205251266D900D9EF7C /* tesscallback.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC132448632600FDF310 /* tesscallback.h */; };
+		083F0206251266D900D9EF7C /* oldlist.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC232448632600FDF310 /* oldlist.h */; };
+		083F0207251266D900D9EF7C /* colpartitionset.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB072448632500FDF310 /* colpartitionset.h */; };
+		083F0208251266DA00D9EF7C /* bits16.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC0D2448632600FDF310 /* bits16.h */; };
+		083F0209251266DA00D9EF7C /* functions.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CCD02448632600FDF310 /* functions.h */; };
+		083F020A251266DA00D9EF7C /* genericvector.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC062448632600FDF310 /* genericvector.h */; };
+		083F020B251266DA00D9EF7C /* ccutil.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC0E2448632600FDF310 /* ccutil.h */; };
+		083F020C251266DA00D9EF7C /* tessclassifier.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB2E2448632500FDF310 /* tessclassifier.h */; };
+		083F020D251266DA00D9EF7C /* points.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC8E2448632600FDF310 /* points.h */; };
+		083F020E251266DA00D9EF7C /* callcpp.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC2A2448632600FDF310 /* callcpp.h */; };
+		083F020F251266DA00D9EF7C /* ocrrow.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC4D2448632600FDF310 /* ocrrow.h */; };
+		083F0210251266DA00D9EF7C /* crakedge.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC9A2448632600FDF310 /* crakedge.h */; };
+		083F0211251266DB00D9EF7C /* capi.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC462448632600FDF310 /* capi.h */; };
+		083F0212251266DB00D9EF7C /* fontinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CC6B2448632600FDF310 /* fontinfo.h */; };
+		083F0213251266DB00D9EF7C /* shapeclassifier.h in Headers */ = {isa = PBXBuildFile; fileRef = F865CB292448632500FDF310 /* shapeclassifier.h */; };
+		083F03C025126C9F00D9EF7C /* Leptonica_fw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083F03BF25126C9F00D9EF7C /* Leptonica_fw.framework */; };
+		083F03C125126C9F00D9EF7C /* Leptonica_fw.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 083F03BF25126C9F00D9EF7C /* Leptonica_fw.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F865CCDD2448632600FDF310 /* wordrec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CA992448632500FDF310 /* wordrec.cpp */; };
 		F865CCDE2448632600FDF310 /* render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CA9B2448632500FDF310 /* render.cpp */; };
 		F865CCDF2448632600FDF310 /* associate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865CA9D2448632500FDF310 /* associate.cpp */; };
@@ -261,6 +737,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		083F03C225126C9F00D9EF7C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				083F03C125126C9F00D9EF7C /* Leptonica_fw.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08D4F54521089D6A00BEB3D1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,6 +760,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		083F00252512653100D9EF7C /* Tesseract4_fw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tesseract4_fw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		083F00272512653100D9EF7C /* Tesseract4_fw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tesseract4_fw.h; sourceTree = "<group>"; };
+		083F00282512653100D9EF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		083F03BF25126C9F00D9EF7C /* Leptonica_fw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Leptonica_fw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		085A4E462216C27C00183FD3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		08D4F54721089D6A00BEB3D1 /* libtesseract.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtesseract.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F865CA9324485FAD00FDF310 /* tess_glue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tess_glue.h; path = config/tess_glue.h; sourceTree = "<group>"; };
@@ -764,6 +1255,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		083F00222512653100D9EF7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083F03C025126C9F00D9EF7C /* Leptonica_fw.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08D4F54421089D6A00BEB3D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -774,12 +1273,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		083F00262512653100D9EF7C /* Tesseract4_fw */ = {
+			isa = PBXGroup;
+			children = (
+				083F00272512653100D9EF7C /* Tesseract4_fw.h */,
+				083F00282512653100D9EF7C /* Info.plist */,
+			);
+			path = Tesseract4_fw;
+			sourceTree = "<group>";
+		};
 		08D4F53E21089D6A00BEB3D1 = {
 			isa = PBXGroup;
 			children = (
 				F865CA972448632500FDF310 /* src */,
 				F865CA9524485FB400FDF310 /* config */,
 				085A4E462216C27C00183FD3 /* PrefixHeader.pch */,
+				083F00262512653100D9EF7C /* Tesseract4_fw */,
 				08D4F54821089D6A00BEB3D1 /* Products */,
 				08D4FA5A2108A01B00BEB3D1 /* Frameworks */,
 			);
@@ -789,6 +1298,7 @@
 			isa = PBXGroup;
 			children = (
 				08D4F54721089D6A00BEB3D1 /* libtesseract.a */,
+				083F00252512653100D9EF7C /* Tesseract4_fw.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -796,6 +1306,7 @@
 		08D4FA5A2108A01B00BEB3D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				083F03BF25126C9F00D9EF7C /* Leptonica_fw.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1399,7 +1910,273 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		083F00202512653100D9EF7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083F019D251266CE00D9EF7C /* ocrfeatures.h in Headers */,
+				083F01C1251266D200D9EF7C /* tess_version.h.in in Headers */,
+				083F017A251266CA00D9EF7C /* params_model.h in Headers */,
+				083F01CE251266D300D9EF7C /* linefind.h in Headers */,
+				083F016B251266C800D9EF7C /* matrix.h in Headers */,
+				083F0171251266C900D9EF7C /* lm_state.h in Headers */,
+				083F019E251266CE00D9EF7C /* scanedg.h in Headers */,
+				083F01E8251266D600D9EF7C /* pithsync.h in Headers */,
+				083F0140251266C300D9EF7C /* lsterr.h in Headers */,
+				083F0165251266C700D9EF7C /* output.h in Headers */,
+				083F01B8251266D100D9EF7C /* ocrpara.h in Headers */,
+				083F017F251266CA00D9EF7C /* dict.h in Headers */,
+				083F0143251266C400D9EF7C /* ratngs.h in Headers */,
+				083F013B251266C300D9EF7C /* colpartition.h in Headers */,
+				083F014D251266C500D9EF7C /* structures.h in Headers */,
+				083F01EE251266D700D9EF7C /* matchdefs.h in Headers */,
+				083F0153251266C500D9EF7C /* object_cache.h in Headers */,
+				083F01F2251266D700D9EF7C /* kdtree.h in Headers */,
+				083F019B251266CE00D9EF7C /* static_shape.h in Headers */,
+				083F01C9251266D300D9EF7C /* quadlsq.h in Headers */,
+				083F01FB251266D800D9EF7C /* bitvec.h in Headers */,
+				083F014B251266C500D9EF7C /* maxpool.h in Headers */,
+				083F01D1251266D300D9EF7C /* underlin.h in Headers */,
+				083F01CC251266D300D9EF7C /* pageiterator.h in Headers */,
+				083F0156251266C600D9EF7C /* ccnontextdetect.h in Headers */,
+				083F01C8251266D200D9EF7C /* ccstruct.h in Headers */,
+				083F0151251266C500D9EF7C /* bitvector.h in Headers */,
+				083F0148251266C400D9EF7C /* quspline.h in Headers */,
+				083F0133251266C200D9EF7C /* unicharcompress.h in Headers */,
+				083F01D2251266D400D9EF7C /* mf.h in Headers */,
+				083F01D9251266D400D9EF7C /* strngs.h in Headers */,
+				083F01A0251266CE00D9EF7C /* simddetect.h in Headers */,
+				083F0160251266C700D9EF7C /* dotproduct.h in Headers */,
+				083F0186251266CB00D9EF7C /* paragraphs_internal.h in Headers */,
+				083F012C251266C100D9EF7C /* intfeaturemap.h in Headers */,
+				083F0190251266CC00D9EF7C /* textlineprojection.h in Headers */,
+				083F01B7251266D100D9EF7C /* mod128.h in Headers */,
+				083F01FC251266D800D9EF7C /* cluster.h in Headers */,
+				083F01BD251266D100D9EF7C /* polyaprx.h in Headers */,
+				083F015E251266C700D9EF7C /* tessvars.h in Headers */,
+				083F0212251266DB00D9EF7C /* fontinfo.h in Headers */,
+				083F020A251266DA00D9EF7C /* genericvector.h in Headers */,
+				083F01F1251266D700D9EF7C /* control.h in Headers */,
+				083F0205251266D900D9EF7C /* tesscallback.h in Headers */,
+				083F01A6251266CF00D9EF7C /* networkscratch.h in Headers */,
+				083F01E2251266D500D9EF7C /* intfx.h in Headers */,
+				083F0174251266C900D9EF7C /* genericheap.h in Headers */,
+				083F01C7251266D200D9EF7C /* tovars.h in Headers */,
+				083F012A251266C100D9EF7C /* tess_glue.h in Headers */,
+				083F0131251266C200D9EF7C /* pgedit.h in Headers */,
+				083F018C251266CC00D9EF7C /* rect.h in Headers */,
+				083F0134251266C200D9EF7C /* boxread.h in Headers */,
+				083F01F6251266D800D9EF7C /* werd.h in Headers */,
+				083F0194251266CD00D9EF7C /* resultiterator.h in Headers */,
+				083F01E3251266D500D9EF7C /* globaloc.h in Headers */,
+				083F015B251266C600D9EF7C /* workingpartset.h in Headers */,
+				083F01AF251266D000D9EF7C /* strokewidth.h in Headers */,
+				083F0182251266CB00D9EF7C /* mutableiterator.h in Headers */,
+				083F0157251266C600D9EF7C /* vecfuncs.h in Headers */,
+				083F018B251266CC00D9EF7C /* unicharmap.h in Headers */,
+				083F01A8251266CF00D9EF7C /* svmnode.h in Headers */,
+				083F0192251266CD00D9EF7C /* blamer.h in Headers */,
+				083F01D4251266D400D9EF7C /* params_training_featdef.h in Headers */,
+				083F0177251266C900D9EF7C /* dawg_cache.h in Headers */,
+				083F017B251266CA00D9EF7C /* apitypes.h in Headers */,
+				083F01A9251266CF00D9EF7C /* detlinefit.h in Headers */,
+				083F01B4251266D000D9EF7C /* publictypes.h in Headers */,
+				083F0136251266C200D9EF7C /* blobgrid.h in Headers */,
+				083F0198251266CD00D9EF7C /* wordseg.h in Headers */,
+				083F01BB251266D100D9EF7C /* networkbuilder.h in Headers */,
+				083F0197251266CD00D9EF7C /* tablerecog.h in Headers */,
+				083F01EC251266D600D9EF7C /* dawg.h in Headers */,
+				083F01D5251266D400D9EF7C /* platform.h in Headers */,
+				083F01BE251266D100D9EF7C /* basedir.h in Headers */,
+				083F01F3251266D700D9EF7C /* coutln.h in Headers */,
+				083F0138251266C200D9EF7C /* clusttool.h in Headers */,
+				083F01DF251266D500D9EF7C /* equationdetect.h in Headers */,
+				083F0154251266C600D9EF7C /* networkio.h in Headers */,
+				083F01A1251266CE00D9EF7C /* network.h in Headers */,
+				083F018E251266CC00D9EF7C /* textord.h in Headers */,
+				083F0167251266C800D9EF7C /* findseam.h in Headers */,
+				083F020E251266DA00D9EF7C /* callcpp.h in Headers */,
+				083F01FF251266D900D9EF7C /* protos.h in Headers */,
+				083F013D251266C300D9EF7C /* recodebeam.h in Headers */,
+				083F020D251266DA00D9EF7C /* points.h in Headers */,
+				083F0164251266C700D9EF7C /* blread.h in Headers */,
+				083F01C6251266D200D9EF7C /* devanagari_processing.h in Headers */,
+				083F0187251266CB00D9EF7C /* tabfind.h in Headers */,
+				083F01D6251266D400D9EF7C /* tessdatamanager.h in Headers */,
+				083F01D3251266D400D9EF7C /* mfx.h in Headers */,
+				083F013A251266C300D9EF7C /* blobbox.h in Headers */,
+				083F012F251266C100D9EF7C /* intfeaturedist.h in Headers */,
+				083F0201251266D900D9EF7C /* sampleiterator.h in Headers */,
+				083F012B251266C100D9EF7C /* colfind.h in Headers */,
+				083F01ED251266D700D9EF7C /* outfeat.h in Headers */,
+				083F01A4251266CF00D9EF7C /* intproto.h in Headers */,
+				083F01F7251266D800D9EF7C /* colpartitiongrid.h in Headers */,
+				083F019A251266CD00D9EF7C /* fpchop.h in Headers */,
+				083F0129251266C100D9EF7C /* normalis.h in Headers */,
+				083F01B5251266D000D9EF7C /* scanutils.h in Headers */,
+				083F01E7251266D600D9EF7C /* measure.h in Headers */,
+				083F01DE251266D500D9EF7C /* split.h in Headers */,
+				083F018F251266CC00D9EF7C /* ocrblock.h in Headers */,
+				083F01AB251266CF00D9EF7C /* alignedblob.h in Headers */,
+				083F019C251266CE00D9EF7C /* convolve.h in Headers */,
+				083F0132251266C200D9EF7C /* tablefind.h in Headers */,
+				083F0180251266CA00D9EF7C /* reject.h in Headers */,
+				083F0206251266D900D9EF7C /* oldlist.h in Headers */,
+				083F01B2251266D000D9EF7C /* paragraphs.h in Headers */,
+				083F0149251266C400D9EF7C /* kdpair.h in Headers */,
+				083F0210251266DA00D9EF7C /* crakedge.h in Headers */,
+				083F0184251266CB00D9EF7C /* intsimdmatrix.h in Headers */,
+				083F0208251266DA00D9EF7C /* bits16.h in Headers */,
+				083F017C251266CA00D9EF7C /* sortflts.h in Headers */,
+				083F015C251266C600D9EF7C /* serialis.h in Headers */,
+				083F01EB251266D600D9EF7C /* drawfx.h in Headers */,
+				083F012E251266C100D9EF7C /* elst.h in Headers */,
+				083F0193251266CD00D9EF7C /* featdefs.h in Headers */,
+				083F01FD251266D800D9EF7C /* series.h in Headers */,
+				083F0188251266CB00D9EF7C /* ltrresultiterator.h in Headers */,
+				083F01BF251266D200D9EF7C /* input.h in Headers */,
+				083F01CA251266D300D9EF7C /* debugpixa.h in Headers */,
+				083F0144251266C400D9EF7C /* mfdefs.h in Headers */,
+				083F019F251266CE00D9EF7C /* fileerr.h in Headers */,
+				083F0185251266CB00D9EF7C /* bbgrid.h in Headers */,
+				083F014C251266C500D9EF7C /* unicity_table.h in Headers */,
+				083F0202251266D900D9EF7C /* fixspace.h in Headers */,
+				083F014A251266C400D9EF7C /* float2int.h in Headers */,
+				083F01E0251266D500D9EF7C /* trainingsample.h in Headers */,
+				083F01AC251266CF00D9EF7C /* equationdetectbase.h in Headers */,
+				083F013F251266C300D9EF7C /* trie.h in Headers */,
+				083F0175251266C900D9EF7C /* mfoutline.h in Headers */,
+				083F016D251266C800D9EF7C /* wordrec.h in Headers */,
+				083F01DC251266D500D9EF7C /* makerow.h in Headers */,
+				083F01CB251266D300D9EF7C /* dppoint.h in Headers */,
+				083F01EA251266D600D9EF7C /* blkocc.h in Headers */,
+				083F0139251266C300D9EF7C /* oldbasel.h in Headers */,
+				083F01C0251266D200D9EF7C /* drawtord.h in Headers */,
+				083F01E1251266D500D9EF7C /* outlines.h in Headers */,
+				083F0203251266D900D9EF7C /* tprintf.h in Headers */,
+				083F01A5251266CF00D9EF7C /* emalloc.h in Headers */,
+				083F0162251266C700D9EF7C /* picofeat.h in Headers */,
+				083F01F0251266D700D9EF7C /* ocrclass.h in Headers */,
+				083F0189251266CB00D9EF7C /* boxword.h in Headers */,
+				083F0166251266C800D9EF7C /* mastertrainer.h in Headers */,
+				083F0211251266DB00D9EF7C /* capi.h in Headers */,
+				083F0170251266C900D9EF7C /* plumbing.h in Headers */,
+				083F0176251266C900D9EF7C /* qrsequence.h in Headers */,
+				083F01A3251266CE00D9EF7C /* weightmatrix.h in Headers */,
+				083F0172251266C900D9EF7C /* normfeat.h in Headers */,
+				083F0200251266D900D9EF7C /* associate.h in Headers */,
+				083F01F9251266D800D9EF7C /* werdit.h in Headers */,
+				083F01DB251266D500D9EF7C /* intmatcher.h in Headers */,
+				083F01C3251266D200D9EF7C /* stridemap.h in Headers */,
+				083F016F251266C900D9EF7C /* pdblock.h in Headers */,
+				083F01F4251266D700D9EF7C /* linlsq.h in Headers */,
+				083F012D251266C100D9EF7C /* ambigs.h in Headers */,
+				083F01B0251266D000D9EF7C /* tess_version.h in Headers */,
+				083F01AD251266D000D9EF7C /* topitch.h in Headers */,
+				083F01A7251266CF00D9EF7C /* lstmrecognizer.h in Headers */,
+				083F0181251266CB00D9EF7C /* language_model.h in Headers */,
+				083F0128251266C100D9EF7C /* baselinedetect.h in Headers */,
+				083F0183251266CB00D9EF7C /* lstmtrainer.h in Headers */,
+				083F018D251266CC00D9EF7C /* cutil_class.h in Headers */,
+				083F0163251266C700D9EF7C /* clst.h in Headers */,
+				083F0137251266C200D9EF7C /* quadratc.h in Headers */,
+				083F016A251266C800D9EF7C /* docqual.h in Headers */,
+				083F013E251266C300D9EF7C /* trainingsampleset.h in Headers */,
+				083F01B1251266D000D9EF7C /* elst2.h in Headers */,
+				083F0195251266CD00D9EF7C /* stepblob.h in Headers */,
+				083F0147251266C400D9EF7C /* baseapi.h in Headers */,
+				083F01D8251266D400D9EF7C /* classify.h in Headers */,
+				083F01BC251266D100D9EF7C /* chop.h in Headers */,
+				083F0178251266CA00D9EF7C /* renderer.h in Headers */,
+				083F01DD251266D500D9EF7C /* thresholder.h in Headers */,
+				083F0161251266C700D9EF7C /* doubleptr.h in Headers */,
+				083F017E251266CA00D9EF7C /* pageres.h in Headers */,
+				083F0158251266C600D9EF7C /* lm_consistency.h in Headers */,
+				083F0142251266C400D9EF7C /* tesseractclass.h in Headers */,
+				083F0207251266D900D9EF7C /* colpartitionset.h in Headers */,
+				083F01BA251266D100D9EF7C /* errorcounter.h in Headers */,
+				083F01E4251266D600D9EF7C /* fileio.h in Headers */,
+				083F0204251266D900D9EF7C /* helpers.h in Headers */,
+				083F01CF251266D300D9EF7C /* normmatch.h in Headers */,
+				083F01E9251266D600D9EF7C /* statistc.h in Headers */,
+				083F016C251266C800D9EF7C /* blobs.h in Headers */,
+				083F01E5251266D600D9EF7C /* tordmain.h in Headers */,
+				083F014F251266C500D9EF7C /* reconfig.h in Headers */,
+				083F01C4251266D200D9EF7C /* edgloop.h in Headers */,
+				083F01FE251266D800D9EF7C /* ctc.h in Headers */,
+				083F020F251266DA00D9EF7C /* ocrrow.h in Headers */,
+				083F016E251266C800D9EF7C /* fpoint.h in Headers */,
+				083F01EF251266D700D9EF7C /* lm_pain_points.h in Headers */,
+				083F01F5251266D700D9EF7C /* edgblob.h in Headers */,
+				083F0213251266DB00D9EF7C /* shapeclassifier.h in Headers */,
+				083F01AA251266CF00D9EF7C /* sorthelper.h in Headers */,
+				083F0199251266CD00D9EF7C /* cjkpitch.h in Headers */,
+				083F0168251266C800D9EF7C /* plotedges.h in Headers */,
+				083F01C5251266D200D9EF7C /* imagefind.h in Headers */,
+				083F01A2251266CE00D9EF7C /* unichar.h in Headers */,
+				083F01DA251266D400D9EF7C /* tabvector.h in Headers */,
+				083F0145251266C400D9EF7C /* drawedg.h in Headers */,
+				083F0196251266CD00D9EF7C /* shapetable.h in Headers */,
+				083F0135251266C200D9EF7C /* unicharset.h in Headers */,
+				083F01D0251266D300D9EF7C /* lstm.h in Headers */,
+				083F0146251266C400D9EF7C /* osdetect.h in Headers */,
+				083F020B251266DA00D9EF7C /* ccutil.h in Headers */,
+				083F015D251266C700D9EF7C /* dotproductavx.h in Headers */,
+				083F0150251266C500D9EF7C /* dotproductsse.h in Headers */,
+				083F0169251266C800D9EF7C /* otsuthr.h in Headers */,
+				083F01D7251266D400D9EF7C /* host.h in Headers */,
+				083F01FA251266D800D9EF7C /* polyblk.h in Headers */,
+				083F018A251266CC00D9EF7C /* unicodes.h in Headers */,
+				083F01CD251266D300D9EF7C /* stopper.h in Headers */,
+				083F01F8251266D800D9EF7C /* gap_map.h in Headers */,
+				083F01E6251266D600D9EF7C /* config_auto.h in Headers */,
+				083F0152251266C500D9EF7C /* adaptive.h in Headers */,
+				083F014E251266C500D9EF7C /* errcode.h in Headers */,
+				083F0141251266C300D9EF7C /* fullyconnected.h in Headers */,
+				083F013C251266C300D9EF7C /* paramsd.h in Headers */,
+				083F00292512653100D9EF7C /* Tesseract4_fw.h in Headers */,
+				083F015A251266C600D9EF7C /* scrollview.h in Headers */,
+				083F0159251266C600D9EF7C /* params.h in Headers */,
+				083F017D251266CA00D9EF7C /* rejctmap.h in Headers */,
+				083F0173251266C900D9EF7C /* imagedata.h in Headers */,
+				083F0191251266CC00D9EF7C /* reversed.h in Headers */,
+				083F0209251266DA00D9EF7C /* functions.h in Headers */,
+				083F01C2251266D200D9EF7C /* indexmapbidi.h in Headers */,
+				083F01B9251266D100D9EF7C /* seam.h in Headers */,
+				083F0179251266CA00D9EF7C /* parallel.h in Headers */,
+				083F01B6251266D100D9EF7C /* intfeaturespace.h in Headers */,
+				083F0130251266C200D9EF7C /* svutil.h in Headers */,
+				083F0155251266C600D9EF7C /* universalambigs.h in Headers */,
+				083F01AE251266D000D9EF7C /* blobclass.h in Headers */,
+				083F015F251266C700D9EF7C /* render.h in Headers */,
+				083F01B3251266D000D9EF7C /* pitsync1.h in Headers */,
+				083F020C251266DA00D9EF7C /* tessclassifier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		083F00242512653100D9EF7C /* Tesseract4_fw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 083F002A2512653100D9EF7C /* Build configuration list for PBXNativeTarget "Tesseract4_fw" */;
+			buildPhases = (
+				083F00202512653100D9EF7C /* Headers */,
+				083F00212512653100D9EF7C /* Sources */,
+				083F00222512653100D9EF7C /* Frameworks */,
+				083F00232512653100D9EF7C /* Resources */,
+				083F03C225126C9F00D9EF7C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tesseract4_fw;
+			productName = Tesseract4_fw;
+			productReference = 083F00252512653100D9EF7C /* Tesseract4_fw.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		08D4F54621089D6A00BEB3D1 /* Tesseract4 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08D4F55021089D6A00BEB3D1 /* Build configuration list for PBXNativeTarget "Tesseract4" */;
@@ -1429,6 +2206,9 @@
 					08395AE52215790B00897C50 = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					083F00242512653100D9EF7C = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					08D4F54621089D6A00BEB3D1 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -1449,9 +2229,20 @@
 			targets = (
 				08D4F54621089D6A00BEB3D1 /* Tesseract4 */,
 				08395AE52215790B00897C50 /* Tesseract_FAT */,
+				083F00242512653100D9EF7C /* Tesseract4_fw */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		083F00232512653100D9EF7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		08395AE92215791800897C50 /* ShellScript */ = {
@@ -1474,13 +2265,257 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		083F00212512653100D9EF7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083F0071251265F700D9EF7C /* stepblob.cpp in Sources */,
+				083F0074251265F700D9EF7C /* adaptions.cpp in Sources */,
+				083F00A1251265F700D9EF7C /* tfacepp.cpp in Sources */,
+				083F00A2251265F700D9EF7C /* lstm.cpp in Sources */,
+				083F0068251265F700D9EF7C /* output.cpp in Sources */,
+				083F010D251265F900D9EF7C /* hyphen.cpp in Sources */,
+				083F011B251265F900D9EF7C /* shapeclassifier.cpp in Sources */,
+				083F00C2251265F800D9EF7C /* emalloc.cpp in Sources */,
+				083F0107251265F900D9EF7C /* outfeat.cpp in Sources */,
+				083F00C4251265F800D9EF7C /* textord.cpp in Sources */,
+				083F00FE251265F900D9EF7C /* polyblk.cpp in Sources */,
+				083F00E1251265F800D9EF7C /* lstmtrainer.cpp in Sources */,
+				083F0089251265F700D9EF7C /* wordseg.cpp in Sources */,
+				083F00BE251265F800D9EF7C /* errcode.cpp in Sources */,
+				083F008C251265F700D9EF7C /* statistc.cpp in Sources */,
+				083F004E251265F600D9EF7C /* recogtraining.cpp in Sources */,
+				083F0110251265F900D9EF7C /* ccutil.cpp in Sources */,
+				083F00EA251265F900D9EF7C /* mfdefs.cpp in Sources */,
+				083F0118251265F900D9EF7C /* gap_map.cpp in Sources */,
+				083F0103251265F900D9EF7C /* points.cpp in Sources */,
+				083F00D5251265F800D9EF7C /* globaloc.cpp in Sources */,
+				083F00A7251265F700D9EF7C /* equationdetectbase.cpp in Sources */,
+				083F00D6251265F800D9EF7C /* mfoutline.cpp in Sources */,
+				083F00BC251265F800D9EF7C /* serialis.cpp in Sources */,
+				083F0044251265F600D9EF7C /* matrix.cpp in Sources */,
+				083F00FC251265F900D9EF7C /* ctc.cpp in Sources */,
+				083F0090251265F700D9EF7C /* intfx.cpp in Sources */,
+				083F0065251265F600D9EF7C /* ccstruct.cpp in Sources */,
+				083F008E251265F700D9EF7C /* network.cpp in Sources */,
+				083F0055251265F600D9EF7C /* drawtord.cpp in Sources */,
+				083F0062251265F600D9EF7C /* clusttool.cpp in Sources */,
+				083F004F251265F600D9EF7C /* recodebeam.cpp in Sources */,
+				083F0073251265F700D9EF7C /* blobclass.cpp in Sources */,
+				083F00C9251265F800D9EF7C /* publictypes.cpp in Sources */,
+				083F00C0251265F800D9EF7C /* baselinedetect.cpp in Sources */,
+				083F00F1251265F900D9EF7C /* unicodes.cpp in Sources */,
+				083F00D4251265F800D9EF7C /* oldlist.cpp in Sources */,
+				083F010C251265F900D9EF7C /* stopper.cpp in Sources */,
+				083F003E251265F600D9EF7C /* linefind.cpp in Sources */,
+				083F0038251265F600D9EF7C /* tessvars.cpp in Sources */,
+				083F006D251265F700D9EF7C /* tablefind.cpp in Sources */,
+				083F0060251265F600D9EF7C /* adaptmatch.cpp in Sources */,
+				083F0100251265F900D9EF7C /* sampleiterator.cpp in Sources */,
+				083F0094251265F700D9EF7C /* makerow.cpp in Sources */,
+				083F009A251265F700D9EF7C /* unicharset.cpp in Sources */,
+				083F009D251265F700D9EF7C /* edgloop.cpp in Sources */,
+				083F0037251265F600D9EF7C /* cjkpitch.cpp in Sources */,
+				083F0066251265F600D9EF7C /* blobbox.cpp in Sources */,
+				083F0101251265F900D9EF7C /* mainblk.cpp in Sources */,
+				083F0046251265F600D9EF7C /* associate.cpp in Sources */,
+				083F003D251265F600D9EF7C /* tablerecog.cpp in Sources */,
+				083F009E251265F700D9EF7C /* boxread.cpp in Sources */,
+				083F0105251265F900D9EF7C /* segsearch.cpp in Sources */,
+				083F00AF251265F800D9EF7C /* normmatch.cpp in Sources */,
+				083F0095251265F700D9EF7C /* fileio.cpp in Sources */,
+				083F011D251265F900D9EF7C /* werd.cpp in Sources */,
+				083F00DC251265F800D9EF7C /* devanagari_processing.cpp in Sources */,
+				083F0051251265F600D9EF7C /* paramsd.cpp in Sources */,
+				083F00C5251265F800D9EF7C /* applybox.cpp in Sources */,
+				083F00E3251265F800D9EF7C /* render.cpp in Sources */,
+				083F006A251265F700D9EF7C /* params_training_featdef.cpp in Sources */,
+				083F00B3251265F800D9EF7C /* blread.cpp in Sources */,
+				083F011F251265F900D9EF7C /* textlineprojection.cpp in Sources */,
+				083F00DD251265F800D9EF7C /* paragraphs.cpp in Sources */,
+				083F008A251265F700D9EF7C /* stridemap.cpp in Sources */,
+				083F00BF251265F800D9EF7C /* trainingsample.cpp in Sources */,
+				083F00D9251265F800D9EF7C /* lstmboxrenderer.cpp in Sources */,
+				083F00C7251265F800D9EF7C /* pageres.cpp in Sources */,
+				083F00A5251265F700D9EF7C /* imagefind.cpp in Sources */,
+				083F00F0251265F900D9EF7C /* intfeaturedist.cpp in Sources */,
+				083F00B1251265F800D9EF7C /* adaptive.cpp in Sources */,
+				083F00FA251265F900D9EF7C /* pagewalk.cpp in Sources */,
+				083F008B251265F700D9EF7C /* fpchop.cpp in Sources */,
+				083F0106251265F900D9EF7C /* classify.cpp in Sources */,
+				083F00F3251265F900D9EF7C /* errorcounter.cpp in Sources */,
+				083F0113251265F900D9EF7C /* edgblob.cpp in Sources */,
+				083F00AC251265F800D9EF7C /* tospace.cpp in Sources */,
+				083F00C1251265F800D9EF7C /* normfeat.cpp in Sources */,
+				083F0109251265F900D9EF7C /* lm_consistency.cpp in Sources */,
+				083F00FF251265F900D9EF7C /* rect.cpp in Sources */,
+				083F0076251265F700D9EF7C /* fullyconnected.cpp in Sources */,
+				083F00F7251265F900D9EF7C /* ocrrow.cpp in Sources */,
+				083F0081251265F700D9EF7C /* colpartitionset.cpp in Sources */,
+				083F0087251265F700D9EF7C /* ocrfeatures.cpp in Sources */,
+				083F0115251265F900D9EF7C /* pieces.cpp in Sources */,
+				083F003C251265F600D9EF7C /* mf.cpp in Sources */,
+				083F00D7251265F800D9EF7C /* capi.cpp in Sources */,
+				083F00F5251265F900D9EF7C /* scrollview.cpp in Sources */,
+				083F0040251265F600D9EF7C /* bbgrid.cpp in Sources */,
+				083F00B0251265F800D9EF7C /* cluster.cpp in Sources */,
+				083F00D3251265F800D9EF7C /* ocrblock.cpp in Sources */,
+				083F010A251265F900D9EF7C /* shapetable.cpp in Sources */,
+				083F0083251265F700D9EF7C /* plotedges.cpp in Sources */,
+				083F00A9251265F800D9EF7C /* tabvector.cpp in Sources */,
+				083F007A251265F700D9EF7C /* dict.cpp in Sources */,
+				083F005F251265F600D9EF7C /* control.cpp in Sources */,
+				083F00B4251265F800D9EF7C /* elst.cpp in Sources */,
+				083F00E0251265F800D9EF7C /* ocrpara.cpp in Sources */,
+				083F0092251265F700D9EF7C /* reconfig.cpp in Sources */,
+				083F007D251265F700D9EF7C /* intfeaturemap.cpp in Sources */,
+				083F0104251265F900D9EF7C /* basedir.cpp in Sources */,
+				083F004B251265F600D9EF7C /* ccnontextdetect.cpp in Sources */,
+				083F0035251265F600D9EF7C /* ltrresultiterator.cpp in Sources */,
+				083F00AB251265F800D9EF7C /* mod128.cpp in Sources */,
+				083F0043251265F600D9EF7C /* osdetect.cpp in Sources */,
+				083F005A251265F600D9EF7C /* mfx.cpp in Sources */,
+				083F00AE251265F800D9EF7C /* tessbox.cpp in Sources */,
+				083F00AD251265F800D9EF7C /* mutableiterator.cpp in Sources */,
+				083F00B8251265F800D9EF7C /* clst.cpp in Sources */,
+				083F00F9251265F900D9EF7C /* linlsq.cpp in Sources */,
+				083F00B5251265F800D9EF7C /* networkbuilder.cpp in Sources */,
+				083F0085251265F700D9EF7C /* elst2.cpp in Sources */,
+				083F00B9251265F800D9EF7C /* fpoint.cpp in Sources */,
+				083F0078251265F700D9EF7C /* intproto.cpp in Sources */,
+				083F0079251265F700D9EF7C /* pdblock.cpp in Sources */,
+				083F00E6251265F800D9EF7C /* vecfuncs.cpp in Sources */,
+				083F0036251265F600D9EF7C /* tesseractmain.cpp in Sources */,
+				083F0047251265F600D9EF7C /* underlin.cpp in Sources */,
+				083F010B251265F900D9EF7C /* tprintf.cpp in Sources */,
+				083F0069251265F700D9EF7C /* pageiterator.cpp in Sources */,
+				083F006B251265F700D9EF7C /* findseam.cpp in Sources */,
+				083F00CF251265F800D9EF7C /* topitch.cpp in Sources */,
+				083F0052251265F600D9EF7C /* quspline.cpp in Sources */,
+				083F00BA251265F800D9EF7C /* kdtree.cpp in Sources */,
+				083F00B6251265F800D9EF7C /* ambigs.cpp in Sources */,
+				083F0064251265F600D9EF7C /* fixxht.cpp in Sources */,
+				083F00A3251265F700D9EF7C /* language_model.cpp in Sources */,
+				083F00CA251265F800D9EF7C /* ratngs.cpp in Sources */,
+				083F004D251265F600D9EF7C /* seam.cpp in Sources */,
+				083F0111251265F900D9EF7C /* hocrrenderer.cpp in Sources */,
+				083F0041251265F600D9EF7C /* quadlsq.cpp in Sources */,
+				083F00C6251265F800D9EF7C /* thresholder.cpp in Sources */,
+				083F00D0251265F800D9EF7C /* dawg_cache.cpp in Sources */,
+				083F00E7251265F900D9EF7C /* wordrec.cpp in Sources */,
+				083F006F251265F700D9EF7C /* dppoint.cpp in Sources */,
+				083F0077251265F700D9EF7C /* chopper.cpp in Sources */,
+				083F00EC251265F900D9EF7C /* input.cpp in Sources */,
+				083F0097251265F700D9EF7C /* colfind.cpp in Sources */,
+				083F00ED251265F900D9EF7C /* intmatcher.cpp in Sources */,
+				083F0116251265F900D9EF7C /* lm_pain_points.cpp in Sources */,
+				083F0054251265F600D9EF7C /* rejctmap.cpp in Sources */,
+				083F0082251265F700D9EF7C /* dawg.cpp in Sources */,
+				083F0072251265F700D9EF7C /* dotproduct.cpp in Sources */,
+				083F00DB251265F800D9EF7C /* trie.cpp in Sources */,
+				083F0057251265F600D9EF7C /* gradechop.cpp in Sources */,
+				083F008D251265F700D9EF7C /* universalambigs.cpp in Sources */,
+				083F0049251265F600D9EF7C /* pgedit.cpp in Sources */,
+				083F00F8251265F900D9EF7C /* boxword.cpp in Sources */,
+				083F00FD251265F900D9EF7C /* parallel.cpp in Sources */,
+				083F0067251265F600D9EF7C /* tessclassifier.cpp in Sources */,
+				083F00A8251265F800D9EF7C /* oldbasel.cpp in Sources */,
+				083F00CE251265F800D9EF7C /* context.cpp in Sources */,
+				083F00C3251265F800D9EF7C /* pitsync1.cpp in Sources */,
+				083F00DA251265F800D9EF7C /* tesseractclass.cpp in Sources */,
+				083F011A251265F900D9EF7C /* plumbing.cpp in Sources */,
+				083F006E251265F700D9EF7C /* svutil.cpp in Sources */,
+				083F0119251265F900D9EF7C /* cutil_class.cpp in Sources */,
+				083F00E9251265F900D9EF7C /* drawfx.cpp in Sources */,
+				083F0121251265F900D9EF7C /* svpaint.cpp in Sources */,
+				083F00F6251265F900D9EF7C /* params.cpp in Sources */,
+				083F0102251265F900D9EF7C /* blobs.cpp in Sources */,
+				083F0120251265F900D9EF7C /* fontinfo.cpp in Sources */,
+				083F00DE251265F800D9EF7C /* strokewidth.cpp in Sources */,
+				083F0050251265F600D9EF7C /* drawedg.cpp in Sources */,
+				083F00DF251265F800D9EF7C /* featdefs.cpp in Sources */,
+				083F009F251265F700D9EF7C /* blamer.cpp in Sources */,
+				083F003F251265F600D9EF7C /* trainingsampleset.cpp in Sources */,
+				083F00B2251265F800D9EF7C /* cutoffs.cpp in Sources */,
+				083F00AA251265F800D9EF7C /* tface.cpp in Sources */,
+				083F00BD251265F800D9EF7C /* polyaprx.cpp in Sources */,
+				083F00EF251265F900D9EF7C /* werdit.cpp in Sources */,
+				083F007E251265F700D9EF7C /* normalis.cpp in Sources */,
+				083F00F2251265F900D9EF7C /* params_model.cpp in Sources */,
+				083F00E4251265F800D9EF7C /* linerec.cpp in Sources */,
+				083F0084251265F700D9EF7C /* lm_state.cpp in Sources */,
+				083F004A251265F600D9EF7C /* callcpp.cpp in Sources */,
+				083F0088251265F700D9EF7C /* unichar.cpp in Sources */,
+				083F00BB251265F800D9EF7C /* reversed.cpp in Sources */,
+				083F0045251265F600D9EF7C /* altorenderer.cpp in Sources */,
+				083F0098251265F700D9EF7C /* tordmain.cpp in Sources */,
+				083F00EB251265F900D9EF7C /* pithsync.cpp in Sources */,
+				083F0117251265F900D9EF7C /* bitvector.cpp in Sources */,
+				083F0091251265F700D9EF7C /* functions.cpp in Sources */,
+				083F0039251265F600D9EF7C /* reject.cpp in Sources */,
+				083F0061251265F600D9EF7C /* scanutils.cpp in Sources */,
+				083F00F4251265F900D9EF7C /* tabfind.cpp in Sources */,
+				083F011C251265F900D9EF7C /* series.cpp in Sources */,
+				083F007B251265F700D9EF7C /* detlinefit.cpp in Sources */,
+				083F0108251265F900D9EF7C /* bitvec.cpp in Sources */,
+				083F0114251265F900D9EF7C /* scanedg.cpp in Sources */,
+				083F00C8251265F800D9EF7C /* tessdatamanager.cpp in Sources */,
+				083F00E5251265F800D9EF7C /* tessedit.cpp in Sources */,
+				083F00B7251265F800D9EF7C /* colpartition.cpp in Sources */,
+				083F005B251265F600D9EF7C /* structures.cpp in Sources */,
+				083F0053251265F600D9EF7C /* sortflts.cpp in Sources */,
+				083F003B251265F600D9EF7C /* float2int.cpp in Sources */,
+				083F0075251265F700D9EF7C /* convolve.cpp in Sources */,
+				083F004C251265F600D9EF7C /* wordstrboxrenderer.cpp in Sources */,
+				083F0070251265F700D9EF7C /* superscript.cpp in Sources */,
+				083F007F251265F700D9EF7C /* protos.cpp in Sources */,
+				083F00A0251265F700D9EF7C /* workingpartset.cpp in Sources */,
+				083F0058251265F600D9EF7C /* lstmrecognizer.cpp in Sources */,
+				083F00E8251265F900D9EF7C /* unicharmap.cpp in Sources */,
+				083F0056251265F600D9EF7C /* tovars.cpp in Sources */,
+				083F0086251265F700D9EF7C /* resultiterator.cpp in Sources */,
+				083F0042251265F600D9EF7C /* unicharcompress.cpp in Sources */,
+				083F00D1251265F800D9EF7C /* networkio.cpp in Sources */,
+				083F0096251265F700D9EF7C /* indexmapbidi.cpp in Sources */,
+				083F009C251265F700D9EF7C /* blkocc.cpp in Sources */,
+				083F00CD251265F800D9EF7C /* mastertrainer.cpp in Sources */,
+				083F00A6251265F700D9EF7C /* strngs.cpp in Sources */,
+				083F011E251265F900D9EF7C /* weightmatrix.cpp in Sources */,
+				083F00A4251265F700D9EF7C /* pagesegmain.cpp in Sources */,
+				083F00FB251265F900D9EF7C /* equationdetect.cpp in Sources */,
+				083F005E251265F600D9EF7C /* fixspace.cpp in Sources */,
+				083F007C251265F700D9EF7C /* coutln.cpp in Sources */,
+				083F010F251265F900D9EF7C /* intfeaturespace.cpp in Sources */,
+				083F008F251265F700D9EF7C /* colpartitiongrid.cpp in Sources */,
+				083F0112251265F900D9EF7C /* pdfrenderer.cpp in Sources */,
+				083F00D8251265F800D9EF7C /* baseapi.cpp in Sources */,
+				083F0099251265F700D9EF7C /* renderer.cpp in Sources */,
+				083F005C251265F600D9EF7C /* maxpool.cpp in Sources */,
+				083F00CC251265F800D9EF7C /* otsuthr.cpp in Sources */,
+				083F010E251265F900D9EF7C /* wordclass.cpp in Sources */,
+				083F006C251265F700D9EF7C /* blobgrid.cpp in Sources */,
+				083F005D251265F600D9EF7C /* simddetect.cpp in Sources */,
+				083F0093251265F700D9EF7C /* outlines.cpp in Sources */,
+				083F0080251265F700D9EF7C /* alignedblob.cpp in Sources */,
+				083F003A251265F600D9EF7C /* imagedata.cpp in Sources */,
+				083F00EE251265F900D9EF7C /* picofeat.cpp in Sources */,
+				083F0059251265F600D9EF7C /* split.cpp in Sources */,
+				083F0063251265F600D9EF7C /* permdawg.cpp in Sources */,
+				083F00CB251265F800D9EF7C /* svmnode.cpp in Sources */,
+				083F0048251265F600D9EF7C /* intsimdmatrix.cpp in Sources */,
+				083F00E2251265F800D9EF7C /* par_control.cpp in Sources */,
+				083F009B251265F700D9EF7C /* docqual.cpp in Sources */,
+				083F00D2251265F800D9EF7C /* chop.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08D4F54321089D6A00BEB3D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F865CD2C2448632600FDF310 /* mfdefs.cpp in Sources */,
 				F865CD842448632600FDF310 /* errcode.cpp in Sources */,
 				F865CDAB2448632700FDF310 /* altorenderer.cpp in Sources */,
-				F865CD2C2448632600FDF310 /* mfdefs.cpp in Sources */,
 				F865CDDF2448632700FDF310 /* network.cpp in Sources */,
 				F865CD292448632600FDF310 /* tessclassifier.cpp in Sources */,
 				F865CD772448632600FDF310 /* thresholder.cpp in Sources */,
@@ -1744,6 +2779,97 @@
 			};
 			name = Release;
 		};
+		083F002B2512653100D9EF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FRUPYT6KB3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = Tesseract4_fw/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.scanbot.Tesseract4-fw";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../Leptonica/leptonica-sources/src",
+					"$(PROJECT_DIR)/config",
+				);
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		083F002C2512653100D9EF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FRUPYT6KB3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = Tesseract4_fw/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.scanbot.Tesseract4-fw";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../Leptonica/leptonica-sources/src",
+					"$(PROJECT_DIR)/config",
+				);
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		08D4F54E21089D6A00BEB3D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1948,6 +3074,15 @@
 			buildConfigurations = (
 				08395AE62215790B00897C50 /* Debug */,
 				08395AE72215790B00897C50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		083F002A2512653100D9EF7C /* Build configuration list for PBXNativeTarget "Tesseract4_fw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083F002B2512653100D9EF7C /* Debug */,
+				083F002C2512653100D9EF7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -21,6 +21,210 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		083F0244251268C300D9EF7C /* Leptonica_fw.h in Headers */ = {isa = PBXBuildFile; fileRef = 083F0242251268C300D9EF7C /* Leptonica_fw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083F02512512694600D9EF7C /* bootnumgen1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52962216C33E00183FD3 /* bootnumgen1.c */; };
+		083F02522512694600D9EF7C /* gifiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52972216C33E00183FD3 /* gifiostub.c */; };
+		083F02532512694600D9EF7C /* runlength.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52982216C33E00183FD3 /* runlength.c */; };
+		083F02542512694600D9EF7C /* jp2kheader.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529A2216C33E00183FD3 /* jp2kheader.c */; };
+		083F02552512694700D9EF7C /* zlibmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529B2216C33E00183FD3 /* zlibmem.c */; };
+		083F02562512694700D9EF7C /* morphseq.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529C2216C33E00183FD3 /* morphseq.c */; };
+		083F02572512694700D9EF7C /* stringcode.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529D2216C33E00183FD3 /* stringcode.c */; };
+		083F02582512694700D9EF7C /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529E2216C33E00183FD3 /* compare.c */; };
+		083F02592512694700D9EF7C /* dwacomblow.2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A529F2216C33E00183FD3 /* dwacomblow.2.c */; };
+		083F025A2512694700D9EF7C /* warper.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A02216C33E00183FD3 /* warper.c */; };
+		083F025B2512694700D9EF7C /* rbtree.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A22216C33E00183FD3 /* rbtree.c */; };
+		083F025C2512694700D9EF7C /* colormorph.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A32216C33E00183FD3 /* colormorph.c */; };
+		083F025D2512694700D9EF7C /* utils2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A42216C33E00183FD3 /* utils2.c */; };
+		083F025E2512694700D9EF7C /* sel1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A52216C33E00183FD3 /* sel1.c */; };
+		083F025F2512694700D9EF7C /* boxbasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A62216C33E00183FD3 /* boxbasic.c */; };
+		083F02602512694700D9EF7C /* pix3.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A72216C33E00183FD3 /* pix3.c */; };
+		083F02612512694700D9EF7C /* list.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A82216C33E00183FD3 /* list.c */; };
+		083F02622512694700D9EF7C /* affine.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52A92216C33E00183FD3 /* affine.c */; };
+		083F02632512694700D9EF7C /* fhmtgenlow.1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52AA2216C33E00183FD3 /* fhmtgenlow.1.c */; };
+		083F02642512694700D9EF7C /* selgen.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52AB2216C33E00183FD3 /* selgen.c */; };
+		083F02652512694700D9EF7C /* dewarp4.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52AD2216C33E00183FD3 /* dewarp4.c */; };
+		083F02662512694700D9EF7C /* gplot.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52AE2216C33E00183FD3 /* gplot.c */; };
+		083F02672512694700D9EF7C /* seedfill.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52AF2216C33E00183FD3 /* seedfill.c */; };
+		083F02682512694700D9EF7C /* numabasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B02216C33E00183FD3 /* numabasic.c */; };
+		083F02692512694700D9EF7C /* flipdetect.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B12216C33E00183FD3 /* flipdetect.c */; };
+		083F026A2512694700D9EF7C /* zlibmemstub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B22216C33E00183FD3 /* zlibmemstub.c */; };
+		083F026B2512694700D9EF7C /* fpix2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B32216C33E00183FD3 /* fpix2.c */; };
+		083F026C2512694700D9EF7C /* rotateorth.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B42216C33E00183FD3 /* rotateorth.c */; };
+		083F026D2512694700D9EF7C /* ccthin.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B62216C33E00183FD3 /* ccthin.c */; };
+		083F026E2512694700D9EF7C /* bilinear.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B72216C33E00183FD3 /* bilinear.c */; };
+		083F026F2512694700D9EF7C /* maze.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B82216C33E00183FD3 /* maze.c */; };
+		083F02702512694700D9EF7C /* colorspace.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52B92216C33E00183FD3 /* colorspace.c */; };
+		083F02712512694700D9EF7C /* ccbord.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52BA2216C33E00183FD3 /* ccbord.c */; };
+		083F02722512694700D9EF7C /* ptafunc2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52BB2216C33E00183FD3 /* ptafunc2.c */; };
+		083F02732512694700D9EF7C /* watershed.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52BD2216C33E00183FD3 /* watershed.c */; };
+		083F02742512694700D9EF7C /* sarray2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52BE2216C33E00183FD3 /* sarray2.c */; };
+		083F02752512694700D9EF7C /* tiffio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52BF2216C33E00183FD3 /* tiffio.c */; };
+		083F02762512694700D9EF7C /* scale1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C02216C33E00183FD3 /* scale1.c */; };
+		083F02772512694700D9EF7C /* kernel.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C12216C33E00183FD3 /* kernel.c */; };
+		083F02782512694700D9EF7C /* writefile.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C22216C33E00183FD3 /* writefile.c */; };
+		083F02792512694700D9EF7C /* pixcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C32216C33E00183FD3 /* pixcomp.c */; };
+		083F027A2512694700D9EF7C /* psio2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C42216C33E00183FD3 /* psio2.c */; };
+		083F027B2512694700D9EF7C /* heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C52216C33E00183FD3 /* heap.c */; };
+		083F027C2512694700D9EF7C /* rotateam.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C62216C33E00183FD3 /* rotateam.c */; };
+		083F027D2512694700D9EF7C /* jp2kiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C82216C33E00183FD3 /* jp2kiostub.c */; };
+		083F027E2512694700D9EF7C /* rotate.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52C92216C33E00183FD3 /* rotate.c */; };
+		083F027F2512694700D9EF7C /* numafunc1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CA2216C33E00183FD3 /* numafunc1.c */; };
+		083F02802512694700D9EF7C /* rop.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CB2216C33E00183FD3 /* rop.c */; };
+		083F02812512694700D9EF7C /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CC2216C33E00183FD3 /* stack.c */; };
+		083F02822512694700D9EF7C /* ptra.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CD2216C33E00183FD3 /* ptra.c */; };
+		083F02832512694700D9EF7C /* partition.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CE2216C33E00183FD3 /* partition.c */; };
+		083F02842512694700D9EF7C /* pnmio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52CF2216C33E00183FD3 /* pnmio.c */; };
+		083F02852512694700D9EF7C /* boxfunc1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D02216C33E00183FD3 /* boxfunc1.c */; };
+		083F02862512694700D9EF7C /* readfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D12216C33E00183FD3 /* readfile.c */; };
+		083F02872512694700D9EF7C /* conncomp.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D22216C33E00183FD3 /* conncomp.c */; };
+		083F02882512694700D9EF7C /* pix4.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D52216C33E00183FD3 /* pix4.c */; };
+		083F02892512694700D9EF7C /* textops.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D62216C33E00183FD3 /* textops.c */; };
+		083F028A2512694700D9EF7C /* ptabasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D72216C33E00183FD3 /* ptabasic.c */; };
+		083F028B2512694700D9EF7C /* quadtree.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D82216C33E00183FD3 /* quadtree.c */; };
+		083F028C2512694700D9EF7C /* dewarp3.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52D92216C33E00183FD3 /* dewarp3.c */; };
+		083F028D2512694700D9EF7C /* bootnumgen2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52DA2216C33E00183FD3 /* bootnumgen2.c */; };
+		083F028E2512694700D9EF7C /* projective.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52DB2216C33E00183FD3 /* projective.c */; };
+		083F028F2512694700D9EF7C /* graphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52DC2216C33E00183FD3 /* graphics.c */; };
+		083F02902512694700D9EF7C /* morphapp.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52DD2216C33E00183FD3 /* morphapp.c */; };
+		083F02912512694700D9EF7C /* rotateshear.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52DE2216C33E00183FD3 /* rotateshear.c */; };
+		083F02922512694700D9EF7C /* colormap.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E12216C33E00183FD3 /* colormap.c */; };
+		083F02932512694700D9EF7C /* skew.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E32216C33E00183FD3 /* skew.c */; };
+		083F02942512694700D9EF7C /* fpix1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E42216C33E00183FD3 /* fpix1.c */; };
+		083F02952512694700D9EF7C /* utils1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E52216C33E00183FD3 /* utils1.c */; };
+		083F02962512694700D9EF7C /* libversions.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E62216C33E00183FD3 /* libversions.c */; };
+		083F02972512694700D9EF7C /* pixconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E72216C33E00183FD3 /* pixconv.c */; };
+		083F02982512694700D9EF7C /* sel2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E82216C33E00183FD3 /* sel2.c */; };
+		083F02992512694700D9EF7C /* scale2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52E92216C33E00183FD3 /* scale2.c */; };
+		083F029A2512694700D9EF7C /* adaptmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52EA2216C33E00183FD3 /* adaptmap.c */; };
+		083F029B2512694700D9EF7C /* sarray1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52EB2216C33E00183FD3 /* sarray1.c */; };
+		083F029C2512694700D9EF7C /* bmpiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52ED2216C33E00183FD3 /* bmpiostub.c */; };
+		083F029D2512694700D9EF7C /* psio1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52EE2216C33E00183FD3 /* psio1.c */; };
+		083F029E2512694700D9EF7C /* recogtrain.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52EF2216C33E00183FD3 /* recogtrain.c */; };
+		083F029F2512694700D9EF7C /* jpegiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F02216C33E00183FD3 /* jpegiostub.c */; };
+		083F02A02512694700D9EF7C /* arrayaccess.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F22216C33E00183FD3 /* arrayaccess.c */; };
+		083F02A12512694700D9EF7C /* queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F32216C33E00183FD3 /* queue.c */; };
+		083F02A22512694700D9EF7C /* pixlabel.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F42216C33E00183FD3 /* pixlabel.c */; };
+		083F02A32512694700D9EF7C /* ptafunc1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F62216C33E00183FD3 /* ptafunc1.c */; };
+		083F02A42512694700D9EF7C /* fmorphgenlow.1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52F82216C33E00183FD3 /* fmorphgenlow.1.c */; };
+		083F02A52512694700D9EF7C /* boxfunc2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52FB2216C33E00183FD3 /* boxfunc2.c */; };
+		083F02A62512694700D9EF7C /* leptwin.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52FC2216C33E00183FD3 /* leptwin.c */; };
+		083F02A72512694700D9EF7C /* colorseg.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52FD2216C33E00183FD3 /* colorseg.c */; };
+		083F02A82512694700D9EF7C /* gifio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52FE2216C33E00183FD3 /* gifio.c */; };
+		083F02A92512694700D9EF7C /* binreduce.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52FF2216C33E00183FD3 /* binreduce.c */; };
+		083F02AA2512694700D9EF7C /* numafunc2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53012216C33E00183FD3 /* numafunc2.c */; };
+		083F02AB2512694700D9EF7C /* jp2kio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53032216C33E00183FD3 /* jp2kio.c */; };
+		083F02AC2512694700D9EF7C /* bilateral.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53042216C33E00183FD3 /* bilateral.c */; };
+		083F02AD2512694800D9EF7C /* fmorphgen.1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53052216C33E00183FD3 /* fmorphgen.1.c */; };
+		083F02AE2512694800D9EF7C /* binarize.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53062216C33E00183FD3 /* binarize.c */; };
+		083F02AF2512694800D9EF7C /* pixtiling.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53072216C33E00183FD3 /* pixtiling.c */; };
+		083F02B02512694800D9EF7C /* pdfio1stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53092216C33E00183FD3 /* pdfio1stub.c */; };
+		083F02B12512694800D9EF7C /* morph.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A530A2216C33E00183FD3 /* morph.c */; };
+		083F02B22512694800D9EF7C /* pix5.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A530B2216C33E00183FD3 /* pix5.c */; };
+		083F02B32512694800D9EF7C /* affinecompose.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A530D2216C33E00183FD3 /* affinecompose.c */; };
+		083F02B42512694800D9EF7C /* pixafunc1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A530E2216C33E00183FD3 /* pixafunc1.c */; };
+		083F02B52512694800D9EF7C /* classapp.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53102216C33E00183FD3 /* classapp.c */; };
+		083F02B62512694800D9EF7C /* bmpio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53112216C33E00183FD3 /* bmpio.c */; };
+		083F02B72512694800D9EF7C /* enhance.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53122216C33E00183FD3 /* enhance.c */; };
+		083F02B82512694800D9EF7C /* webpiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53142216C33E00183FD3 /* webpiostub.c */; };
+		083F02B92512694800D9EF7C /* bootnumgen3.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53152216C33E00183FD3 /* bootnumgen3.c */; };
+		083F02BA2512694800D9EF7C /* shear.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53162216C33E00183FD3 /* shear.c */; };
+		083F02BB2512694800D9EF7C /* dewarp2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53172216C33E00183FD3 /* dewarp2.c */; };
+		083F02BC2512694800D9EF7C /* pageseg.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53182216C33E00183FD3 /* pageseg.c */; };
+		083F02BD2512694800D9EF7C /* finditalic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53192216C33E00183FD3 /* finditalic.c */; };
+		083F02BE2512694800D9EF7C /* psio2stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A531A2216C33E00183FD3 /* psio2stub.c */; };
+		083F02BF2512694800D9EF7C /* pnmiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A531B2216C33E00183FD3 /* pnmiostub.c */; };
+		083F02C02512694800D9EF7C /* bardecode.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A531C2216C33E00183FD3 /* bardecode.c */; };
+		083F02C12512694800D9EF7C /* roplow.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A531E2216C33E00183FD3 /* roplow.c */; };
+		083F02C22512694800D9EF7C /* bytearray.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A531F2216C33E00183FD3 /* bytearray.c */; };
+		083F02C32512694800D9EF7C /* pix1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53202216C33E00183FD3 /* pix1.c */; };
+		083F02C42512694800D9EF7C /* pixalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53212216C33E00183FD3 /* pixalloc.c */; };
+		083F02C52512694800D9EF7C /* blend.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53232216C33E00183FD3 /* blend.c */; };
+		083F02C62512694800D9EF7C /* baseline.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53252216C33E00183FD3 /* baseline.c */; };
+		083F02C72512694800D9EF7C /* jpegio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53262216C33E00183FD3 /* jpegio.c */; };
+		083F02C82512694800D9EF7C /* pixabasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53272216C33E00183FD3 /* pixabasic.c */; };
+		083F02C92512694800D9EF7C /* fliphmtgen.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53282216C33E00183FD3 /* fliphmtgen.c */; };
+		083F02CA2512694800D9EF7C /* recogdid.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53292216C33E00183FD3 /* recogdid.c */; };
+		083F02CB2512694800D9EF7C /* bbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A532A2216C33E00183FD3 /* bbuffer.c */; };
+		083F02CC2512694800D9EF7C /* pdfio2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A532B2216C33E00183FD3 /* pdfio2.c */; };
+		083F02CD2512694800D9EF7C /* binexpand.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A532D2216C33E00183FD3 /* binexpand.c */; };
+		083F02CE2512694800D9EF7C /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53302216C33E00183FD3 /* map.c */; };
+		083F02CF2512694800D9EF7C /* strokes.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53312216C33E00183FD3 /* strokes.c */; };
+		083F02D02512694800D9EF7C /* dnahash.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53322216C33E00183FD3 /* dnahash.c */; };
+		083F02D12512694800D9EF7C /* jp2kheaderstub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53332216C33E00183FD3 /* jp2kheaderstub.c */; };
+		083F02D22512694800D9EF7C /* colorquant2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53342216C33E00183FD3 /* colorquant2.c */; };
+		083F02D32512694800D9EF7C /* edge.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53352216C33E00183FD3 /* edge.c */; };
+		083F02D42512694800D9EF7C /* boxfunc3.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53362216C33E00183FD3 /* boxfunc3.c */; };
+		083F02D52512694800D9EF7C /* tiffiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53372216C33E00183FD3 /* tiffiostub.c */; };
+		083F02D62512694800D9EF7C /* graymorph.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53382216C33E00183FD3 /* graymorph.c */; };
+		083F02D72512694800D9EF7C /* paintcmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A533C2216C33F00183FD3 /* paintcmap.c */; };
+		083F02D82512694800D9EF7C /* colorcontent.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A533D2216C33F00183FD3 /* colorcontent.c */; };
+		083F02D92512694800D9EF7C /* parseprotos.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A533F2216C33F00183FD3 /* parseprotos.c */; };
+		083F02DA2512694800D9EF7C /* pixafunc2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53402216C33F00183FD3 /* pixafunc2.c */; };
+		083F02DB2512694800D9EF7C /* dewarp1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53412216C33F00183FD3 /* dewarp1.c */; };
+		083F02DC2512694800D9EF7C /* pixacc.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53422216C33F00183FD3 /* pixacc.c */; };
+		083F02DD2512694800D9EF7C /* pdfio2stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53432216C33F00183FD3 /* pdfio2stub.c */; };
+		083F02DE2512694800D9EF7C /* pngiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53442216C33F00183FD3 /* pngiostub.c */; };
+		083F02DF2512694800D9EF7C /* pix2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53462216C33F00183FD3 /* pix2.c */; };
+		083F02E02512694800D9EF7C /* recogident.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53472216C33F00183FD3 /* recogident.c */; };
+		083F02E12512694800D9EF7C /* fmorphauto.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53482216C33F00183FD3 /* fmorphauto.c */; };
+		083F02E22512694800D9EF7C /* dnabasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53492216C33F00183FD3 /* dnabasic.c */; };
+		083F02E32512694800D9EF7C /* spixio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A534A2216C33F00183FD3 /* spixio.c */; };
+		083F02E42512694800D9EF7C /* jbclass.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A534B2216C33F00183FD3 /* jbclass.c */; };
+		083F02E52512694800D9EF7C /* psio1stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A534C2216C33F00183FD3 /* psio1stub.c */; };
+		083F02E62512694800D9EF7C /* correlscore.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A534D2216C33F00183FD3 /* correlscore.c */; };
+		083F02E72512694800D9EF7C /* boxfunc4.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A534F2216C33F00183FD3 /* boxfunc4.c */; };
+		083F02E82512694800D9EF7C /* sudoku.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53512216C33F00183FD3 /* sudoku.c */; };
+		083F02E92512694800D9EF7C /* convolve.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53522216C33F00183FD3 /* convolve.c */; };
+		083F02EA2512694800D9EF7C /* morphdwa.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53532216C33F00183FD3 /* morphdwa.c */; };
+		083F02EB2512694800D9EF7C /* webpio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53542216C33F00183FD3 /* webpio.c */; };
+		083F02EC2512694800D9EF7C /* regutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53552216C33F00183FD3 /* regutils.c */; };
+		083F02ED2512694800D9EF7C /* pngio.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53562216C33F00183FD3 /* pngio.c */; };
+		083F02EE2512694800D9EF7C /* readbarcode.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53572216C33F00183FD3 /* readbarcode.c */; };
+		083F02EF2512694800D9EF7C /* grayquant.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53582216C33F00183FD3 /* grayquant.c */; };
+		083F02F02512694800D9EF7C /* pdfio1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A535A2216C33F00183FD3 /* pdfio1.c */; };
+		083F02F12512694800D9EF7C /* recogbasic.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A535C2216C33F00183FD3 /* recogbasic.c */; };
+		083F02F22512694800D9EF7C /* fhmtgen.1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A535E2216C33F00183FD3 /* fhmtgen.1.c */; };
+		083F02F32512694800D9EF7C /* pixarith.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A535F2216C33F00183FD3 /* pixarith.c */; };
+		083F02F42512694800D9EF7C /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53612216C33F00183FD3 /* encoding.c */; };
+		083F02F52512694800D9EF7C /* colorquant1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53642216C33F00183FD3 /* colorquant1.c */; };
+		083F02F62512694800D9EF7C /* convertfiles.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53662216C33F00183FD3 /* convertfiles.c */; };
+		083F02F72512694800D9EF7C /* rank.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53672216C33F00183FD3 /* rank.c */; };
+		083F02F82512694800D9EF7C /* dnafunc1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53682216C33F00183FD3 /* dnafunc1.c */; };
+		083F02F92512694800D9EF7C /* fhmtauto.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A53692216C33F00183FD3 /* fhmtauto.c */; };
+		083F02FA2512694800D9EF7C /* dwacomb.2.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A536A2216C33F00183FD3 /* dwacomb.2.c */; };
+		083F02FB2512694800D9EF7C /* coloring.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A536B2216C33F00183FD3 /* coloring.c */; };
+		083F02FC2512694800D9EF7C /* bmf.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A536C2216C33F00183FD3 /* bmf.c */; };
+		083F036125126C2F00D9EF7C /* allheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52992216C33E00183FD3 /* allheaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083F038025126C5C00D9EF7C /* alltypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A534E2216C33F00183FD3 /* alltypes.h */; };
+		083F038125126C5C00D9EF7C /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A535D2216C33F00183FD3 /* queue.h */; };
+		083F038225126C5C00D9EF7C /* gplot.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A530C2216C33E00183FD3 /* gplot.h */; };
+		083F038325126C5C00D9EF7C /* ptra.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A532E2216C33E00183FD3 /* ptra.h */; };
+		083F038425126C5C00D9EF7C /* array.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A532C2216C33E00183FD3 /* array.h */; };
+		083F038525126C5C00D9EF7C /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A532F2216C33E00183FD3 /* stack.h */; };
+		083F038625126C5C00D9EF7C /* leptwin.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A535B2216C33F00183FD3 /* leptwin.h */; };
+		083F038725126C5C00D9EF7C /* rbtree.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A531D2216C33E00183FD3 /* rbtree.h */; };
+		083F038825126C5C00D9EF7C /* bmfdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A53602216C33F00183FD3 /* bmfdata.h */; };
+		083F038925126C5C00D9EF7C /* imageio.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52A12216C33E00183FD3 /* imageio.h */; };
+		083F038A25126C5C00D9EF7C /* morph.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52B52216C33E00183FD3 /* morph.h */; };
+		083F038B25126C5C00D9EF7C /* arrayaccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A53652216C33F00183FD3 /* arrayaccess.h */; };
+		083F038C25126C5C00D9EF7C /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52BC2216C33E00183FD3 /* endianness.h */; };
+		083F038D25126C5C00D9EF7C /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A53132216C33E00183FD3 /* list.h */; };
+		083F038E25126C5C00D9EF7C /* bbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52D32216C33E00183FD3 /* bbuffer.h */; };
+		083F038F25126C5C00D9EF7C /* watershed.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A533B2216C33F00183FD3 /* watershed.h */; };
+		083F039025126C5C00D9EF7C /* regutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52FA2216C33E00183FD3 /* regutils.h */; };
+		083F039125126C5C00D9EF7C /* pix.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A53622216C33F00183FD3 /* pix.h */; };
+		083F039225126C5C00D9EF7C /* bmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52DF2216C33E00183FD3 /* bmp.h */; };
+		083F039325126C5C00D9EF7C /* recog.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52F12216C33E00183FD3 /* recog.h */; };
+		083F039425126C5C00D9EF7C /* readbarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52F92216C33E00183FD3 /* readbarcode.h */; };
+		083F039525126C5C00D9EF7C /* jbclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52D42216C33E00183FD3 /* jbclass.h */; };
+		083F039625126C5C00D9EF7C /* bmf.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52EC2216C33E00183FD3 /* bmf.h */; };
+		083F039725126C5C00D9EF7C /* environ.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52F52216C33E00183FD3 /* environ.h */; };
+		083F039825126C5C00D9EF7C /* stringcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A53242216C33E00183FD3 /* stringcode.h */; };
+		083F039925126C5C00D9EF7C /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A53392216C33E00183FD3 /* heap.h */; };
+		083F039A25126C5C00D9EF7C /* bilateral.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52AC2216C33E00183FD3 /* bilateral.h */; };
+		083F039B25126C5C00D9EF7C /* ccbord.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A533E2216C33F00183FD3 /* ccbord.h */; };
+		083F039C25126C5C00D9EF7C /* dewarp.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A52952216C33E00183FD3 /* dewarp.h */; };
+		083F039D25126C5C00D9EF7C /* sudoku.h in Headers */ = {isa = PBXBuildFile; fileRef = 085A53002216C33E00183FD3 /* sudoku.h */; };
 		085A536D2216C33F00183FD3 /* bootnumgen1.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52962216C33E00183FD3 /* bootnumgen1.c */; };
 		085A536E2216C33F00183FD3 /* gifiostub.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52972216C33E00183FD3 /* gifiostub.c */; };
 		085A536F2216C33F00183FD3 /* runlength.c in Sources */ = {isa = PBXBuildFile; fileRef = 085A52982216C33E00183FD3 /* runlength.c */; };
@@ -209,14 +413,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		083F0240251268C300D9EF7C /* Leptonica_fw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Leptonica_fw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		083F0242251268C300D9EF7C /* Leptonica_fw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leptonica_fw.h; sourceTree = "<group>"; };
+		083F0243251268C300D9EF7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		084736AF2223EC7C00DCCBAF /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = libs/dependencies/lib/libpng.a; sourceTree = "<group>"; };
 		084736B02223EC7C00DCCBAF /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtiff.a; path = libs/dependencies/lib/libtiff.a; sourceTree = "<group>"; };
 		085A491F2216C15200183FD3 /* libLeptonica.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLeptonica.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		085A52852216C31100183FD3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		085A52892216C32E00183FD3 /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
-		085A528A2216C32E00183FD3 /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
-		085A52902216C32E00183FD3 /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
-		085A52912216C32E00183FD3 /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
 		085A52952216C33E00183FD3 /* dewarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dewarp.h; sourceTree = "<group>"; };
 		085A52962216C33E00183FD3 /* bootnumgen1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bootnumgen1.c; sourceTree = "<group>"; };
 		085A52972216C33E00183FD3 /* gifiostub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gifiostub.c; sourceTree = "<group>"; };
@@ -437,6 +640,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		083F023D251268C300D9EF7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		085A491C2216C15200183FD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,12 +658,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		083F0241251268C300D9EF7C /* Leptonica_fw */ = {
+			isa = PBXGroup;
+			children = (
+				083F0242251268C300D9EF7C /* Leptonica_fw.h */,
+				083F0243251268C300D9EF7C /* Info.plist */,
+			);
+			path = Leptonica_fw;
+			sourceTree = "<group>";
+		};
 		085A49162216C15200183FD3 = {
 			isa = PBXGroup;
 			children = (
 				085A52852216C31100183FD3 /* PrefixHeader.pch */,
 				085A52942216C33E00183FD3 /* src */,
-				085A52882216C32E00183FD3 /* include */,
+				083F0241251268C300D9EF7C /* Leptonica_fw */,
 				085A49202216C15200183FD3 /* Products */,
 				087F95682220100B00EF06BE /* Frameworks */,
 			);
@@ -463,19 +682,9 @@
 			isa = PBXGroup;
 			children = (
 				085A491F2216C15200183FD3 /* libLeptonica.a */,
+				083F0240251268C300D9EF7C /* Leptonica_fw.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		085A52882216C32E00183FD3 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				085A52892216C32E00183FD3 /* jpeglib.h */,
-				085A528A2216C32E00183FD3 /* jerror.h */,
-				085A52902216C32E00183FD3 /* jconfig.h */,
-				085A52912216C32E00183FD3 /* jmorecfg.h */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 		085A52942216C33E00183FD3 /* src */ = {
@@ -714,7 +923,67 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		083F023B251268C300D9EF7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083F039725126C5C00D9EF7C /* environ.h in Headers */,
+				083F039225126C5C00D9EF7C /* bmp.h in Headers */,
+				083F0244251268C300D9EF7C /* Leptonica_fw.h in Headers */,
+				083F038C25126C5C00D9EF7C /* endianness.h in Headers */,
+				083F036125126C2F00D9EF7C /* allheaders.h in Headers */,
+				083F039C25126C5C00D9EF7C /* dewarp.h in Headers */,
+				083F039425126C5C00D9EF7C /* readbarcode.h in Headers */,
+				083F039925126C5C00D9EF7C /* heap.h in Headers */,
+				083F038A25126C5C00D9EF7C /* morph.h in Headers */,
+				083F039125126C5C00D9EF7C /* pix.h in Headers */,
+				083F038925126C5C00D9EF7C /* imageio.h in Headers */,
+				083F038625126C5C00D9EF7C /* leptwin.h in Headers */,
+				083F039525126C5C00D9EF7C /* jbclass.h in Headers */,
+				083F038125126C5C00D9EF7C /* queue.h in Headers */,
+				083F039325126C5C00D9EF7C /* recog.h in Headers */,
+				083F038B25126C5C00D9EF7C /* arrayaccess.h in Headers */,
+				083F038E25126C5C00D9EF7C /* bbuffer.h in Headers */,
+				083F038D25126C5C00D9EF7C /* list.h in Headers */,
+				083F039025126C5C00D9EF7C /* regutils.h in Headers */,
+				083F038F25126C5C00D9EF7C /* watershed.h in Headers */,
+				083F038825126C5C00D9EF7C /* bmfdata.h in Headers */,
+				083F038725126C5C00D9EF7C /* rbtree.h in Headers */,
+				083F039A25126C5C00D9EF7C /* bilateral.h in Headers */,
+				083F038525126C5C00D9EF7C /* stack.h in Headers */,
+				083F038325126C5C00D9EF7C /* ptra.h in Headers */,
+				083F039D25126C5C00D9EF7C /* sudoku.h in Headers */,
+				083F038225126C5C00D9EF7C /* gplot.h in Headers */,
+				083F039625126C5C00D9EF7C /* bmf.h in Headers */,
+				083F038025126C5C00D9EF7C /* alltypes.h in Headers */,
+				083F038425126C5C00D9EF7C /* array.h in Headers */,
+				083F039825126C5C00D9EF7C /* stringcode.h in Headers */,
+				083F039B25126C5C00D9EF7C /* ccbord.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		083F023F251268C300D9EF7C /* Leptonica_fw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 083F0245251268C300D9EF7C /* Build configuration list for PBXNativeTarget "Leptonica_fw" */;
+			buildPhases = (
+				083F023B251268C300D9EF7C /* Headers */,
+				083F023C251268C300D9EF7C /* Sources */,
+				083F023D251268C300D9EF7C /* Frameworks */,
+				083F023E251268C300D9EF7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Leptonica_fw;
+			productName = Leptonica_fw;
+			productReference = 083F0240251268C300D9EF7C /* Leptonica_fw.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		085A491E2216C15200183FD3 /* Leptonica */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 085A49282216C15300183FD3 /* Build configuration list for PBXNativeTarget "Leptonica" */;
@@ -741,6 +1010,9 @@
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "doo GmbH";
 				TargetAttributes = {
+					083F023F251268C300D9EF7C = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					085A491E2216C15200183FD3 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -764,9 +1036,20 @@
 			targets = (
 				085A491E2216C15200183FD3 /* Leptonica */,
 				085A541D2216C56500183FD3 /* Leptonica_FAT */,
+				083F023F251268C300D9EF7C /* Leptonica_fw */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		083F023E251268C300D9EF7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		085A54212216C56E00183FD3 /* ShellScript */ = {
@@ -789,6 +1072,185 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		083F023C251268C300D9EF7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083F02512512694600D9EF7C /* bootnumgen1.c in Sources */,
+				083F02522512694600D9EF7C /* gifiostub.c in Sources */,
+				083F02532512694600D9EF7C /* runlength.c in Sources */,
+				083F02542512694600D9EF7C /* jp2kheader.c in Sources */,
+				083F02552512694700D9EF7C /* zlibmem.c in Sources */,
+				083F02562512694700D9EF7C /* morphseq.c in Sources */,
+				083F02572512694700D9EF7C /* stringcode.c in Sources */,
+				083F02582512694700D9EF7C /* compare.c in Sources */,
+				083F02592512694700D9EF7C /* dwacomblow.2.c in Sources */,
+				083F025A2512694700D9EF7C /* warper.c in Sources */,
+				083F025B2512694700D9EF7C /* rbtree.c in Sources */,
+				083F025C2512694700D9EF7C /* colormorph.c in Sources */,
+				083F025D2512694700D9EF7C /* utils2.c in Sources */,
+				083F025E2512694700D9EF7C /* sel1.c in Sources */,
+				083F025F2512694700D9EF7C /* boxbasic.c in Sources */,
+				083F02602512694700D9EF7C /* pix3.c in Sources */,
+				083F02612512694700D9EF7C /* list.c in Sources */,
+				083F02622512694700D9EF7C /* affine.c in Sources */,
+				083F02632512694700D9EF7C /* fhmtgenlow.1.c in Sources */,
+				083F02642512694700D9EF7C /* selgen.c in Sources */,
+				083F02652512694700D9EF7C /* dewarp4.c in Sources */,
+				083F02662512694700D9EF7C /* gplot.c in Sources */,
+				083F02672512694700D9EF7C /* seedfill.c in Sources */,
+				083F02682512694700D9EF7C /* numabasic.c in Sources */,
+				083F02692512694700D9EF7C /* flipdetect.c in Sources */,
+				083F026A2512694700D9EF7C /* zlibmemstub.c in Sources */,
+				083F026B2512694700D9EF7C /* fpix2.c in Sources */,
+				083F026C2512694700D9EF7C /* rotateorth.c in Sources */,
+				083F026D2512694700D9EF7C /* ccthin.c in Sources */,
+				083F026E2512694700D9EF7C /* bilinear.c in Sources */,
+				083F026F2512694700D9EF7C /* maze.c in Sources */,
+				083F02702512694700D9EF7C /* colorspace.c in Sources */,
+				083F02712512694700D9EF7C /* ccbord.c in Sources */,
+				083F02722512694700D9EF7C /* ptafunc2.c in Sources */,
+				083F02732512694700D9EF7C /* watershed.c in Sources */,
+				083F02742512694700D9EF7C /* sarray2.c in Sources */,
+				083F02752512694700D9EF7C /* tiffio.c in Sources */,
+				083F02762512694700D9EF7C /* scale1.c in Sources */,
+				083F02772512694700D9EF7C /* kernel.c in Sources */,
+				083F02782512694700D9EF7C /* writefile.c in Sources */,
+				083F02792512694700D9EF7C /* pixcomp.c in Sources */,
+				083F027A2512694700D9EF7C /* psio2.c in Sources */,
+				083F027B2512694700D9EF7C /* heap.c in Sources */,
+				083F027C2512694700D9EF7C /* rotateam.c in Sources */,
+				083F027D2512694700D9EF7C /* jp2kiostub.c in Sources */,
+				083F027E2512694700D9EF7C /* rotate.c in Sources */,
+				083F027F2512694700D9EF7C /* numafunc1.c in Sources */,
+				083F02802512694700D9EF7C /* rop.c in Sources */,
+				083F02812512694700D9EF7C /* stack.c in Sources */,
+				083F02822512694700D9EF7C /* ptra.c in Sources */,
+				083F02832512694700D9EF7C /* partition.c in Sources */,
+				083F02842512694700D9EF7C /* pnmio.c in Sources */,
+				083F02852512694700D9EF7C /* boxfunc1.c in Sources */,
+				083F02862512694700D9EF7C /* readfile.c in Sources */,
+				083F02872512694700D9EF7C /* conncomp.c in Sources */,
+				083F02882512694700D9EF7C /* pix4.c in Sources */,
+				083F02892512694700D9EF7C /* textops.c in Sources */,
+				083F028A2512694700D9EF7C /* ptabasic.c in Sources */,
+				083F028B2512694700D9EF7C /* quadtree.c in Sources */,
+				083F028C2512694700D9EF7C /* dewarp3.c in Sources */,
+				083F028D2512694700D9EF7C /* bootnumgen2.c in Sources */,
+				083F028E2512694700D9EF7C /* projective.c in Sources */,
+				083F028F2512694700D9EF7C /* graphics.c in Sources */,
+				083F02902512694700D9EF7C /* morphapp.c in Sources */,
+				083F02912512694700D9EF7C /* rotateshear.c in Sources */,
+				083F02922512694700D9EF7C /* colormap.c in Sources */,
+				083F02932512694700D9EF7C /* skew.c in Sources */,
+				083F02942512694700D9EF7C /* fpix1.c in Sources */,
+				083F02952512694700D9EF7C /* utils1.c in Sources */,
+				083F02962512694700D9EF7C /* libversions.c in Sources */,
+				083F02972512694700D9EF7C /* pixconv.c in Sources */,
+				083F02982512694700D9EF7C /* sel2.c in Sources */,
+				083F02992512694700D9EF7C /* scale2.c in Sources */,
+				083F029A2512694700D9EF7C /* adaptmap.c in Sources */,
+				083F029B2512694700D9EF7C /* sarray1.c in Sources */,
+				083F029C2512694700D9EF7C /* bmpiostub.c in Sources */,
+				083F029D2512694700D9EF7C /* psio1.c in Sources */,
+				083F029E2512694700D9EF7C /* recogtrain.c in Sources */,
+				083F029F2512694700D9EF7C /* jpegiostub.c in Sources */,
+				083F02A02512694700D9EF7C /* arrayaccess.c in Sources */,
+				083F02A12512694700D9EF7C /* queue.c in Sources */,
+				083F02A22512694700D9EF7C /* pixlabel.c in Sources */,
+				083F02A32512694700D9EF7C /* ptafunc1.c in Sources */,
+				083F02A42512694700D9EF7C /* fmorphgenlow.1.c in Sources */,
+				083F02A52512694700D9EF7C /* boxfunc2.c in Sources */,
+				083F02A62512694700D9EF7C /* leptwin.c in Sources */,
+				083F02A72512694700D9EF7C /* colorseg.c in Sources */,
+				083F02A82512694700D9EF7C /* gifio.c in Sources */,
+				083F02A92512694700D9EF7C /* binreduce.c in Sources */,
+				083F02AA2512694700D9EF7C /* numafunc2.c in Sources */,
+				083F02AB2512694700D9EF7C /* jp2kio.c in Sources */,
+				083F02AC2512694700D9EF7C /* bilateral.c in Sources */,
+				083F02AD2512694800D9EF7C /* fmorphgen.1.c in Sources */,
+				083F02AE2512694800D9EF7C /* binarize.c in Sources */,
+				083F02AF2512694800D9EF7C /* pixtiling.c in Sources */,
+				083F02B02512694800D9EF7C /* pdfio1stub.c in Sources */,
+				083F02B12512694800D9EF7C /* morph.c in Sources */,
+				083F02B22512694800D9EF7C /* pix5.c in Sources */,
+				083F02B32512694800D9EF7C /* affinecompose.c in Sources */,
+				083F02B42512694800D9EF7C /* pixafunc1.c in Sources */,
+				083F02B52512694800D9EF7C /* classapp.c in Sources */,
+				083F02B62512694800D9EF7C /* bmpio.c in Sources */,
+				083F02B72512694800D9EF7C /* enhance.c in Sources */,
+				083F02B82512694800D9EF7C /* webpiostub.c in Sources */,
+				083F02B92512694800D9EF7C /* bootnumgen3.c in Sources */,
+				083F02BA2512694800D9EF7C /* shear.c in Sources */,
+				083F02BB2512694800D9EF7C /* dewarp2.c in Sources */,
+				083F02BC2512694800D9EF7C /* pageseg.c in Sources */,
+				083F02BD2512694800D9EF7C /* finditalic.c in Sources */,
+				083F02BE2512694800D9EF7C /* psio2stub.c in Sources */,
+				083F02BF2512694800D9EF7C /* pnmiostub.c in Sources */,
+				083F02C02512694800D9EF7C /* bardecode.c in Sources */,
+				083F02C12512694800D9EF7C /* roplow.c in Sources */,
+				083F02C22512694800D9EF7C /* bytearray.c in Sources */,
+				083F02C32512694800D9EF7C /* pix1.c in Sources */,
+				083F02C42512694800D9EF7C /* pixalloc.c in Sources */,
+				083F02C52512694800D9EF7C /* blend.c in Sources */,
+				083F02C62512694800D9EF7C /* baseline.c in Sources */,
+				083F02C72512694800D9EF7C /* jpegio.c in Sources */,
+				083F02C82512694800D9EF7C /* pixabasic.c in Sources */,
+				083F02C92512694800D9EF7C /* fliphmtgen.c in Sources */,
+				083F02CA2512694800D9EF7C /* recogdid.c in Sources */,
+				083F02CB2512694800D9EF7C /* bbuffer.c in Sources */,
+				083F02CC2512694800D9EF7C /* pdfio2.c in Sources */,
+				083F02CD2512694800D9EF7C /* binexpand.c in Sources */,
+				083F02CE2512694800D9EF7C /* map.c in Sources */,
+				083F02CF2512694800D9EF7C /* strokes.c in Sources */,
+				083F02D02512694800D9EF7C /* dnahash.c in Sources */,
+				083F02D12512694800D9EF7C /* jp2kheaderstub.c in Sources */,
+				083F02D22512694800D9EF7C /* colorquant2.c in Sources */,
+				083F02D32512694800D9EF7C /* edge.c in Sources */,
+				083F02D42512694800D9EF7C /* boxfunc3.c in Sources */,
+				083F02D52512694800D9EF7C /* tiffiostub.c in Sources */,
+				083F02D62512694800D9EF7C /* graymorph.c in Sources */,
+				083F02D72512694800D9EF7C /* paintcmap.c in Sources */,
+				083F02D82512694800D9EF7C /* colorcontent.c in Sources */,
+				083F02D92512694800D9EF7C /* parseprotos.c in Sources */,
+				083F02DA2512694800D9EF7C /* pixafunc2.c in Sources */,
+				083F02DB2512694800D9EF7C /* dewarp1.c in Sources */,
+				083F02DC2512694800D9EF7C /* pixacc.c in Sources */,
+				083F02DD2512694800D9EF7C /* pdfio2stub.c in Sources */,
+				083F02DE2512694800D9EF7C /* pngiostub.c in Sources */,
+				083F02DF2512694800D9EF7C /* pix2.c in Sources */,
+				083F02E02512694800D9EF7C /* recogident.c in Sources */,
+				083F02E12512694800D9EF7C /* fmorphauto.c in Sources */,
+				083F02E22512694800D9EF7C /* dnabasic.c in Sources */,
+				083F02E32512694800D9EF7C /* spixio.c in Sources */,
+				083F02E42512694800D9EF7C /* jbclass.c in Sources */,
+				083F02E52512694800D9EF7C /* psio1stub.c in Sources */,
+				083F02E62512694800D9EF7C /* correlscore.c in Sources */,
+				083F02E72512694800D9EF7C /* boxfunc4.c in Sources */,
+				083F02E82512694800D9EF7C /* sudoku.c in Sources */,
+				083F02E92512694800D9EF7C /* convolve.c in Sources */,
+				083F02EA2512694800D9EF7C /* morphdwa.c in Sources */,
+				083F02EB2512694800D9EF7C /* webpio.c in Sources */,
+				083F02EC2512694800D9EF7C /* regutils.c in Sources */,
+				083F02ED2512694800D9EF7C /* pngio.c in Sources */,
+				083F02EE2512694800D9EF7C /* readbarcode.c in Sources */,
+				083F02EF2512694800D9EF7C /* grayquant.c in Sources */,
+				083F02F02512694800D9EF7C /* pdfio1.c in Sources */,
+				083F02F12512694800D9EF7C /* recogbasic.c in Sources */,
+				083F02F22512694800D9EF7C /* fhmtgen.1.c in Sources */,
+				083F02F32512694800D9EF7C /* pixarith.c in Sources */,
+				083F02F42512694800D9EF7C /* encoding.c in Sources */,
+				083F02F52512694800D9EF7C /* colorquant1.c in Sources */,
+				083F02F62512694800D9EF7C /* convertfiles.c in Sources */,
+				083F02F72512694800D9EF7C /* rank.c in Sources */,
+				083F02F82512694800D9EF7C /* dnafunc1.c in Sources */,
+				083F02F92512694800D9EF7C /* fhmtauto.c in Sources */,
+				083F02FA2512694800D9EF7C /* dwacomb.2.c in Sources */,
+				083F02FB2512694800D9EF7C /* coloring.c in Sources */,
+				083F02FC2512694800D9EF7C /* bmf.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		085A491B2216C15200183FD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -971,6 +1433,92 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		083F0246251268C300D9EF7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FRUPYT6KB3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/dependencies/include";
+				INFOPLIST_FILE = Leptonica_fw/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/dependencies/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.scanbot.Leptonica-fw";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		083F0247251268C300D9EF7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FRUPYT6KB3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/dependencies/include";
+				INFOPLIST_FILE = Leptonica_fw/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/dependencies/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.scanbot.Leptonica-fw";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		085A49262216C15300183FD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1172,6 +1720,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		083F0245251268C300D9EF7C /* Build configuration list for PBXNativeTarget "Leptonica_fw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083F0246251268C300D9EF7C /* Debug */,
+				083F0247251268C300D9EF7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		085A491A2216C15200183FD3 /* Build configuration list for PBXProject "Leptonica" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
