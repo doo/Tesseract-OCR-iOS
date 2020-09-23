@@ -1,0 +1,3 @@
+[submodule "TesseractOCR/G8Tess4/Tesseract4/tesseract-sources"]
+	path = TesseractOCR/G8Tess4/Tesseract4/tesseract-sources
+	url = git@github.com:doo/tesseract

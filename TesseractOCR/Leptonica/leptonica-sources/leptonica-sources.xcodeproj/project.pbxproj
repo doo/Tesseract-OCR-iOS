@@ -1,0 +1,188 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		08D4F56621089E3400BEB3D1 /* lept.pc.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = lept.pc.cmake; sourceTree = "<group>"; };
+		08D4F56721089E3400BEB3D1 /* lept.pc.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = lept.pc.in; sourceTree = "<group>"; };
+		08D4F56821089E3400BEB3D1 /* moller52.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moller52.jpg; sourceTree = "<group>"; };
+		08D4F56921089E3400BEB3D1 /* configure.ac */ = {isa = PBXFileReference; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		08D4F56A21089E3400BEB3D1 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		08D4F56B21089E3400BEB3D1 /* make-for-local */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "make-for-local"; sourceTree = "<group>"; };
+		08D4F56C21089E3400BEB3D1 /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
+		08D4F56D21089E3400BEB3D1 /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		08D4F56E21089E3400BEB3D1 /* autom4te.cache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = autom4te.cache; sourceTree = "<group>"; };
+		08D4F56F21089E3400BEB3D1 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
+		08D4F57021089E3400BEB3D1 /* leptonica-license.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "leptonica-license.txt"; sourceTree = "<group>"; };
+		08D4F57121089E3400BEB3D1 /* README.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = README.html; sourceTree = "<group>"; };
+		08D4F57221089E3400BEB3D1 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		08D4F57321089E3400BEB3D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		08D4F57421089E3400BEB3D1 /* prog */ = {isa = PBXFileReference; lastKnownFileType = folder; path = prog; sourceTree = "<group>"; };
+		08D4F57521089E3400BEB3D1 /* appveyor.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = appveyor.yml; sourceTree = "<group>"; };
+		08D4F57621089E3400BEB3D1 /* autobuild */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = autobuild; sourceTree = "<group>"; };
+		08D4F57721089E3400BEB3D1 /* style-guide.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "style-guide.txt"; sourceTree = "<group>"; };
+		08D4F57821089E3400BEB3D1 /* sw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sw.cpp; sourceTree = "<group>"; };
+		08D4F57921089E3400BEB3D1 /* version-notes.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "version-notes.html"; sourceTree = "<group>"; };
+		08D4F57A21089E3400BEB3D1 /* m4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = m4; sourceTree = "<group>"; };
+		08D4F57B21089E3400BEB3D1 /* Doxyfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		08D4F57C21089E3400BEB3D1 /* cppan.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = cppan.yml; sourceTree = "<group>"; };
+		08D4F57D21089E3400BEB3D1 /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		08D4F57E21089E3400BEB3D1 /* aclocal.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		08D4F57F21089E3400BEB3D1 /* make-for-auto */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "make-for-auto"; sourceTree = "<group>"; };
+		08D4F58021089E3400BEB3D1 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08D4F56021089E3400BEB3D1 = {
+			isa = PBXGroup;
+			children = (
+				08D4F56621089E3400BEB3D1 /* lept.pc.cmake */,
+				08D4F56721089E3400BEB3D1 /* lept.pc.in */,
+				08D4F56821089E3400BEB3D1 /* moller52.jpg */,
+				08D4F56921089E3400BEB3D1 /* configure.ac */,
+				08D4F56A21089E3400BEB3D1 /* CMakeLists.txt */,
+				08D4F56B21089E3400BEB3D1 /* make-for-local */,
+				08D4F56C21089E3400BEB3D1 /* cmake */,
+				08D4F56D21089E3400BEB3D1 /* configure */,
+				08D4F56E21089E3400BEB3D1 /* autom4te.cache */,
+				08D4F56F21089E3400BEB3D1 /* config */,
+				08D4F57021089E3400BEB3D1 /* leptonica-license.txt */,
+				08D4F57121089E3400BEB3D1 /* README.html */,
+				08D4F57221089E3400BEB3D1 /* Makefile.am */,
+				08D4F57321089E3400BEB3D1 /* README.md */,
+				08D4F57421089E3400BEB3D1 /* prog */,
+				08D4F57521089E3400BEB3D1 /* appveyor.yml */,
+				08D4F57621089E3400BEB3D1 /* autobuild */,
+				08D4F57721089E3400BEB3D1 /* style-guide.txt */,
+				08D4F57821089E3400BEB3D1 /* sw.cpp */,
+				08D4F57921089E3400BEB3D1 /* version-notes.html */,
+				08D4F57A21089E3400BEB3D1 /* m4 */,
+				08D4F57B21089E3400BEB3D1 /* Doxyfile */,
+				08D4F57C21089E3400BEB3D1 /* cppan.yml */,
+				08D4F57D21089E3400BEB3D1 /* Makefile.in */,
+				08D4F57E21089E3400BEB3D1 /* aclocal.m4 */,
+				08D4F57F21089E3400BEB3D1 /* make-for-auto */,
+				08D4F58021089E3400BEB3D1 /* src */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		08D4F56521089E3400BEB3D1 /* leptonica-sources */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 08D4F58121089E3400BEB3D1 /* Build configuration list for PBXLegacyTarget "leptonica-sources" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/sebastianhusche/Development/Tesseract/Tesseract/Tesseract/leptonica-sources";
+			dependencies = (
+			);
+			name = "leptonica-sources";
+			passBuildSettingsInEnvironment = 1;
+			productName = "leptonica-sources";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		08D4F56121089E3400BEB3D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 08D4F56421089E3400BEB3D1 /* Build configuration list for PBXProject "leptonica-sources" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08D4F56021089E3400BEB3D1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08D4F56521089E3400BEB3D1 /* leptonica-sources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		08D4F56221089E3400BEB3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		08D4F56321089E3400BEB3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		08D4F58221089E3400BEB3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "leptonica-sources";
+			};
+			name = Debug;
+		};
+		08D4F58321089E3400BEB3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "leptonica-sources";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08D4F56421089E3400BEB3D1 /* Build configuration list for PBXProject "leptonica-sources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D4F56221089E3400BEB3D1 /* Debug */,
+				08D4F56321089E3400BEB3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08D4F58121089E3400BEB3D1 /* Build configuration list for PBXLegacyTarget "leptonica-sources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D4F58221089E3400BEB3D1 /* Debug */,
+				08D4F58321089E3400BEB3D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08D4F56121089E3400BEB3D1 /* Project object */;
+}
