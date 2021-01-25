@@ -14,6 +14,8 @@
 
 - (BOOL)beginPDF:(NSURL *)pdfOutputURL creatorString:(NSString *)creator;
 
+- (BOOL)beginPDFDataWithCreatorString:(NSString *)creator;
+
 - (BOOL)addCurrentPageWithResolution:(int)dpi;
 
 - (BOOL)endPDF;
