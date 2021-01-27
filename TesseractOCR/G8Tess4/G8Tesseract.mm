@@ -52,6 +52,7 @@ namespace tesseract {
 @property (nonatomic, assign) G8WritingDirection writingDirection;
 @property (nonatomic, assign) G8TextlineOrder textlineOrder;
 @property (nonatomic, assign) CGFloat deskewAngle;
+@property (nonatomic, strong) NSData *pdfOutputData;
 
 @end
 
@@ -1138,6 +1139,23 @@ static bool tesseractCancelCallbackFunction(void *cancel_this, int words) {
     _tesseract->SetInputName(imageURL.fileSystemRepresentation);
 }
 
+- (BOOL)beginPDFDataWithCreatorString:(NSString *)creator {
+    if (_renderer != NULL) {
+        NSLog(@"ERROR: There is already a renderer running. Call endPDF().");
+        return NO;
+    }
+    const char *dataPath = _tesseract->GetDatapath();
+    _pdfOutputData = nil;
+    _renderer = new tesseract::TessPDFRenderer(dataPath);
+    bool success = _renderer->BeginDocument("");
+    if (!success) {
+        NSLog(@"ERROR: Unable to create PDF renderer.");
+        delete _renderer;
+        _renderer = NULL;
+    }
+    return success;
+}
+
 - (BOOL)beginPDF:(NSURL *)pdfOutputURL creatorString:(NSString *)creator {
     if (_renderer != NULL) {
         NSLog(@"ERROR: There is already a renderer running. Call endPDF().");
@@ -1163,6 +1181,13 @@ static bool tesseractCancelCallbackFunction(void *cancel_this, int words) {
         return NO;
     }
     bool success = _renderer->EndDocument();
+    
+    std::vector<char> outputBuffer = _renderer->outputBuffer();
+    
+    if (outputBuffer.size() > 0) {
+        _pdfOutputData = [[NSData alloc] initWithBytes:outputBuffer.data() length:outputBuffer.size()];
+    }
+    
     delete _renderer;
     _renderer = NULL;
     return success;

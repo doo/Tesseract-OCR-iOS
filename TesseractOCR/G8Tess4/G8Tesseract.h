@@ -142,6 +142,9 @@ extern NSInteger const kG8MaxCredibleResolution;
  */
 @property (nonatomic, readonly) NSString *recognizedText;
 
+
+@property (nonatomic, readonly) NSData *pdfOutputData;
+
 /**
  *  Make an HTML-formatted string with hOCR markup from the internal Tesseract
  *  data structures.
