@@ -194,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = G8;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Daniele Galiotto - www.g8production.com";
 				TargetAttributes = {
 					08AFF1EB221EE986004E7B66 = {
